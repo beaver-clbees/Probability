@@ -1,0 +1,189 @@
+<worksheet>
+    <title>Properties of Probability</title>
+
+    <definition xml:id="def-ranexp">
+      <title>Random Experiment</title>    
+      <statement>
+        <p>An experiment where the outcome cannot be predicted with certainty. xyz
+        </p>
+      </statement>
+    </definition>
+  <definition xml:id="def-samplespace">
+    <title>Sample Space</title>
+       
+    <statement>
+      <p>
+         The set of all possible outcomes of a random experiment is called a sample space, S (also called outcome space, or just space).
+      </p>
+    </statement>
+  </definition>
+ 
+
+    
+    <exercise workspace="0.5in">
+      <statement>
+        <p>
+          Flip a coin and record the face that is showing:
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise workspace="0.5in">
+      <statement>
+        <p>
+          Roll two dice and add the faces showing:
+          <!--$S = \{2,3,4,5,6,7,8,9,10,11,12\}$.-->
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise workspace="0.5in">
+      <statement>
+        <p>
+          Flip two coins. Record the faces:
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise workspace="0.5in">
+      <statement>
+        <p>
+          Flip two coins. Determine if they are the same:
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise workspace="0.5in">
+      <statement>
+        <p>
+          Flip a coin until a heads appears. Record the number of flips needed:
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise workspace="0.5in">
+      <statement>
+        <p>
+          Flip a coin until you get two heads in a row. Record how long (time)
+          it takes:
+        </p>
+      </statement>
+    </exercise>
+<definition>
+ <title>Event</title>    
+      <statement>
+        <p>An event is a collection of outcomes in a sample space.
+
+        </p>
+      </statement>
+    </definition>
+
+    <p>Notice that a sample space S is a set, and an event is a subset of S. We will review some basics of sets and 
+    see how they can be represented with Venn Diagrams. Our universal set is always our sample space in this context because 
+    the sample space contains all possible outcomes. We will assume all sets and elements are in S. </p>
+
+    <definition xml:id="def-emptyset">
+    <title>Empty or Null Set</title>
+       <statement>
+        <p>
+          <m>\emptyset</m> denotes the empty or null set (the set containing no elements). 
+        </p>
+      </statement>
+    </definition>
+  <exercise>
+      <statement>
+        <p>
+          <m>A \subset</m> B indicates A is a subset of B. Draw and shade set A so it is a subset of B.
+        </p>
+        <image width="40%">
+  <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw (0,0) circle (1.5) (-.5,1.25)  node [font=\tiny,text=black,above] {$B$}
+      (-2,-2) rectangle (3,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture} </latex-image>
+          </image>
+    </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>A \cup B</m> is the union of sets A and B. Elements in the union might be in A or in B or in both A and B. Shade <m> A \cup B. </m> 
+        </p>
+        <image width="40%">
+          <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
+      (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
+\draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture} </latex-image>
+    </image>
+      </statement>
+    </exercise>
+
+    <exercise>
+    <statement>
+      <p>
+      <m> A \cap B </m> is the intersection of A and B. Elements in the intersection are in A and also in B. Shade <m> A \cap B </m>.  
+      </p>
+    <image width="40%">
+      <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
+      (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
+\draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture} </latex-image>
+          </image>
+    </statement>
+      </exercise>
+
+<exercise>
+<statement>
+  <p> A' is the complement of A (all elements in S that are NOT in A). Shade A'.
+  </p>
+    <image width="40%">
+  <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw (0,0) circle (1.5) (-.5,1.25)  node [font=\tiny,text=black,above] {$A$}
+      (-2,-2) rectangle (3,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture} </latex-image>
+          </image>
+          </statement>
+          </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        <m>A</m> and <m>B</m> are mutually exclusive or disjoint if <m>A \cap B = \emptyset </m>. Make a sketch.
+      </p>
+      <image width="40%">
+  <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw (-2,-2) rectangle (4,2)node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture} </latex-image>
+          </image>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A and B are exhaustive if <m> A \cup B =S,</m> Make a sketch.
+      </p>
+       <image width="40%">
+  <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw (-2,-2) rectangle (4,2)node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture} </latex-image>
+          </image>
+    </statement>
+  </exercise>
+<p>
+  These definitions extend to larger numbers of subsets. For example, given <m> A_1,A_2,...,A_k \subseteq S</m> 
+  <ol>
+    <li>
+      <p>
+         <m>A_1, A_2,...,A_k</m> are mutually exclusive events if <m>A_i \cap A_j = \emptyset</m> for <m>i \neq j</m> (they are pairwise disjoint).
+      </p>
+    </li>
+    <li>
+      <p>
+        <m>A_1, A_2,...,A_k</m> are exhaustive events if <m>A_1 \cup A_2 \cup \cdots \cup A_k=S</m>
+      </p>
+    </li>
+  </ol>
+</p>
+  </worksheet>

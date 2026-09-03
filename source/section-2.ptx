@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:id="section-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>My Additional Section</title>
+  <p>tikz pics</p>
+  <figure xml:id="figure-tikz-example-diagram">
+    <caption>The graph <m>C_5</m> made by TikZ</caption>
+    <image xml:id="tikz-example-diagram" width="20%">
+      <description>A 5-cycle</description>
+      <latex-image> \begin{tikzpicture}[fill=gray,scale=0.5]
+% outline
+\draw (0,0) circle (1.5) (-.5,1.25)  node [font=\tiny,text=black,above] {$B$}
+      (-2,-2) rectangle (3,2) node [font=\tiny,text=black,above] {$S$};
+    \end{tikzpicture} </latex-image>
+    </image>
+  </figure>
+  <p>bar</p>
+</section>
