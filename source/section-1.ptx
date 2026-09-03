@@ -1,5 +1,5 @@
 <worksheet>
-    <title>Properties of Probability</title>
+    <title>Basic Definitions</title>
 
     <definition xml:id="def-ranexp">
       <title>Random Experiment</title>    
@@ -186,4 +186,229 @@
     </li>
   </ol>
 </p>
+<p>We are interested in computing the probability of an event A in our sample space. We can approximate the probability by repeating the experiment n times. 
+Let N(A) be the number of times an outcome of the experiment is in the event (subset) A. Then we can approximate the probability of A as 
+  </p>
+  <exercise workspace="0.5in">
+  <statement> 
+    <p><m> P(A)\approx</m>
+    </p>
+    </statement>
+    </exercise>
+    <p>
+     which is called the <alert> relative frequency </alert> of the event A in these n repetitions of the experiment.
+    </p>
+    <p>
+      Note that if n is small and a few of us do this experiment we
+      may get wildly different answers. However as n gets larger 
+      and larger, this fraction will tend to stabilize and we call it the <alert> probability of event A </alert>. 
+      You can think of it as
+    </p>
+    <exercise workspace="0.5in">
+      <statement>
+        <p>
+          (Probability of A) <m>P(A)=</m>
+        </p>
+      </statement>
+    </exercise>
+    <exercise workshpace="1in">
+    <statement>
+      <p>
+      Suppose we have a fair, six sided die and we want to know the probability of the event, E that it will show an even number. 
+      Find the sample space S and E. What do you expect for P(E)?  
+      </p>
+    </statement>
+      
+    </exercise>
+    <p>
+      Now we give the formal definition of a probability function.
+    </p>
+
+    <definition xml:id="def-probability">
+    <title>Probability</title>
+       
+      <statement>
+        <p>
+          Probability is a real-valued set function, P, 
+          that assigns to each event A in the sample space S,
+          a number P(A), called the probability of the event A
+           such that the following properties are satisfied:
+           <ol>
+            <li>
+              <p>
+                <m> P(A)\geq 0</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>P(S)=1</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                If <m>A_1,A_2,A_3,...</m> are events and 
+                <m>A_i \cap A_j = \emptyset, i \neq j,</m> (mutually disjoint)
+                then
+<me>P(A_1 \cup A_2 \cup \cdots \cup A_k) = P(A_1)+P(A_2)+ \cdots + P(A_k)</me>
+
+for each positive integer k and
+<me>P(A_1 \cup A_2 \cup A_3 ...) = P(A_1)+P(A_2)+ P(A_3) +...</me>
+for any countable (possibly infinite) number of events.
+              </p>
+            </li>
+           </ol>
+        </p>
+      </statement>
+    </definition>
+    <exercise workspace="1.5in">
+      <statement>
+        <p>
+          Sometimes you can use mathematics to determine what the probability function should be under given conditions.
+          For example in the 6-sided die example, if the die is fair, then
+
+    <me>P(1)=P(2)=P(3)=P(4)=P(5)=P(6)=</me>
+
+
+    Let <m>E = \{ 1,2 \}, F = \{3,4\}.</m> Let G be the set of odd outcomes.
+    </p> 
+    <p>
+    Find <m>P(E), P(F), P(E \cup F), P(E\cap F), P(G),P(G\cup F).</m>
+
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      <alert>Equally Likely Outcomes</alert>
+    </p>
+    <p>
+      Suppose we have a random experiment with m outcomes and 
+    sample space <m>S=\{e_1,e_2,...,e_m\}</m>. If each of the 
+    outcomes in S has the same probability of occurring
+    (e.g. roll a fair die), then we say that each of the m
+     outcomes are equally likely. In that case,
+    </p>
+    <exercise workspace="0.5in">
+      <statement>
+        <p>
+          <m>P(e_i)=</m>
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      This makes it easy to determine the probability of an event:
+      If <m>A \subseteq S</m> is an event, with h outcomes, then
+      <me> P(A)=</me>
+    </p>
+    <figure xml:id="deck of cards">
+      <caption>Standard deck of cards</caption>
+    </figure>
+    <image source="deck of cards.png" />
+   <exercise>
+    <introduction>
+    
+      <p>
+        Draw one card at random from a standard 52 card deck. The sample space is the collection of 52 cards. Assume that each card is equally likely to be chosen (i.e., that a card is drawn `at random'). Thus the probability function assigns a probability of <m>\frac{1}{52}</m>
+        to each of the outcomes. Let 
+    <ul>>
+    <li>
+      <p>
+        <m>A=\{x \mid x \hbox{ is a jack, queen, or king}\}</m>
+      </p>
+    </li>
+    <li>
+      <p>
+        <m>B=\{x \mid (x \hbox{ is a }9, 10, \hbox{ or jack) AND RED}\}</m>
+      </p>
+    </li> 
+    <li>
+      <p>
+        <m>C=\{x \mid x \hbox{ is a club}\}</m>
+      </p>
+    </li> 
+    <li>
+      <p>
+     <m>D=\{x \mid x \hbox{ is a diamond, a heart, or a spade}\}</m>
+      </p>
+    </li>
+     </ul>
+     Determine the following probabilities.
+     </p>
+</introduction>
+    
+    <task workspace=".1in">
+    <p>
+       <m>P(A)=</m>
+    </p>
+    </task>
+
+     <task workspace=".1in">
+     <p>
+        <m>P(A \cap B')=</m>
+     </p>
+     </task> 
+  <task workspace=".1in">
+    <p>
+        <m>P(A \cup B)=</m>
+    </p>
+    </task>
+    <task workspace=".1in">
+    <p>
+        <m>P(C \cup D)=</m>
+    </p>
+    </task>
+    <task workspace=".1in">
+    <p>
+        <m>P(C \cap D)=</m>
+    </p>
+    </task>
+   </exercise>
+   <exercise>
+    <introduction>
+      <p>
+     Suppose a dart is thrown at the picture below.
+     Assume it lands in the sample space, S. Let A
+     be the event the dart lands in rectangle A and let B
+     be the event the dart lands in rectangle B.
+     Estimate the following probabilities and be prepared to justify your estimates.   
+      </p>
+       <image source="Boxes.PNG" width="50%" />
+    </introduction>
+    <task workspace="0.2in">
+      <statement>
+        <p>
+          <m>P(A)=</m>
+        </p>
+      </statement>
+    </task>
+    <task workspace="0.2in">
+      <statement>
+        <p>
+          <m>P(A')=</m>
+        </p>
+      </statement>
+    </task>
+    <task workspace="0.2in">
+      <statement>
+        <p>
+          <m>P(B)=</m>
+        </p>
+      </statement>
+    </task>
+    <task workspace="0.2in">
+      <statement>
+        <p>
+          <m>P((A\cup B)')=</m>
+        </p>
+      </statement>
+    </task>
+    <task workspace="0.2in">
+      <statement>
+        <p>
+          <m>P(A\cap B)=</m>
+        </p>
+      </statement>
+    </task>
+   </exercise>
+  
+    
   </worksheet>
