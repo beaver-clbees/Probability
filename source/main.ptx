@@ -6,7 +6,7 @@
     <document-id>authorslastnamelowercase-ShortTitleCamelCase</document-id>
 
     <macros>\newcommand{\foo}{b^{ar}}</macros>
-    <latex-image-preamble>\usepackage{tikz}</latex-image-preamble>
+    <latex-image-preamble>\usepackage{tikz,pgfplots}</latex-image-preamble>
   </docinfo>
 
   <article xml:id="shorttitlelowercase">

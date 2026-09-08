@@ -249,10 +249,10 @@ Let N(A) be the number of times an outcome of the experiment is in the event (su
                 If <m>A_1,A_2,A_3,...</m> are events and 
                 <m>A_i \cap A_j = \emptyset, i \neq j,</m> (mutually disjoint)
                 then
-<me>P(A_1 \cup A_2 \cup \cdots \cup A_k) = P(A_1)+P(A_2)+ \cdots + P(A_k)</me>
+<md>P(A_1 \cup A_2 \cup \cdots \cup A_k) = P(A_1)+P(A_2)+ \cdots + P(A_k)</md>
 
 for each positive integer k and
-<me>P(A_1 \cup A_2 \cup A_3 ...) = P(A_1)+P(A_2)+ P(A_3) +...</me>
+<md>P(A_1 \cup A_2 \cup A_3 ...) = P(A_1)+P(A_2)+ P(A_3) +...</md>
 for any countable (possibly infinite) number of events.
               </p>
             </li>
@@ -266,7 +266,7 @@ for any countable (possibly infinite) number of events.
           Sometimes you can use mathematics to determine what the probability function should be under given conditions.
           For example in the 6-sided die example, if the die is fair, then
 
-    <me>P(1)=P(2)=P(3)=P(4)=P(5)=P(6)=</me>
+    <md>P(1)=P(2)=P(3)=P(4)=P(5)=P(6)=</md>
 
 
     Let <m>E = \{ 1,2 \}, F = \{3,4\}.</m> Let G be the set of odd outcomes.
@@ -297,12 +297,12 @@ for any countable (possibly infinite) number of events.
     <p>
       This makes it easy to determine the probability of an event:
       If <m>A \subseteq S</m> is an event, with h outcomes, then
-      <me> P(A)=</me>
+      <md> P(A)=</md>
     </p>
-    <figure xml:id="deck of cards">
+    <figure xml:id="deck_of_cards">
       <caption>Standard deck of cards</caption>
     </figure>
-    <image source="deck of cards.png" />
+    <image source="deck_of_cards.png" />
    <exercise>
     <introduction>
     
@@ -409,6 +409,41 @@ for any countable (possibly infinite) number of events.
       </statement>
     </task>
    </exercise>
-  
-    
+  <exercise>
+    <statement>
+      <p>
+        Shade the regions indicated.
+      </p>
+      <image>
+      <latex-image>\begin{tikzpicture}%[scale=0.75]
+    \draw (-1.5,-2.5) rectangle (2.5,1.5) (0,-2.5) node [below]{$A\cap (B \cup C)$}
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+ \begin{tikzpicture}%[scale=0.75]
+    \draw (-1.5,-2.5) rectangle (2.5,1.5) (0,-2.5) node [below] {$A \cup (B\cap C)$}
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+ \begin{tikzpicture}%[scale=0.75]
+    \draw (-1.5,-2.5) rectangle (2.5,1.5) (0,-2.5) node [below] {$A' \cup B \cap C$}
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture} </latex-image>
+          </image>
+    </statement>
+  </exercise>
+
+    <exercise workspace="0.25in">
+      <statement>
+        <p>
+          Express the shaded regions using set notation.
+        </p>
+      
+      <image source="vennshading.png"/>
+          </statement>
+    </exercise>
   </worksheet>
