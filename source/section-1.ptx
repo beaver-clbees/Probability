@@ -4,7 +4,7 @@
     <definition xml:id="def-ranexp">
       <title>Random Experiment</title>    
       <statement>
-        <p>An experiment where the outcome cannot be predicted with certainty. xyz
+        <p>An experiment where the outcome cannot be predicted with certainty.
         </p>
       </statement>
     </definition>
@@ -211,7 +211,7 @@ Let N(A) be the number of times an outcome of the experiment is in the event (su
         </p>
       </statement>
     </exercise>
-    <exercise workshpace="1in">
+    <exercise workspace="1in">
     <statement>
       <p>
       Suppose we have a fair, six sided die and we want to know the probability of the event, E that it will show an even number. 
@@ -301,15 +301,15 @@ for any countable (possibly infinite) number of events.
     </p>
     <figure xml:id="deck_of_cards">
       <caption>Standard deck of cards</caption>
-    </figure>
-    <image source="deck_of_cards.png" />
+       <image source="deck_of_cards.png" />
+     </figure>
    <exercise>
     <introduction>
     
       <p>
         Draw one card at random from a standard 52 card deck. The sample space is the collection of 52 cards. Assume that each card is equally likely to be chosen (i.e., that a card is drawn `at random'). Thus the probability function assigns a probability of <m>\frac{1}{52}</m>
         to each of the outcomes. Let 
-    <ul>>
+    <ul>
     <li>
       <p>
         <m>A=\{x \mid x \hbox{ is a jack, queen, or king}\}</m>
@@ -415,19 +415,19 @@ for any countable (possibly infinite) number of events.
         Shade the regions indicated.
       </p>
       <image>
-      <latex-image>\begin{tikzpicture}%[scale=0.75]
+      <latex-image>\begin{tikzpicture}
     \draw (-1.5,-2.5) rectangle (2.5,1.5) (0,-2.5) node [below]{$A\cap (B \cup C)$}
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
     (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
     (0.5,-1) circle (1) node [text=black,below] {$C$};
 \end{tikzpicture}
- \begin{tikzpicture}%[scale=0.75]
+ \begin{tikzpicture}
     \draw (-1.5,-2.5) rectangle (2.5,1.5) (0,-2.5) node [below] {$A \cup (B\cap C)$}
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
     (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
     (0.5,-1) circle (1) node [text=black,below] {$C$};
 \end{tikzpicture}
- \begin{tikzpicture}%[scale=0.75]
+ \begin{tikzpicture}
     \draw (-1.5,-2.5) rectangle (2.5,1.5) (0,-2.5) node [below] {$A' \cup B \cap C$}
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
     (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}

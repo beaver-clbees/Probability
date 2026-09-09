@@ -1,17 +1,463 @@
-<?xml version="1.0" encoding="utf-8"?>
-<section xml:id="section-2" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>My Additional Section</title>
-  <p>tikz pics</p>
-  <figure xml:id="figure-tikz-example-diagram">
-    <caption>The graph <m>C_5</m> made by TikZ</caption>
-    <image xml:id="tikz-example-diagram" width="20%">
-      <description>A 5-cycle</description>
-      <latex-image> \begin{tikzpicture}[fill=gray,scale=0.5]
-% outline
-\draw (0,0) circle (1.5) (-.5,1.25)  node [font=\tiny,text=black,above] {$B$}
-      (-2,-2) rectangle (3,2) node [font=\tiny,text=black,above] {$S$};
-    \end{tikzpicture} </latex-image>
+<worksheet>
+<title>Properties of Sets</title>
+<p> Commutative laws 
+<ul>
+<li> <p><m>A \cup B = B \cup A</m></p></li>
+<li> <p><m>A \cap B = B \cap A</m></p></li>
+</ul>
+</p>
+<p>Associative Laws
+<ul>
+<li>
+    <p>
+        <m>(A \cup B) \cup C = A \cup (B \cup C)</m>
+    </p>
+</li>
+    <li>
+        <p>
+            <m>(A \cap B) \cap C = A \cap (B \cap C)</m>
+        </p>
+    </li>
+</ul>
+</p>
+<image width="40%">
+<latex-image>
+    \begin{tikzpicture}
+        \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+\begin{tikzpicture}
+    \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+    \begin{tikzpicture}
+    \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+    \end{tikzpicture}
+</latex-image>
+</image>
+<p> Distributive Laws
+<ul>
+<li>
+    <p>
+        <m>A \cap (B \cup C) = (A \cap B) \cup (A \cap C)</m>
+    </p>
+</li>
+</ul>
+</p>
+<image width="40%">
+<latex-image>
+    \begin{tikzpicture}
+     \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+  \begin{tikzpicture}
+    \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+</latex-image>
+</image>
+<ul>
+<li>
+    <p>
+        <m>A \cup (B \cap C) = (A \cup B) \cap (A \cup C)</m>
+    </p>
+</li>
+</ul>
+<image width="40%">
+<latex-image>
+    \begin{tikzpicture}
+     \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+  \begin{tikzpicture}
+    \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+</latex-image>
+</image>
+
+<p>De Morgan's Laws </p>
+
+<ul>
+  <li>
+    <p>
+        <m>(A \cup B)' = A' \cap B'</m>
+    </p>
+    </li>
+</ul>
+<image width="40%">
+    <latex-image>
+       \begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
+      (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
+\draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture}\begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
+      (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
+\draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture}
+    </latex-image>
     </image>
-  </figure>
-  <p>bar</p>
-</section>
+<ul>
+<li>
+    <p>
+        <m>(A \cap B)' = A' \cup B'</m>
+    </p>
+    </li>
+</ul>
+    <image width="40%">
+        <latex-image>
+              \begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
+      (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
+\draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture}\begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
+      (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
+\draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture}
+        </latex-image>
+        </image>
+
+ <theorem xml:id="thm-complement">
+    <title>Complementary Probability</title>
+    
+    
+    <statement>
+        <p>
+           For each event A, <m>P(A)=1-P(A').</m> 
+        </p>
+    </statement>
+ </theorem>
+ <exercise workspace="1in">
+    <alert>Proof:</alert>
+ </exercise>
+<theorem xml:id="thm-emptyset">
+    <title>Probability of Empty Set</title>
+    <statement>
+        <p>
+            <m>P(\emptyset) = 0</m>.
+        </p>
+    </statement>
+</theorem>
+ <exercise workspace="1in">
+    <alert>Proof:</alert>
+ </exercise>
+<theorem xml:id="thm-subset">
+    <title>Probability of Subset</title>
+    <statement>
+        <p>
+            If <m>A\subseteq B</m>, then <m>P(A) \leq P(B)</m>.
+        </p>
+    </statement>
+</theorem>
+ <exercise workspace="1in">
+    <alert>Proof:</alert>
+    <image width="40%">
+        <latex-image>\begin{tikzpicture}[fill=gray,scale=0.5]
+\scope
+\clip (0,0) circle (1.5);
+\fill (0,0) circle (0.75); % fills everything that in this circle that is also inside the circle centered at (1,0)
+\endscope
+% outline
+\draw (0,0) circle (1.5) (-.5,1)  node [font=\tiny,text=black] {$B$}
+      (0,0) circle (0.75) ((0,0)  node [font=\tiny,text=white] {$A$}
+      (-2,-2) rectangle (2,2) node [text=black,above] {$S$};
+\end{tikzpicture}
+ \begin{tikzpicture}[fill=gray,scale=0.5]
+\scope
+\clip (0,0) circle (0.75)
+ (-2,-2) rectangle (2,2);
+\fill (0,0) circle (1.5);
+\endscope
+% outline
+\draw (0,0) circle (1.5) (-.5,1.25)  (-.5,1)  node [font=\tiny,text=white] {$B$}
+      (0,0) circle (0.75) (0,0)  node [font=\tiny,text=black] {$A$}
+      (-2,-2) rectangle (2,2) node [text=black,above] {$S$};
+%      (9,0) node {$B=A \cup (B \cap A'), $ and  $A \cap (B \cap A')=\emptyset$};
+\end{tikzpicture}
+        </latex-image>
+    </image>
+ </exercise>
+ <theorem xml:id="thm-less-than-one">
+    <title>Probability of an Event is less than 1</title>
+      
+    <statement>
+        <p>
+        If      <m>A\subseteq S</m>, then <m>P(A) \leq 1</m>.
+        </p>
+    </statement>
+ </theorem>
+ <exercise workspace="1in">
+    <alert>Proof:</alert>
+ </exercise>
+<theorem>
+    <title>Inclusion-Exclusion Probability (Union)</title>
+    <statement>
+        <p>
+            For any two events A and B, <m>P(A \cup B) = P(A) + P(B) - P(A \cap B)</m>.
+        </p>
+    </statement>
+</theorem>
+ <exercise workspace="3in">
+    <alert>Proof:</alert>
+    <image width="40%">
+        <latex-image>
+        \begin{tikzpicture}[fill=gray, scale = 0.5]
+\filldraw[black,fill=gray] (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
+      (1,0) circle (1) (1,1)  node [text=black,above] {$B$};
+\draw (-2,-2) rectangle (3,2) node [text=black,above] {$S$};
+\draw (4,0) node {$=$};
+\end{tikzpicture}
+\begin{tikzpicture}[fill=gray, scale = 0.5]
+\filldraw[black,fill=gray] (0,0) circle (1) (0,1)  node [text=black,above] {$A$};
+\draw (-2,-2) rectangle (3,2) node [text=black,above] {$S$}
+(1,0) circle (1) (1,1)  node [text=black,above] {$B$};
+\draw (4,0) node {$+$};
+\end{tikzpicture}
+\begin{tikzpicture}[fill=gray, scale = 0.5]
+ \scope
+\clip (-2,-2) rectangle (3,2)
+(0,0) circle (1);
+\fill (1,0) circle (1); 
+\endscope
+\draw (0,0) circle (1) (0,1) node [text=black,above] {$A$}
+    (1,0) circle (1) (1,1) node [text=black,above] {$B$}
+      (-2,-2) rectangle (3,2) node [text=black,above] {$S$};
+\end{tikzpicture}
+        </latex-image>
+    </image>
+ </exercise> 
+ <p>
+    In the following, suppose that A and B are events in a sample space S. 
+ </p>
+<exercise workspace="1in">
+    <statement>
+        <p>
+            If <m>P(A)=0.3. P(B)=0.8</m> and <m>P(A\cup B)=0.95</m>, then find <m>P(A \cap B)</m>.
+        </p>
+        <image width="40%">
+            <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw (0,0) circle (1.5) (-.5,1)  node [font=\tiny,text=black] {$B$}
+      (0,0) circle (0.75) (0,0)  node [font=\tiny,text=black] {$A$}
+      (-2,-2) rectangle (2,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture}
+            </latex-image>
+        </image>
+    </statement>
+</exercise>
+
+<exercise workspace="1in">
+    <statement>
+        <p>
+            If <m>P'(A)=0.2. P(B)=0.5</m> and <m>P(A\cap B)=0.4</m>, then find <m>P(A \cup B)</m>.
+        </p>
+        <image width="40%">
+            <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw (0,0) circle (1.5) (-.5,1)  node [font=\tiny,text=black] {$B$}
+      (0,0) circle (0.75) (0,0)  node [font=\tiny,text=black] {$A$}
+      (-2,-2) rectangle (2,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture}
+            </latex-image>
+        </image>
+    </statement>
+</exercise>
+
+<exercise workspace="1in">
+    <statement>
+        <p>
+            If <m>P(A\cap B)=0.1. P(A\cap B')=0.3</m> and <m>P(A\cup B)=0.7</m>, then find <m>P(B)</m>.
+        </p>
+        <image width="40%">
+            <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw (0,0) circle (1.5) (-.5,1)  node [font=\tiny,text=black] {$B$}
+      (0,0) circle (0.75) (0,0)  node [font=\tiny,text=black] {$A$}
+      (-2,-2) rectangle (2,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture}
+            </latex-image>
+        </image>
+    </statement>
+</exercise>
+
+<theorem xml:id="thm-inclusion-exclusion-three">
+    <title>Inclusion-Exclusion Probability (Union of Three Events)</title>
+    <statement>
+        <p>
+            For any three events A, B, and C, (fill in)
+        </p>
+        <p>
+            <m>P(A \cup B \cup C) = </m> 
+        </p>
+    </statement>
+</theorem>
+<exercise workspace="2in">
+    <alert>Proof:</alert>
+    <image width="40%">
+        <latex-image>
+       \begin{tikzpicture}
+    \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$}
+    (0,-.55) node {$1$}
+    (.5,-.25) node {$3$}
+    (.5,.5) node {$2$}
+    (1,-.55) node {$4$};
+\end{tikzpicture}
+        </latex-image>
+    </image>
+</exercise>
+
+<exercise>  
+    <introduction>
+        <p>
+           Suppose A and B are subsets of the sample space S. If <m>P(A)=0.25, P(B) = 0.45</m>, and <m>P(A\cup B)=0.55</m>, then find the following:
+        </p>
+    </introduction>
+    <task workspace="0.2in">
+        <statement>
+            <p>
+                <m>P(A')=</m>
+            </p>
+        </statement>
+    </task>
+    <task workspace="0.2in">
+        <statement>
+            <p>
+                <m>P(A \cap B)=</m>
+            </p>
+        </statement>
+    </task>
+    <task workspace="0.2in">
+        <statement>
+            <p>
+                <m>P(A \cup B')=</m>
+            </p>
+        </statement>
+    </task>
+    <task workspace="0.2in">
+        <statement>
+            <p>
+                <m>P(A' \cup B')=</m>
+            </p>
+        </statement>
+    </task>
+    <task workspace="0.2in">
+        <statement>
+            <p>
+                <m>P(B \cap A')=</m>
+            </p>
+        </statement>
+    </task>
+    <image width="40%">
+        <latex-image>
+            \begin{tikzpicture}
+                \draw (-.25,0) circle (1.25) (-1,1)  node [text=black,above] {$A$}
+      (1.25,0) circle (1.25) (2,1)  node [text=black,above] {$B$};
+\draw (-2,-1.5) rectangle (3,2) node [text=black,above] {$S$};
+            \end{tikzpicture}
+        </latex-image>
+            </image>
+    </exercise>
+
+    <exercise workspace="1in">
+        <statement>
+            <p>
+                 Suppose A and B are subsets of the sample space S. If <m>P(A \cup B)=0.90</m>, <m>P(A' \cup B) = 0.40</m>, then find <m>P(B)</m>
+            </p>
+        </statement>
+        <image width="40%">
+        <latex-image>
+            \begin{tikzpicture}
+                \draw (-.25,0) circle (1.25) (-1,1)  node [text=black,above] {$A$}
+      (1.25,0) circle (1.25) (2,1)  node [text=black,above] {$B$};
+\draw (-2,-1.5) rectangle (3,2) node [text=black,above] {$S$};
+            \end{tikzpicture}
+        </latex-image>
+            </image>
+    </exercise>
+    <exercise workspace="1in">
+        <statement>
+            <p>
+                An insurance company looks at its auto insurance customers and finds that
+<ul>
+    <li>
+        <p>
+            all insure at least one car
+        </p>
+    </li>
+    <li>
+        <p>
+            85% insure more than one car
+        </p>
+    </li>
+    <li>
+        <p>
+            23% insure a sports car
+        </p>
+    </li>
+    <li>
+        <p>
+            17% insure more than one car, including a sports car
+        </p>
+    </li>
+</ul>
+<p>
+    Find the probability that a customer selected at random insures exactly one car and it is not a sports car.
+</p>
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                A survey of 1000 people found that 400 people had a pet, 300 people had a child, and 200 people had both a pet and a child. If a person is selected at random, find the probability that the person has either a pet or a child.
+            </p>
+        </introduction>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Is it reasonable to assume that all of the outcomes in your sample space are equally likely? Explain
+
+                </p>
+            </statement>
+        </task>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What is the probability the sum of the two die is 7?
+                </p>
+            </statement>
+        </task>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What is the probability the sum of the two die is at least 4?
+                </p>
+            </statement>
+        </task>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What is the probability the sum of the two die is at most 11?   
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    
+ </worksheet>
