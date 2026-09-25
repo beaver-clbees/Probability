@@ -1,4 +1,5 @@
 <worksheet>
+
     <title>Basic Definitions</title>
 
     <definition xml:id="def-ranexp">
@@ -20,7 +21,7 @@
  
 
     
-    <exercise workspace="0.5in">
+    <exercise workspace="0.3in">
       <statement>
         <p>
           Flip a coin and record the face that is showing:
@@ -28,7 +29,7 @@
       </statement>
     </exercise>
 
-    <exercise workspace="0.5in">
+    <exercise workspace="0.3in">
       <statement>
         <p>
           Roll two dice and add the faces showing:
@@ -37,7 +38,7 @@
       </statement>
     </exercise>
 
-    <exercise workspace="0.5in">
+    <exercise workspace="0.3in">
       <statement>
         <p>
           Flip two coins. Record the faces:
@@ -45,7 +46,7 @@
       </statement>
     </exercise>
 
-    <exercise workspace="0.5in">
+    <exercise workspace="0.3in">
       <statement>
         <p>
           Flip two coins. Determine if they are the same:
@@ -53,7 +54,7 @@
       </statement>
     </exercise>
 
-    <exercise workspace="0.5in">
+    <exercise workspace="0.3in">
       <statement>
         <p>
           Flip a coin until a heads appears. Record the number of flips needed:
@@ -61,7 +62,7 @@
       </statement>
     </exercise>
 
-    <exercise workspace="0.5in">
+    <exercise workspace="0.3in">
       <statement>
         <p>
           Flip a coin until you get two heads in a row. Record how long (time)
@@ -69,6 +70,7 @@
         </p>
       </statement>
     </exercise>
+  
 <definition>
  <title>Event</title>    
       <statement>
@@ -95,8 +97,8 @@
         <p>
           <m>A \subset</m> B indicates A is a subset of B. Draw and shade set A so it is a subset of B.
         </p>
-        <image width="40%">
-  <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
+        <image width="25%">
+  <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.2]
 \draw (0,0) circle (1.5) (-.5,1.25)  node [font=\tiny,text=black,above] {$B$}
       (-2,-2) rectangle (3,2) node [font=\tiny,text=black,above] {$S$};
 \end{tikzpicture} </latex-image>
@@ -108,8 +110,8 @@
         <p>
           <m>A \cup B</m> is the union of sets A and B. Elements in the union might be in A or in B or in both A and B. Shade <m> A \cup B. </m> 
         </p>
-        <image width="40%">
-          <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
+        <image width="25%">
+          <latex-image>\begin{tikzpicture}[fill=gray]
 \draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
       (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
 \draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
@@ -123,7 +125,7 @@
       <p>
       <m> A \cap B </m> is the intersection of A and B. Elements in the intersection are in A and also in B. Shade <m> A \cap B </m>.  
       </p>
-    <image width="40%">
+    <image width="25%">
       <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
 \draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
       (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
@@ -135,10 +137,10 @@
 
 <exercise>
 <statement>
-  <p> A' is the complement of A (all elements in S that are NOT in A). Shade A'.
+  <p> <m>A'</m> is the complement of A (all elements in S that are NOT in A). Shade A'.
   </p>
-    <image width="40%">
-  <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
+    <image width="25%">
+  <latex-image>\begin{tikzpicture}[fill=gray]
 \draw (0,0) circle (1.5) (-.5,1.25)  node [font=\tiny,text=black,above] {$A$}
       (-2,-2) rectangle (3,2) node [font=\tiny,text=black,above] {$S$};
 \end{tikzpicture} </latex-image>
@@ -149,10 +151,10 @@
   <exercise>
     <statement>
       <p>
-        <m>A</m> and <m>B</m> are mutually exclusive or disjoint if <m>A \cap B = \emptyset </m>. Make a sketch.
+        <m>A</m> and <m>B</m> are mutually exclusive or disjoint if <m>A \cap B = \emptyset </m>. Make a sketch of two mutually exclusive sets sets.
       </p>
-      <image width="40%">
-  <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
+      <image width="25%">
+  <latex-image>\begin{tikzpicture}[fill=gray]
 \draw (-2,-2) rectangle (4,2)node [font=\tiny,text=black,above] {$S$};
 \end{tikzpicture} </latex-image>
           </image>
@@ -164,7 +166,7 @@
       <p>
         A and B are exhaustive if <m> A \cup B =S,</m> Make a sketch.
       </p>
-       <image width="40%">
+       <image width="25%">
   <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
 \draw (-2,-2) rectangle (4,2)node [font=\tiny,text=black,above] {$S$};
 \end{tikzpicture} </latex-image>
@@ -307,7 +309,7 @@ for any countable (possibly infinite) number of events.
     <introduction>
     
       <p>
-        Draw one card at random from a standard 52 card deck. The sample space is the collection of 52 cards. Assume that each card is equally likely to be chosen (i.e., that a card is drawn `at random'). Thus the probability function assigns a probability of <m>\frac{1}{52}</m>
+        Draw one card at random from a standard 52 card deck. The sample space is the collection of 52 cards. Assume that each card is equally likely to be chosen (i.e., that a card is drawn 'at random'). Thus the probability function assigns a probability of <m>\frac{1}{52}</m>
         to each of the outcomes. Let 
     <ul>
     <li>
@@ -362,7 +364,7 @@ for any countable (possibly infinite) number of events.
     </p>
     </task>
    </exercise>
-   <exercise>
+   <exercisegroup cols="2">
     <introduction>
       <p>
      Suppose a dart is thrown at the picture below.
@@ -373,42 +375,42 @@ for any countable (possibly infinite) number of events.
       </p>
        <image source="Boxes.PNG" width="50%" />
     </introduction>
-    <task workspace="0.2in">
+    <exercise workspace="0.2in">
       <statement>
         <p>
           <m>P(A)=</m>
         </p>
       </statement>
-    </task>
-    <task workspace="0.2in">
+    </exercise>
+    <exercise workspace="0.2in">
       <statement>
         <p>
           <m>P(A')=</m>
         </p>
       </statement>
-    </task>
-    <task workspace="0.2in">
+    </exercise>
+    <exercise workspace="0.2in">
       <statement>
         <p>
           <m>P(B)=</m>
         </p>
       </statement>
-    </task>
-    <task workspace="0.2in">
+    </exercise>
+    <exercise workspace="0.2in">
       <statement>
         <p>
           <m>P((A\cup B)')=</m>
         </p>
       </statement>
-    </task>
-    <task workspace="0.2in">
+    </exercise>
+    <exercise workspace="0.2in">
       <statement>
         <p>
           <m>P(A\cap B)=</m>
         </p>
       </statement>
-    </task>
-   </exercise>
+    </exercise>
+   </exercisegroup>
   <exercise>
     <statement>
       <p>

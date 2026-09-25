@@ -8,7 +8,7 @@
     <macros>\newcommand{\foo}{b^{ar}}</macros>
     <latex-image-preamble>\usepackage{tikz,pgfplots}</latex-image-preamble>
   </docinfo>
-
+Please note the numbers here do not correspond to the numbers in the book. They are just for reference in the worksheets.
   <article xml:id="shorttitlelowercase">
     <title>Probability</title>
     <xi:include href="./section-1.ptx" />
