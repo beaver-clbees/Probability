@@ -98,7 +98,7 @@
           <m>A \subset</m> B indicates A is a subset of B. Draw and shade set A so it is a subset of B.
         </p>
         <image width="25%">
-  <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.2]
+  <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
 \draw (0,0) circle (1.5) (-.5,1.25)  node [font=\tiny,text=black,above] {$B$}
       (-2,-2) rectangle (3,2) node [font=\tiny,text=black,above] {$S$};
 \end{tikzpicture} </latex-image>
@@ -111,7 +111,7 @@
           <m>A \cup B</m> is the union of sets A and B. Elements in the union might be in A or in B or in both A and B. Shade <m> A \cup B. </m> 
         </p>
         <image width="25%">
-          <latex-image>\begin{tikzpicture}[fill=gray]
+          <latex-image>\begin{tikzpicture}[fill=gray, scale=0.5]
 \draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
       (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
 \draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
@@ -137,10 +137,10 @@
 
 <exercise>
 <statement>
-  <p> <m>A'</m> is the complement of A (all elements in S that are NOT in A). Shade A'.
+  <p> <m>A'</m> is the complement of A (all elements in S that are NOT in A). Shade <m>A'</m>.
   </p>
     <image width="25%">
-  <latex-image>\begin{tikzpicture}[fill=gray]
+  <latex-image>\begin{tikzpicture}[fill=gray, scale=0.5]
 \draw (0,0) circle (1.5) (-.5,1.25)  node [font=\tiny,text=black,above] {$A$}
       (-2,-2) rectangle (3,2) node [font=\tiny,text=black,above] {$S$};
 \end{tikzpicture} </latex-image>
@@ -154,7 +154,7 @@
         <m>A</m> and <m>B</m> are mutually exclusive or disjoint if <m>A \cap B = \emptyset </m>. Make a sketch of two mutually exclusive sets sets.
       </p>
       <image width="25%">
-  <latex-image>\begin{tikzpicture}[fill=gray]
+  <latex-image>\begin{tikzpicture}[fill=gray, scale=0.5]
 \draw (-2,-2) rectangle (4,2)node [font=\tiny,text=black,above] {$S$};
 \end{tikzpicture} </latex-image>
           </image>
@@ -305,7 +305,7 @@ for any countable (possibly infinite) number of events.
       <caption>Standard deck of cards</caption>
        <image source="deck_of_cards.png" />
      </figure>
-   <exercise>
+   <exercisegroup cols="2">
     <introduction>
     
       <p>
@@ -337,33 +337,33 @@ for any countable (possibly infinite) number of events.
      </p>
 </introduction>
     
-    <task workspace=".1in">
+    <exercise workspace=".1in">
     <p>
        <m>P(A)=</m>
     </p>
-    </task>
+    </exercise>
 
-     <task workspace=".1in">
+     <exercise workspace=".1in">
      <p>
         <m>P(A \cap B')=</m>
      </p>
-     </task> 
-  <task workspace=".1in">
+     </exercise> 
+  <exercise workspace=".1in">
     <p>
         <m>P(A \cup B)=</m>
     </p>
-    </task>
-    <task workspace=".1in">
+    </exercise>
+    <exercise workspace=".1in">
     <p>
         <m>P(C \cup D)=</m>
     </p>
-    </task>
-    <task workspace=".1in">
+    </exercise>
+    <exercise workspace=".1in">
     <p>
         <m>P(C \cap D)=</m>
     </p>
-    </task>
-   </exercise>
+    </exercise>
+   </exercisegroup>
    <exercisegroup cols="2">
     <introduction>
       <p>
