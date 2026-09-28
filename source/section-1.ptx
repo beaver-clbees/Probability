@@ -70,7 +70,7 @@
         </p>
       </statement>
     </exercise>
-  
+
 <definition>
  <title>Event</title>    
       <statement>
@@ -151,7 +151,7 @@
   <exercise>
     <statement>
       <p>
-        <m>A</m> and <m>B</m> are mutually exclusive or disjoint if <m>A \cap B = \emptyset </m>. Make a sketch of two mutually exclusive sets sets.
+        <m>A</m> and <m>B</m> are mutually exclusive or disjoint if <m>A \cap B = \emptyset </m>. Sketch two mutually exclusive sets sets.
       </p>
       <image width="25%">
   <latex-image>\begin{tikzpicture}[fill=gray, scale=0.5]
@@ -164,7 +164,7 @@
   <exercise>
     <statement>
       <p>
-        A and B are exhaustive if <m> A \cup B =S,</m> Make a sketch.
+        A and B are exhaustive if <m> A \cup B =S,</m> Make a sketch of two sets that are exhaustive.
       </p>
        <image width="25%">
   <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
@@ -188,15 +188,14 @@
     </li>
   </ol>
 </p>
+
+
 <p>We are interested in computing the probability of an event A in our sample space. We can approximate the probability by repeating the experiment n times. 
 Let N(A) be the number of times an outcome of the experiment is in the event (subset) A. Then we can approximate the probability of A as 
   </p>
-  <exercise workspace="0.5in">
-  <statement> 
     <p><m> P(A)\approx</m>
     </p>
-    </statement>
-    </exercise>
+
     <p>
      which is called the <alert> relative frequency </alert> of the event A in these n repetitions of the experiment.
     </p>
@@ -206,13 +205,11 @@ Let N(A) be the number of times an outcome of the experiment is in the event (su
       and larger, this fraction will tend to stabilize and we call it the <alert> probability of event A </alert>. 
       You can think of it as
     </p>
-    <exercise workspace="0.5in">
-      <statement>
+
         <p>
           (Probability of A) <m>P(A)=</m>
         </p>
-      </statement>
-    </exercise>
+
     <exercise workspace="1in">
     <statement>
       <p>
@@ -223,7 +220,7 @@ Let N(A) be the number of times an outcome of the experiment is in the event (su
       
     </exercise>
     <p>
-      Now we give the formal definition of a probability function.
+      Next we give the formal definition of a probability function.
     </p>
 
     <definition xml:id="def-probability">
@@ -262,24 +259,62 @@ for any countable (possibly infinite) number of events.
         </p>
       </statement>
     </definition>
-    <exercise workspace="1.5in">
-      <statement>
-        <p>
+    <exercisegroup cols="2">
+    <introduction>
+          <p>
           Sometimes you can use mathematics to determine what the probability function should be under given conditions.
           For example in the 6-sided die example, if the die is fair, then
 
     <md>P(1)=P(2)=P(3)=P(4)=P(5)=P(6)=</md>
 
-
     Let <m>E = \{ 1,2 \}, F = \{3,4\}.</m> Let G be the set of odd outcomes.
     </p> 
-    <p>
-    Find <m>P(E), P(F), P(E \cup F), P(E\cap F), P(G),P(G\cup F).</m>
-
+    </introduction>
+    <exercise workspace="0.5in">
+      <statement>
+        <p>
+          <m>P(E)=</m>
         </p>
       </statement>
     </exercise>
-    <p>
+    <exercise workspace="0.5in">
+    <statement>
+      <p>
+        <m>P(F)=</m>
+      </p>
+    </statement>
+    </exercise>
+     <exercise workspace="0.5in">
+      <statement>
+        <p>
+          <m>P(G)=</m>
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="0.5in">
+    <statement>
+      <p>
+        <m>P(E\cup F)=</m>
+      </p>
+    </statement>
+    </exercise>
+     <exercise workspace="0.5in">
+      <statement>
+        <p>
+          <m>P(E\cap F)=</m>
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="0.5in">
+    <statement>
+      <p>
+        <m>P(G\cup F)=</m>
+      </p>
+    </statement>
+    </exercise>
+   </exercisegroup>
+     
+    <p>    
       <alert>Equally Likely Outcomes</alert>
     </p>
     <p>
@@ -301,10 +336,11 @@ for any countable (possibly infinite) number of events.
       If <m>A \subseteq S</m> is an event, with h outcomes, then
       <md> P(A)=</md>
     </p>
-    <figure xml:id="deck_of_cards">
+<figure xml:id="deck_of_cards">
       <caption>Standard deck of cards</caption>
        <image source="deck_of_cards.png" />
      </figure>
+ 
    <exercisegroup cols="2">
     <introduction>
     
@@ -333,7 +369,7 @@ for any countable (possibly infinite) number of events.
       </p>
     </li>
      </ul>
-     Determine the following probabilities.
+     Determine the following probabilities. Write answer as a fraction (do not reduce).
      </p>
 </introduction>
     
@@ -364,53 +400,9 @@ for any countable (possibly infinite) number of events.
     </p>
     </exercise>
    </exercisegroup>
-   <exercisegroup cols="2">
-    <introduction>
-      <p>
-     Suppose a dart is thrown at the picture below.
-     Assume it lands in the sample space, S. Let A
-     be the event the dart lands in rectangle A and let B
-     be the event the dart lands in rectangle B.
-     Estimate the following probabilities and be prepared to justify your estimates.   
-      </p>
-       <image source="Boxes.PNG" width="50%" />
-    </introduction>
-    <exercise workspace="0.2in">
-      <statement>
-        <p>
-          <m>P(A)=</m>
-        </p>
-      </statement>
-    </exercise>
-    <exercise workspace="0.2in">
-      <statement>
-        <p>
-          <m>P(A')=</m>
-        </p>
-      </statement>
-    </exercise>
-    <exercise workspace="0.2in">
-      <statement>
-        <p>
-          <m>P(B)=</m>
-        </p>
-      </statement>
-    </exercise>
-    <exercise workspace="0.2in">
-      <statement>
-        <p>
-          <m>P((A\cup B)')=</m>
-        </p>
-      </statement>
-    </exercise>
-    <exercise workspace="0.2in">
-      <statement>
-        <p>
-          <m>P(A\cap B)=</m>
-        </p>
-      </statement>
-    </exercise>
-   </exercisegroup>
+ 
+  
+ 
   <exercise>
     <statement>
       <p>
@@ -448,4 +440,51 @@ for any countable (possibly infinite) number of events.
       <image source="vennshading.png"/>
           </statement>
     </exercise>
+ <exercisegroup cols="2">
+    <introduction>
+      <p>
+     Suppose a dart is thrown at the picture below.
+     Assume it lands in the sample space, S. Let A
+     be the event the dart lands in rectangle A and let B
+     be the event the dart lands in rectangle B.
+     Estimate the following probabilities and be prepared to justify your estimates.   
+      </p>
+       <image source="Boxes.PNG" width="50%" />
+    </introduction>
+    <exercise workspace="0.2in">
+      <statement>
+        <p>
+          <m>P(A)\approx </m>
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="0.2in">
+      <statement>
+        <p>
+          <m>P(A')\approx</m>
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="0.2in">
+      <statement>
+        <p>
+          <m>P(B)\approx</m>
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="0.2in">
+      <statement>
+        <p>
+          <m>P((A\cup B)')\approx</m>
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="0.2in">
+      <statement>
+        <p>
+          <m>P(A\cap B)\approx</m>
+        </p>
+      </statement>
+    </exercise>
+   </exercisegroup>
   </worksheet>

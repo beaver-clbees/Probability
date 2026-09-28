@@ -240,13 +240,18 @@
 \end{tikzpicture} 
     </latex-image>
     </image>
-    <image width="50%">
+    <image width="60%">
     <latex-image>
        \begin{tikzpicture}[fill=gray, scale = 0.5]
 \draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
       (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
 \draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
 \end{tikzpicture}
+\begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
+      (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
+\draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture} 
 \begin{tikzpicture}[fill=gray, scale = 0.5]
 \draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
       (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
@@ -273,13 +278,18 @@
 \draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
 \end{tikzpicture} 
     </latex-image>
-    </image><image width="50%">
+    </image><image width="60%">
     <latex-image>
        \begin{tikzpicture}[fill=gray, scale = 0.5]
 \draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
       (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
 \draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
 \end{tikzpicture}\begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
+      (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
+\draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture} 
+\begin{tikzpicture}[fill=gray, scale = 0.5]
 \draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
       (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
 \draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
@@ -347,6 +357,7 @@
         </latex-image>
     </image>
  </exercise>
+
  <theorem xml:id="thm-less-than-one">
     <title>Probability of an Event is less than 1</title>
       
@@ -381,7 +392,7 @@
 \filldraw[black,fill=gray] (0,0) circle (1) (0,1)  node [text=black,above] {$A$};
 \draw (-2,-2) rectangle (3,2) node [text=black,above] {$S$}
 (1,0) circle (1) (1,1)  node [text=black,above] {$B$};
-\draw (4,0) node {$+$};
+\draw (4,0) node {$\cup$};
 \end{tikzpicture}
 \begin{tikzpicture}[fill=gray, scale = 0.5]
  \scope
@@ -416,10 +427,10 @@
     </statement>
 </exercise>
 
-<exercise workspace="1in">
+<exercise workspace="1.5in">
     <statement>
         <p>
-            If <m>P(A\cap B)=0.1. P(A\cap B')=0.3</m> and <m>P(A\cup B)=0.7</m>, then find <m>P(B)</m>.
+            If <m>P(A\cap B)=0.1. P(A\cap B')=0.3</m> and <m>P(A\cup B)=0.8</m>, then find <m>P(B)</m>.
         </p>
        
     </statement>
@@ -553,7 +564,7 @@
     </p>
     <p>
    <alert>Hint</alert>: Let the sample space be the set of all people who insure at least one car. Let <m>A</m> be the set of people insuring
-    more than one car and <m>B</m> be the set of people insuring a sports car.
+    more than one car and <m>B</m> be the set of people insuring a sports car. Draw a Venn diagram.
 </p>
             </p>
         </statement>
