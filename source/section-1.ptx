@@ -408,26 +408,8 @@ for any countable (possibly infinite) number of events.
       <p>
         Shade the regions indicated.
       </p>
-      <image>
-      <latex-image>\begin{tikzpicture}
-    \draw (-1.5,-2.5) rectangle (2.5,1.5) (0,-2.5) node [below]{$A\cap (B \cup C)$}
-    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
-    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
-    (0.5,-1) circle (1) node [text=black,below] {$C$};
-\end{tikzpicture}
- \begin{tikzpicture}
-    \draw (-1.5,-2.5) rectangle (2.5,1.5) (0,-2.5) node [below] {$A \cup (B\cap C)$}
-    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
-    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
-    (0.5,-1) circle (1) node [text=black,below] {$C$};
-\end{tikzpicture}
- \begin{tikzpicture}
-    \draw (-1.5,-2.5) rectangle (2.5,1.5) (0,-2.5) node [below] {$A' \cup B \cap C$}
-    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
-    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
-    (0.5,-1) circle (1) node [text=black,below] {$C$};
-\end{tikzpicture} </latex-image>
-          </image>
+         <image source="Vennshade.png"/>
+    
     </statement>
   </exercise>
 
