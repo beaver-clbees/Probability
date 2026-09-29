@@ -448,7 +448,7 @@
     </statement>
 </theorem>
 <exercise workspace="2in">
-    <alert>Proof:</alert>
+    <alert>Sketch of Proof:</alert>
     <image width="40%">
         <latex-image>
        \begin{tikzpicture}
@@ -482,6 +482,22 @@
         <statement>
             <p>
                 <m>P(A \cap B)=</m>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Fill in the Venn diagram with the appropriate probabilities in each region.
+                <image width="50%">
+    <latex-image>
+       \begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
+      (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
+\draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture}
+    </latex-image>
+    </image>
             </p>
         </statement>
     </task>
