@@ -1,5 +1,6 @@
-<worksheet>
-<title>Properties of Sets</title>
+<worksheet><title>Properties of Sets</title>
+<page>
+
 <p> Commutative laws 
 <ul>
 <li> <p><m>A \cup B = B \cup A</m></p></li>
@@ -15,20 +16,19 @@
 </li>
 </ul>
 </p>
-<image width="50%">
-<latex-image>
+<sidebyside margins="20%">
+<image>
+<latex-image xml:id="venn1a">
     \begin{tikzpicture}
         \draw (-1.5,-2.5) rectangle (2.5,1.5)
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
     (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
     (0.5,-1) circle (1) node [text=black,below] {$C$};
 \end{tikzpicture}
-\begin{tikzpicture}
-    \draw (-1.5,-2.5) rectangle (2.5,1.5)
-    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
-    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
-    (0.5,-1) circle (1) node [text=black,below] {$C$};
-\end{tikzpicture}
+</latex-image>
+</image>
+<image>
+  <latex-image xml:id="venn2a">
 \begin{tikzpicture}
     \draw (-1.5,-2.5) rectangle (2.5,1.5)
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
@@ -37,20 +37,8 @@
 \end{tikzpicture}
 </latex-image>
 </image>
-<image width="50%">
-<latex-image>
-    \begin{tikzpicture}
-        \draw (-1.5,-2.5) rectangle (2.5,1.5)
-    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
-    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
-    (0.5,-1) circle (1) node [text=black,below] {$C$};
-\end{tikzpicture}
-\begin{tikzpicture}
-    \draw (-1.5,-2.5) rectangle (2.5,1.5)
-    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
-    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
-    (0.5,-1) circle (1) node [text=black,below] {$C$};
-\end{tikzpicture}
+<image>
+<latex-image xml:id="venn3a">
 \begin{tikzpicture}
     \draw (-1.5,-2.5) rectangle (2.5,1.5)
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
@@ -59,6 +47,39 @@
 \end{tikzpicture}
 </latex-image>
 </image>
+</sidebyside>
+<sidebyside widths="20% 20% 20%" margins="20%">
+<image>
+<latex-image xml:id="venn1b">
+    \begin{tikzpicture}
+        \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+</latex-image>
+</image>
+<image>
+  <latex-image xml:id="venn2b">
+\begin{tikzpicture}
+    \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+</latex-image>
+</image>
+<image>
+<latex-image xml:id="venn3b">
+\begin{tikzpicture}
+    \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+</latex-image>
+</image>
+</sidebyside>
 <ul>
     <li>
         <p>
@@ -66,20 +87,19 @@
         </p>
     </li>
 </ul>
-<image width="50%">
-<latex-image>
+<sidebyside margins="20%">
+<image>
+<latex-image xml:id="venn1c">
     \begin{tikzpicture}
         \draw (-1.5,-2.5) rectangle (2.5,1.5)
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
     (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
     (0.5,-1) circle (1) node [text=black,below] {$C$};
 \end{tikzpicture}
-\begin{tikzpicture}
-    \draw (-1.5,-2.5) rectangle (2.5,1.5)
-    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
-    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
-    (0.5,-1) circle (1) node [text=black,below] {$C$};
-\end{tikzpicture}
+</latex-image>
+</image>
+<image>
+  <latex-image xml:id="venn2c">
 \begin{tikzpicture}
     \draw (-1.5,-2.5) rectangle (2.5,1.5)
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
@@ -88,20 +108,8 @@
 \end{tikzpicture}
 </latex-image>
 </image>
-<image width="50%">
-<latex-image>
-    \begin{tikzpicture}
-        \draw (-1.5,-2.5) rectangle (2.5,1.5)
-    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
-    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
-    (0.5,-1) circle (1) node [text=black,below] {$C$};
-\end{tikzpicture}
-\begin{tikzpicture}
-    \draw (-1.5,-2.5) rectangle (2.5,1.5)
-    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
-    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
-    (0.5,-1) circle (1) node [text=black,below] {$C$};
-\end{tikzpicture}
+<image>
+<latex-image xml:id="venn3c">
 \begin{tikzpicture}
     \draw (-1.5,-2.5) rectangle (2.5,1.5)
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
@@ -110,7 +118,41 @@
 \end{tikzpicture}
 </latex-image>
 </image>
-
+</sidebyside>
+<sidebyside widths="20% 20% 20%" margins="20%">
+<image>
+<latex-image xml:id="venn1d">
+    \begin{tikzpicture}
+        \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+</latex-image>
+</image>
+<image>
+  <latex-image xml:id="venn2d">
+\begin{tikzpicture}
+    \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+</latex-image>
+</image>
+<image>
+<latex-image xml:id="venn3d">
+\begin{tikzpicture}
+    \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+</latex-image>
+</image>
+</sidebyside>
+</page>
+<page>
 <p> Distributive Laws
 <ul>
 <li>
@@ -120,21 +162,20 @@
 </li>
 </ul>
 </p>
-<image width="50%">
-<latex-image>
+<sidebyside widths="20% 20% 20%" margins="20%">
+<image>
+<latex-image xml:id="venn1e">
     \begin{tikzpicture}
-     \draw (-1.5,-2.5) rectangle (2.5,1.5)
+        \draw (-1.5,-2.5) rectangle (2.5,1.5)
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
     (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
     (0.5,-1) circle (1) node [text=black,below] {$C$};
 \end{tikzpicture}
-  \begin{tikzpicture}
-    \draw (-1.5,-2.5) rectangle (2.5,1.5)
-    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
-    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
-    (0.5,-1) circle (1) node [text=black,below] {$C$};
-\end{tikzpicture}
-  \begin{tikzpicture}
+</latex-image>
+</image>
+<image>
+  <latex-image xml:id="venn2e">
+\begin{tikzpicture}
     \draw (-1.5,-2.5) rectangle (2.5,1.5)
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
     (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
@@ -142,21 +183,9 @@
 \end{tikzpicture}
 </latex-image>
 </image>
-<image width="50%">
-<latex-image>
-    \begin{tikzpicture}
-     \draw (-1.5,-2.5) rectangle (2.5,1.5)
-    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
-    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
-    (0.5,-1) circle (1) node [text=black,below] {$C$};
-\end{tikzpicture}
-  \begin{tikzpicture}
-    \draw (-1.5,-2.5) rectangle (2.5,1.5)
-    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
-    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
-    (0.5,-1) circle (1) node [text=black,below] {$C$};
-\end{tikzpicture}
-  \begin{tikzpicture}
+<image>
+<latex-image xml:id="venn3e">
+\begin{tikzpicture}
     \draw (-1.5,-2.5) rectangle (2.5,1.5)
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
     (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
@@ -164,6 +193,39 @@
 \end{tikzpicture}
 </latex-image>
 </image>
+</sidebyside>
+<sidebyside widths="20% 20% 20%" margins="20%">
+<image>
+<latex-image xml:id="venn1f">
+    \begin{tikzpicture}
+        \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+</latex-image>
+</image>
+<image>
+  <latex-image xml:id="venn2f">
+\begin{tikzpicture}
+    \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+</latex-image>
+</image>
+<image>
+<latex-image xml:id="venn3f">
+\begin{tikzpicture}
+    \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+</latex-image>
+</image>
+</sidebyside>
 <ul>
 <li>
     <p>
@@ -171,21 +233,20 @@
     </p>
 </li>
 </ul>
-<image width="50%">
-<latex-image>
+<sidebyside widths="20% 20% 20%" margins="20%">
+<image>
+<latex-image xml:id="venn1g">
     \begin{tikzpicture}
-     \draw (-1.5,-2.5) rectangle (2.5,1.5)
+        \draw (-1.5,-2.5) rectangle (2.5,1.5)
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
     (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
     (0.5,-1) circle (1) node [text=black,below] {$C$};
 \end{tikzpicture}
+</latex-image>
+</image>
+<image>
+  <latex-image xml:id="venn2g">
 \begin{tikzpicture}
-     \draw (-1.5,-2.5) rectangle (2.5,1.5)
-    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
-    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
-    (0.5,-1) circle (1) node [text=black,below] {$C$};
-\end{tikzpicture}
-  \begin{tikzpicture}
     \draw (-1.5,-2.5) rectangle (2.5,1.5)
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
     (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
@@ -193,21 +254,31 @@
 \end{tikzpicture}
 </latex-image>
 </image>
-<image width="50%">
-<latex-image>
+<image>
+<latex-image xml:id="venn3g">
+\begin{tikzpicture}
+    \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+</latex-image>
+</image>
+</sidebyside>
+<sidebyside widths="20% 20% 20%" margins="20%">
+<image>
+<latex-image xml:id="venn1h">
     \begin{tikzpicture}
-     \draw (-1.5,-2.5) rectangle (2.5,1.5)
+        \draw (-1.5,-2.5) rectangle (2.5,1.5)
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
     (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
     (0.5,-1) circle (1) node [text=black,below] {$C$};
 \end{tikzpicture}
-  \begin{tikzpicture}
-    \draw (-1.5,-2.5) rectangle (2.5,1.5)
-    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
-    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
-    (0.5,-1) circle (1) node [text=black,below] {$C$};
-\end{tikzpicture}
-  \begin{tikzpicture}
+</latex-image>
+</image>
+<image>
+  <latex-image xml:id="venn2h">
+\begin{tikzpicture}
     \draw (-1.5,-2.5) rectangle (2.5,1.5)
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
     (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
@@ -215,7 +286,19 @@
 \end{tikzpicture}
 </latex-image>
 </image>
-
+<image>
+<latex-image xml:id="venn3h">
+\begin{tikzpicture}
+    \draw (-1.5,-2.5) rectangle (2.5,1.5)
+    (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
+    (1,0) circle (1) (1.25,0) node [text=black,above] {$B$}
+    (0.5,-1) circle (1) node [text=black,below] {$C$};
+\end{tikzpicture}
+</latex-image>
+</image>
+</sidebyside>
+</page>
+<page>
 
 <p>De Morgan's Laws </p>
 
@@ -226,13 +309,18 @@
     </p>
     </li>
 </ul>
-<image width="50%">
-    <latex-image>
+<sidebyside margins="30%">
+<image>
+    <latex-image xml:id="venn1i">
        \begin{tikzpicture}[fill=gray, scale = 0.5]
 \draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
       (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
 \draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
 \end{tikzpicture}
+    </latex-image>
+</image>
+<image>
+    <latex-image xml:id="venn2i">
 \begin{tikzpicture}[fill=gray, scale = 0.5]
 \draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
       (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
@@ -240,18 +328,28 @@
 \end{tikzpicture} 
     </latex-image>
     </image>
-    <image width="60%">
-    <latex-image>
-       \begin{tikzpicture}[fill=gray, scale = 0.5]
+    </sidebyside>   
+<sidebyside  margins="20%">
+<image>
+<latex-image xml:id="venn1j">
+      \begin{tikzpicture}[fill=gray, scale = 0.5]
 \draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
       (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
 \draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
 \end{tikzpicture}
+</latex-image>
+</image>
+  <image>
+<latex-image xml:id="venn2j">
 \begin{tikzpicture}[fill=gray, scale = 0.5]
 \draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
       (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
 \draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
 \end{tikzpicture} 
+</latex-image>
+</image>
+  <image>
+<latex-image xml:id="venn3j">
 \begin{tikzpicture}[fill=gray, scale = 0.5]
 \draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
       (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
@@ -259,6 +357,7 @@
 \end{tikzpicture} 
     </latex-image>
     </image>
+    </sidebyside>
 <ul>
 <li>
     <p>
@@ -266,29 +365,18 @@
     </p>
     </li>
 </ul>
-<image width="50%">
-    <latex-image>
+<sidebyside margins="30%">
+<image>
+    <latex-image xml:id="venn1k">
        \begin{tikzpicture}[fill=gray, scale = 0.5]
 \draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
       (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
 \draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
-\end{tikzpicture}\begin{tikzpicture}[fill=gray, scale = 0.5]
-\draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
-      (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
-\draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
-\end{tikzpicture} 
+\end{tikzpicture}
     </latex-image>
-    </image><image width="60%">
-    <latex-image>
-       \begin{tikzpicture}[fill=gray, scale = 0.5]
-\draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
-      (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
-\draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
-\end{tikzpicture}\begin{tikzpicture}[fill=gray, scale = 0.5]
-\draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
-      (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
-\draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
-\end{tikzpicture} 
+</image>
+<image>
+    <latex-image xml:id="venn2k">
 \begin{tikzpicture}[fill=gray, scale = 0.5]
 \draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
       (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
@@ -296,6 +384,36 @@
 \end{tikzpicture} 
     </latex-image>
     </image>
+    </sidebyside>   
+<sidebyside  margins="20%">
+<image>
+<latex-image xml:id="venn1l">
+      \begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
+      (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
+\draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture}
+</latex-image>
+</image>
+  <image>
+<latex-image xml:id="venn2l">
+\begin{tikzpicture}[fill=gray]
+\draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
+      (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
+\draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture} 
+</latex-image>
+</image>
+  <image>
+<latex-image xml:id="venn3l">
+\begin{tikzpicture}[fill=gray]
+\draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
+      (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
+\draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture} 
+    </latex-image>
+    </image>
+    </sidebyside>
 
  <theorem xml:id="thm-complement">
     <title>Complementary Probability</title>
@@ -310,6 +428,8 @@
  <exercise workspace="1in">
     <alert>Proof:</alert>
  </exercise>
+ </page>
+ <page>
 <theorem xml:id="thm-emptyset">
     <title>Probability of Empty Set</title>
     <statement>
@@ -331,8 +451,10 @@
 </theorem>
  <exercise workspace="1in">
     <alert>Proof:</alert>
-    <image width="50%">
-        <latex-image>\begin{tikzpicture}[fill=gray,scale=0.5]
+    <sidebyside margins="30%">
+    <image>
+        <latex-image xml:id="venn-subset-1">
+\begin{tikzpicture}[fill=gray]
 \scope
 \clip (0,0) circle (1.5);
 \fill (0,0) circle (0.75); % fills everything that in this circle that is also inside the circle centered at (1,0)
@@ -342,7 +464,11 @@
       (0,0) circle (0.75) ((0,0)  node [font=\tiny,text=white] {$A$}
       (-2,-2) rectangle (2,2) node [text=black,above] {$S$};
 \end{tikzpicture}
- \begin{tikzpicture}[fill=gray,scale=0.5]
+</latex-image>
+</image>
+<image> 
+<latex-image xml:id="venn-subset-2">
+ \begin{tikzpicture}[fill=gray]
 \scope
 \clip (0,0) circle (0.75)
  (-2,-2) rectangle (2,2);
@@ -356,6 +482,7 @@
 \end{tikzpicture}
         </latex-image>
     </image>
+</sidebyside>
  </exercise>
 
  <theorem xml:id="thm-less-than-one">
@@ -370,7 +497,9 @@
  <exercise workspace="1in">
     <alert>Proof:</alert>
  </exercise>
-<theorem>
+ </page>
+ <page>
+     <theorem>
     <title>Inclusion-Exclusion Probability (Union)</title>
     <statement>
         <p>
@@ -380,20 +509,27 @@
 </theorem>
  <exercise workspace="3in">
     <alert>Proof:</alert>
-    <image width="60%">
-        <latex-image>
+    <sidebyside margins="20%">
+    <image>
+        <latex-image xml:id="venn-union1">
         \begin{tikzpicture}[fill=gray, scale = 0.5]
 \filldraw[black,fill=gray] (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
       (1,0) circle (1) (1,1)  node [text=black,above] {$B$};
 \draw (-2,-2) rectangle (3,2) node [text=black,above] {$S$};
-\draw (4,0) node {$=$};
 \end{tikzpicture}
+</latex-image>
+</image>
+<image> 
+<latex-image xml:id="venn-union2">  
 \begin{tikzpicture}[fill=gray, scale = 0.5]
 \filldraw[black,fill=gray] (0,0) circle (1) (0,1)  node [text=black,above] {$A$};
 \draw (-2,-2) rectangle (3,2) node [text=black,above] {$S$}
 (1,0) circle (1) (1,1)  node [text=black,above] {$B$};
-\draw (4,0) node {$\cup$};
 \end{tikzpicture}
+</latex-image>
+</image>
+<image> 
+<latex-image xml:id="venn-union-3">  
 \begin{tikzpicture}[fill=gray, scale = 0.5]
  \scope
 \clip (-2,-2) rectangle (3,2)
@@ -406,6 +542,7 @@
 \end{tikzpicture}
         </latex-image>
     </image>
+    </sidebyside>
  </exercise> 
  <p>
     In the following, suppose that A and B are events in a sample space S. 
@@ -417,7 +554,8 @@
         </p>
     </statement>
 </exercise>
-
+</page>
+<page>
 <exercise workspace="1in">
     <statement>
         <p>
@@ -450,7 +588,7 @@
 <exercise workspace="2in">
     <alert>Sketch of Proof:</alert>
     <image width="40%">
-        <latex-image>
+        <latex-image xml:id="venn-inclusion-exclusion-three">
        \begin{tikzpicture}
     \draw (-1.5,-2.5) rectangle (2.5,1.5)
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
@@ -464,7 +602,8 @@
         </latex-image>
     </image>
 </exercise>
-
+</page>
+<page>
 <exercise>  
     <introduction>
         <p>
@@ -489,7 +628,7 @@
         <statement>
             <p>
                 Fill in the Venn diagram with the appropriate probabilities in each region.
-                <image width="50%">
+                <image xml:id="venn2" width="40%">
     <latex-image>
        \begin{tikzpicture}[fill=gray, scale = 0.5]
 \draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
@@ -523,7 +662,7 @@
         </statement>
     </task>
     <image width="40%">
-        <latex-image>
+        <latex-image xml:id="example-venn">
             \begin{tikzpicture}
                 \draw (-.25,0) circle (1.25) (-1,1)  node [text=black,above] {$A$}
       (1.25,0) circle (1.25) (2,1)  node [text=black,above] {$B$};
@@ -532,7 +671,8 @@
         </latex-image>
             </image>
     </exercise>
-
+</page>
+<page>
     <exercise workspace="1in">
         <statement>
             <p>
@@ -591,14 +731,14 @@
                 A survey of 1000 people found that 400 people had a pet, 300 people had a child, and 200 people had both a pet and a child. 
             </p>
         </introduction>
-        <task workspace="1in">
+        <task workspace="0.25in">
             <statement>
                 <p>
                     If a person is selected at random, find the probability that the person has either a pet or a child.
                 </p>
             </statement>
         </task>
-        <task workspace="1in">
+        <task workspace="0.25in">
             <statement>
                 <p>
                     Is it reasonable to assume that all of the outcomes in your sample space are equally likely? Explain
@@ -607,6 +747,8 @@
             </statement>
         </task>
         </exercise>
+        </page>
+        <page>
         <exercise>
         <introduction>
             <p>
@@ -642,5 +784,5 @@
             </statement>
         </task>
     </exercise>
-    
+    </page>
  </worksheet>
