@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "1",
   "title": "Basic Definitions",
-  "body": " Basic Definitions   Random Experiment   An experiment where the outcome cannot be predicted with certainty.     Sample Space   The set of all possible outcomes of a random experiment is called a sample space, S (also called outcome space, or just space).      Flip a coin and record the face that is showing:      Roll two dice and add the faces showing:       Flip two coins. Record the faces:      Flip two coins. Determine if they are the same:      Flip a coin until a heads appears. Record the number of flips needed:      Flip a coin until you get two heads in a row. Record how long (time) it takes:     Event   An event is a collection of outcomes in a sample space.    Notice that a sample space S is a set, and an event is a subset of S. We will review some basics of sets and see how they can be represented with Venn Diagrams. Our universal set is always our sample space in this context because the sample space contains all possible outcomes. We will assume all sets and elements are in S.   Empty or Null Set    denotes the empty or null set (the set containing no elements).       B indicates A is a subset of B. Draw and shade set A so it is a subset of B.          is the union of sets A and B. Elements in the union might be in A or in B or in both A and B. Shade           is the intersection of A and B. Elements in the intersection are in A and also in B. Shade .          is the complement of A (all elements in S that are NOT in A). Shade .          and are mutually exclusive or disjoint if . Sketch two mutually exclusive sets sets.         A and B are exhaustive if Make a sketch of two sets that are exhaustive.       These definitions extend to larger numbers of subsets. For example, given     are mutually exclusive events if for (they are pairwise disjoint).     are exhaustive events if      We are interested in computing the probability of an event A in our sample space. We can approximate the probability by repeating the experiment n times. Let N(A) be the number of times an outcome of the experiment is in the event (subset) A. Then we can approximate the probability of A as    which is called the relative frequency of the event A in these n repetitions of the experiment.  Note that if n is small and a few of us do this experiment we may get wildly different answers. However as n gets larger and larger, this fraction will tend to stabilize and we call it the probability of event A . You can think of it as  (Probability of A)     Suppose we have a fair, six sided die and we want to know the probability of the event, E that it will show an even number. Find the sample space S and E. What do you expect for P(E)?    Next we give the formal definition of a probability function.   Probability   Probability is a real-valued set function, P, that assigns to each event A in the sample space S, a number P(A), called the probability of the event A such that the following properties are satisfied:             If are events and (mutually disjoint) then for each positive integer k and for any countable (possibly infinite) number of events.         Sometimes you can use mathematics to determine what the probability function should be under given conditions. For example in the 6-sided die example, if the die is fair, then Let Let G be the set of odd outcomes.                                               Equally Likely Outcomes   Suppose we have a random experiment with m outcomes and sample space . If each of the outcomes in S has the same probability of occurring (e.g. roll a fair die), then we say that each of the m outcomes are equally likely. In that case,         This makes it easy to determine the probability of an event: If is an event, with h outcomes, then    Standard deck of cards      Draw one card at random from a standard 52 card deck. The sample space is the collection of 52 cards. Assume that each card is equally likely to be chosen (i.e., that a card is drawn 'at random'). Thus the probability function assigns a probability of to each of the outcomes. Let                      Determine the following probabilities. Write answer as a fraction (do not reduce).                               Shade the regions indicated.       Express the shaded regions using set notation.       Suppose a dart is thrown at the picture below. Assume it lands in the sample space, S. Let A be the event the dart lands in rectangle A and let B be the event the dart lands in rectangle B. Estimate the following probabilities and be prepared to justify your estimates.                                        "
+  "body": " Basic Definitions    Random Experiment   An experiment where the outcome cannot be predicted with certainty.     Sample Space   The set of all possible outcomes of a random experiment is called a sample space, S (also called outcome space, or just space).      Flip a coin and record the face that is showing:      Roll two dice and add the faces showing:       Flip two coins. Record the faces:      Flip two coins. Determine if they are the same:      Flip a coin until a heads appears. Record the number of flips needed:      Flip a coin until you get two heads in a row. Record how long (time) it takes:       Event   An event is a collection of outcomes in a sample space.    Notice that a sample space S is a set, and an event is a subset of S. We will review some basics of sets and see how they can be represented with Venn Diagrams. Our universal set is always our sample space in this context because the sample space contains all possible outcomes. We will assume all sets and elements are in S.   Empty or Null Set    denotes the empty or null set (the set containing no elements).       B indicates A is a subset of B. Draw and shade set A so it is a subset of B.          is the union of sets A and B. Elements in the union might be in A or in B or in both A and B. Shade           is the intersection of A and B. Elements in the intersection are in A and also in B. Shade .            is the complement of A (all elements in S that are NOT in A). Shade .          and are mutually exclusive or disjoint if . Sketch two mutually exclusive sets sets.         A and B are exhaustive if Make a sketch of two sets that are exhaustive.       These definitions extend to larger numbers of subsets. For example, given     are mutually exclusive events if for (they are pairwise disjoint).     are exhaustive events if        We are interested in computing the probability of an event A in our sample space. We can approximate the probability by repeating the experiment n times. Let N(A) be the number of times an outcome of the experiment is in the event (subset) A. Then we can approximate the probability of A as    which is called the relative frequency of the event A in these n repetitions of the experiment.  Note that if n is small and a few of us do this experiment we may get wildly different answers. However as n gets larger and larger, this fraction will tend to stabilize and we call it the probability of event A . You can think of it as  (Probability of A)     Suppose we have a fair, six sided die and we want to know the probability of the event, E that it will show an even number. Find the sample space S and E. What do you expect for P(E)?    Next we give the formal definition of a probability function.   Probability   Probability is a real-valued set function, P, that assigns to each event A in the sample space S, a number P(A), called the probability of the event A such that the following properties are satisfied:             If are events and (mutually disjoint) then for each positive integer k and for any countable (possibly infinite) number of events.           Sometimes you can use mathematics to determine what the probability function should be under given conditions. For example in the 6-sided die example, if the die is fair, then Let Let G be the set of odd outcomes.                                               Equally Likely Outcomes   Suppose we have a random experiment with m outcomes and sample space . If each of the outcomes in S has the same probability of occurring (e.g. roll a fair die), then we say that each of the m outcomes are equally likely. In that case,         This makes it easy to determine the probability of an event: If is an event, with h outcomes, then      Standard deck of cards      Draw one card at random from a standard 52 card deck. The sample space is the collection of 52 cards. Assume that each card is equally likely to be chosen (i.e., that a card is drawn 'at random'). Thus the probability function assigns a probability of to each of the outcomes. Let                      Determine the following probabilities. Write answer as a fraction (do not reduce).                                 Shade the regions indicated.                 Express the shaded regions using set notation.         Suppose a dart is thrown at the picture below. Assume it lands in the sample space, S. Let A be the event the dart lands in rectangle A and let B be the event the dart lands in rectangle B. Estimate the following probabilities and be prepared to justify your estimates.                                         "
 },
 {
   "id": "def-ranexp",
@@ -28,63 +28,63 @@ var ptx_lunr_docs = [
   "body": " Sample Space   The set of all possible outcomes of a random experiment is called a sample space, S (also called outcome space, or just space).   "
 },
 {
-  "id": "shorttitlelowercase-2-4",
+  "id": "shorttitlelowercase-2-2-3",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-4",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-2-3",
   "type": "Worksheet Exercise",
   "number": "1.1",
   "title": "",
   "body": "  Flip a coin and record the face that is showing:   "
 },
 {
-  "id": "shorttitlelowercase-2-5",
+  "id": "shorttitlelowercase-2-2-4",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-5",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-2-4",
   "type": "Worksheet Exercise",
   "number": "1.2",
   "title": "",
   "body": "  Roll two dice and add the faces showing:    "
 },
 {
-  "id": "shorttitlelowercase-2-6",
+  "id": "shorttitlelowercase-2-2-5",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-6",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-2-5",
   "type": "Worksheet Exercise",
   "number": "1.3",
   "title": "",
   "body": "  Flip two coins. Record the faces:   "
 },
 {
-  "id": "shorttitlelowercase-2-7",
+  "id": "shorttitlelowercase-2-2-6",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-7",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-2-6",
   "type": "Worksheet Exercise",
   "number": "1.4",
   "title": "",
   "body": "  Flip two coins. Determine if they are the same:   "
 },
 {
-  "id": "shorttitlelowercase-2-8",
+  "id": "shorttitlelowercase-2-2-7",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-8",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-2-7",
   "type": "Worksheet Exercise",
   "number": "1.5",
   "title": "",
   "body": "  Flip a coin until a heads appears. Record the number of flips needed:   "
 },
 {
-  "id": "shorttitlelowercase-2-9",
+  "id": "shorttitlelowercase-2-2-8",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-9",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-2-8",
   "type": "Worksheet Exercise",
   "number": "1.6",
   "title": "",
   "body": "  Flip a coin until you get two heads in a row. Record how long (time) it takes:   "
 },
 {
-  "id": "shorttitlelowercase-2-10",
+  "id": "shorttitlelowercase-2-3-1",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-10",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-3-1",
   "type": "Definition",
   "number": "1.3",
   "title": "Event.",
@@ -100,63 +100,63 @@ var ptx_lunr_docs = [
   "body": " Empty or Null Set    denotes the empty or null set (the set containing no elements).   "
 },
 {
-  "id": "shorttitlelowercase-2-13",
+  "id": "shorttitlelowercase-2-3-4",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-13",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-3-4",
   "type": "Worksheet Exercise",
   "number": "1.7",
   "title": "",
   "body": "   B indicates A is a subset of B. Draw and shade set A so it is a subset of B.      "
 },
 {
-  "id": "shorttitlelowercase-2-14",
+  "id": "shorttitlelowercase-2-3-5",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-14",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-3-5",
   "type": "Worksheet Exercise",
   "number": "1.8",
   "title": "",
   "body": "   is the union of sets A and B. Elements in the union might be in A or in B or in both A and B. Shade       "
 },
 {
-  "id": "shorttitlelowercase-2-15",
+  "id": "shorttitlelowercase-2-3-6",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-15",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-3-6",
   "type": "Worksheet Exercise",
   "number": "1.9",
   "title": "",
   "body": "   is the intersection of A and B. Elements in the intersection are in A and also in B. Shade .      "
 },
 {
-  "id": "shorttitlelowercase-2-16",
+  "id": "shorttitlelowercase-2-4-1",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-16",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-4-1",
   "type": "Worksheet Exercise",
   "number": "1.10",
   "title": "",
   "body": "   is the complement of A (all elements in S that are NOT in A). Shade .      "
 },
 {
-  "id": "shorttitlelowercase-2-17",
+  "id": "shorttitlelowercase-2-4-2",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-17",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-4-2",
   "type": "Worksheet Exercise",
   "number": "1.11",
   "title": "",
   "body": "   and are mutually exclusive or disjoint if . Sketch two mutually exclusive sets sets.      "
 },
 {
-  "id": "shorttitlelowercase-2-18",
+  "id": "shorttitlelowercase-2-4-3",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-18",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-4-3",
   "type": "Worksheet Exercise",
   "number": "1.12",
   "title": "",
   "body": "  A and B are exhaustive if Make a sketch of two sets that are exhaustive.      "
 },
 {
-  "id": "shorttitlelowercase-2-25",
+  "id": "shorttitlelowercase-2-5-6",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-25",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-5-6",
   "type": "Worksheet Exercise",
   "number": "1.13",
   "title": "",
@@ -172,63 +172,63 @@ var ptx_lunr_docs = [
   "body": " Probability   Probability is a real-valued set function, P, that assigns to each event A in the sample space S, a number P(A), called the probability of the event A such that the following properties are satisfied:             If are events and (mutually disjoint) then for each positive integer k and for any countable (possibly infinite) number of events.      "
 },
 {
-  "id": "shorttitlelowercase-2-28-2",
+  "id": "shorttitlelowercase-2-6-1-2",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-28-2",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-6-1-2",
   "type": "Worksheet Exercise",
   "number": "1.14",
   "title": "",
   "body": "      "
 },
 {
-  "id": "shorttitlelowercase-2-28-3",
+  "id": "shorttitlelowercase-2-6-1-3",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-28-3",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-6-1-3",
   "type": "Worksheet Exercise",
   "number": "1.15",
   "title": "",
   "body": "      "
 },
 {
-  "id": "shorttitlelowercase-2-28-4",
+  "id": "shorttitlelowercase-2-6-1-4",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-28-4",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-6-1-4",
   "type": "Worksheet Exercise",
   "number": "1.16",
   "title": "",
   "body": "      "
 },
 {
-  "id": "shorttitlelowercase-2-28-5",
+  "id": "shorttitlelowercase-2-6-1-5",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-28-5",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-6-1-5",
   "type": "Worksheet Exercise",
   "number": "1.17",
   "title": "",
   "body": "      "
 },
 {
-  "id": "shorttitlelowercase-2-28-6",
+  "id": "shorttitlelowercase-2-6-1-6",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-28-6",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-6-1-6",
   "type": "Worksheet Exercise",
   "number": "1.18",
   "title": "",
   "body": "      "
 },
 {
-  "id": "shorttitlelowercase-2-28-7",
+  "id": "shorttitlelowercase-2-6-1-7",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-28-7",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-6-1-7",
   "type": "Worksheet Exercise",
   "number": "1.19",
   "title": "",
   "body": "      "
 },
 {
-  "id": "shorttitlelowercase-2-31",
+  "id": "shorttitlelowercase-2-6-4",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-31",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-6-4",
   "type": "Worksheet Exercise",
   "number": "1.20",
   "title": "",
@@ -244,108 +244,108 @@ var ptx_lunr_docs = [
   "body": " Standard deck of cards   "
 },
 {
-  "id": "shorttitlelowercase-2-34-2",
+  "id": "shorttitlelowercase-2-7-2-2",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-34-2",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-7-2-2",
   "type": "Worksheet Exercise",
   "number": "1.21",
   "title": "",
   "body": "    "
 },
 {
-  "id": "shorttitlelowercase-2-34-3",
+  "id": "shorttitlelowercase-2-7-2-3",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-34-3",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-7-2-3",
   "type": "Worksheet Exercise",
   "number": "1.22",
   "title": "",
   "body": "    "
 },
 {
-  "id": "shorttitlelowercase-2-34-4",
+  "id": "shorttitlelowercase-2-7-2-4",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-34-4",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-7-2-4",
   "type": "Worksheet Exercise",
   "number": "1.23",
   "title": "",
   "body": "    "
 },
 {
-  "id": "shorttitlelowercase-2-34-5",
+  "id": "shorttitlelowercase-2-7-2-5",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-34-5",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-7-2-5",
   "type": "Worksheet Exercise",
   "number": "1.24",
   "title": "",
   "body": "    "
 },
 {
-  "id": "shorttitlelowercase-2-34-6",
+  "id": "shorttitlelowercase-2-7-2-6",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-34-6",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-7-2-6",
   "type": "Worksheet Exercise",
   "number": "1.25",
   "title": "",
   "body": "    "
 },
 {
-  "id": "shorttitlelowercase-2-35",
+  "id": "shorttitlelowercase-2-8-1",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-35",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-8-1",
   "type": "Worksheet Exercise",
   "number": "1.26",
   "title": "",
-  "body": "  Shade the regions indicated.    "
+  "body": "  Shade the regions indicated.              "
 },
 {
-  "id": "shorttitlelowercase-2-36",
+  "id": "shorttitlelowercase-2-8-2",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-36",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-8-2",
   "type": "Worksheet Exercise",
   "number": "1.27",
   "title": "",
   "body": "  Express the shaded regions using set notation.    "
 },
 {
-  "id": "shorttitlelowercase-2-37-2",
+  "id": "shorttitlelowercase-2-9-1-2",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-37-2",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-9-1-2",
   "type": "Worksheet Exercise",
   "number": "1.28",
   "title": "",
   "body": "      "
 },
 {
-  "id": "shorttitlelowercase-2-37-3",
+  "id": "shorttitlelowercase-2-9-1-3",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-37-3",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-9-1-3",
   "type": "Worksheet Exercise",
   "number": "1.29",
   "title": "",
   "body": "      "
 },
 {
-  "id": "shorttitlelowercase-2-37-4",
+  "id": "shorttitlelowercase-2-9-1-4",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-37-4",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-9-1-4",
   "type": "Worksheet Exercise",
   "number": "1.30",
   "title": "",
   "body": "      "
 },
 {
-  "id": "shorttitlelowercase-2-37-5",
+  "id": "shorttitlelowercase-2-9-1-5",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-37-5",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-9-1-5",
   "type": "Worksheet Exercise",
   "number": "1.31",
   "title": "",
   "body": "      "
 },
 {
-  "id": "shorttitlelowercase-2-37-6",
+  "id": "shorttitlelowercase-2-9-1-6",
   "level": "2",
-  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-37-6",
+  "url": "shorttitlelowercase-2.html#shorttitlelowercase-2-9-1-6",
   "type": "Worksheet Exercise",
   "number": "1.32",
   "title": "",
@@ -358,7 +358,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "2",
   "title": "Properties of Sets",
-  "body": " Properties of Sets  Commutative laws        Associative Laws                            Distributive Laws                            De Morgan's Laws                            Complementary Probability   For each event A,      Proof:    Probability of Empty Set    .     Proof:    Probability of Subset   If , then .     Proof:       Probability of an Event is less than 1   If , then .     Proof:    Inclusion-Exclusion Probability (Union)   For any two events A and B, .     Proof:      In the following, suppose that A and B are events in a sample space S.    If and , then find .      If and , then find .      If and , then find .     Inclusion-Exclusion Probability (Union of Three Events)   For any three events A, B, and C, (fill in)        Sketch of Proof:        Suppose A and B are subsets of the sample space S. If , and , then find the following:                   Fill in the Venn diagram with the appropriate probabilities in each region.                                  Suppose A and B are subsets of the sample space S. If , , then find          An insurance company looks at its auto insurance customers and finds that   all insure at least one car    85% insure more than one car    23% insure a sports car    17% insure more than one car, including a sports car    Find the probability that a customer selected at random insures exactly one car and it is not a sports car.   Hint : Let the sample space be the set of all people who insure at least one car. Let be the set of people insuring more than one car and be the set of people insuring a sports car. Draw a Venn diagram.       A survey of 1000 people found that 400 people had a pet, 300 people had a child, and 200 people had both a pet and a child.     If a person is selected at random, find the probability that the person has either a pet or a child.      Is it reasonable to assume that all of the outcomes in your sample space are equally likely? Explain       Two dice are rolled and the values shown on top are observed.     Write down a sample space for the experiment in such a way that each outcome in the sample space is equally likely.      What is the probability the sum of the two die is 7?      What is the probability the sum of the two die is at least 4?      What is the probability the sum of the two die is at most 11?     "
+  "body": "Properties of Sets   Commutative laws        Associative Laws                                                              Distributive Laws                                                              De Morgan's Laws                                                       Complementary Probability   For each event A,      Proof:      Probability of Empty Set    .     Proof:    Probability of Subset   If , then .     Proof:            Probability of an Event is less than 1   If , then .     Proof:      Inclusion-Exclusion Probability (Union)   For any two events A and B, .     Proof:              In the following, suppose that A and B are events in a sample space S.    If and , then find .        If and , then find .      If and , then find .     Inclusion-Exclusion Probability (Union of Three Events)   For any three events A, B, and C, (fill in)        Sketch of Proof:          Suppose A and B are subsets of the sample space S. If , and , then find the following:                   Fill in the Venn diagram with the appropriate probabilities in each region.                                    Suppose A and B are subsets of the sample space S. If , , then find          An insurance company looks at its auto insurance customers and finds that   all insure at least one car    85% insure more than one car    23% insure a sports car    17% insure more than one car, including a sports car    Find the probability that a customer selected at random insures exactly one car and it is not a sports car.   Hint : Let the sample space be the set of all people who insure at least one car. Let be the set of people insuring more than one car and be the set of people insuring a sports car. Draw a Venn diagram.       A survey of 1000 people found that 400 people had a pet, 300 people had a child, and 200 people had both a pet and a child.     If a person is selected at random, find the probability that the person has either a pet or a child.      Is it reasonable to assume that all of the outcomes in your sample space are equally likely? Explain         Two dice are rolled and the values shown on top are observed.     Write down a sample space for the experiment in such a way that each outcome in the sample space is equally likely.      What is the probability the sum of the two die is 7?      What is the probability the sum of the two die is at least 4?      What is the probability the sum of the two die is at most 11?      "
 },
 {
   "id": "thm-complement",
@@ -370,9 +370,9 @@ var ptx_lunr_docs = [
   "body": " Complementary Probability   For each event A,    "
 },
 {
-  "id": "shorttitlelowercase-3-23",
+  "id": "shorttitlelowercase-3-4-9",
   "level": "2",
-  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-23",
+  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-4-9",
   "type": "Worksheet Exercise",
   "number": "2.1",
   "title": "",
@@ -388,9 +388,9 @@ var ptx_lunr_docs = [
   "body": " Probability of Empty Set    .   "
 },
 {
-  "id": "shorttitlelowercase-3-25",
+  "id": "shorttitlelowercase-3-5-2",
   "level": "2",
-  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-25",
+  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-5-2",
   "type": "Worksheet Exercise",
   "number": "2.2",
   "title": "",
@@ -406,13 +406,13 @@ var ptx_lunr_docs = [
   "body": " Probability of Subset   If , then .   "
 },
 {
-  "id": "shorttitlelowercase-3-27",
+  "id": "shorttitlelowercase-3-5-4",
   "level": "2",
-  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-27",
+  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-5-4",
   "type": "Worksheet Exercise",
   "number": "2.3",
   "title": "",
-  "body": " Proof:     "
+  "body": " Proof:          "
 },
 {
   "id": "thm-less-than-one",
@@ -424,54 +424,54 @@ var ptx_lunr_docs = [
   "body": " Probability of an Event is less than 1   If , then .   "
 },
 {
-  "id": "shorttitlelowercase-3-29",
+  "id": "shorttitlelowercase-3-5-6",
   "level": "2",
-  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-29",
+  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-5-6",
   "type": "Worksheet Exercise",
   "number": "2.4",
   "title": "",
   "body": " Proof:  "
 },
 {
-  "id": "shorttitlelowercase-3-30",
+  "id": "shorttitlelowercase-3-6-1",
   "level": "2",
-  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-30",
+  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-6-1",
   "type": "Theorem",
   "number": "2.5",
   "title": "Inclusion-Exclusion Probability (Union).",
   "body": " Inclusion-Exclusion Probability (Union)   For any two events A and B, .   "
 },
 {
-  "id": "shorttitlelowercase-3-31",
+  "id": "shorttitlelowercase-3-6-2",
   "level": "2",
-  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-31",
+  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-6-2",
   "type": "Worksheet Exercise",
   "number": "2.5",
   "title": "",
-  "body": " Proof:     "
+  "body": " Proof:             "
 },
 {
-  "id": "shorttitlelowercase-3-33",
+  "id": "shorttitlelowercase-3-6-4",
   "level": "2",
-  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-33",
+  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-6-4",
   "type": "Worksheet Exercise",
   "number": "2.6",
   "title": "",
   "body": "  If and , then find .   "
 },
 {
-  "id": "shorttitlelowercase-3-34",
+  "id": "shorttitlelowercase-3-7-1",
   "level": "2",
-  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-34",
+  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-7-1",
   "type": "Worksheet Exercise",
   "number": "2.7",
   "title": "",
   "body": "  If and , then find .   "
 },
 {
-  "id": "shorttitlelowercase-3-35",
+  "id": "shorttitlelowercase-3-7-2",
   "level": "2",
-  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-35",
+  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-7-2",
   "type": "Worksheet Exercise",
   "number": "2.8",
   "title": "",
@@ -487,54 +487,54 @@ var ptx_lunr_docs = [
   "body": " Inclusion-Exclusion Probability (Union of Three Events)   For any three events A, B, and C, (fill in)      "
 },
 {
-  "id": "shorttitlelowercase-3-37",
+  "id": "shorttitlelowercase-3-7-4",
   "level": "2",
-  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-37",
+  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-7-4",
   "type": "Worksheet Exercise",
   "number": "2.9",
   "title": "",
   "body": " Sketch of Proof:     "
 },
 {
-  "id": "shorttitlelowercase-3-38",
+  "id": "shorttitlelowercase-3-8-1",
   "level": "2",
-  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-38",
+  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-8-1",
   "type": "Worksheet Exercise",
   "number": "2.10",
   "title": "",
   "body": "  Suppose A and B are subsets of the sample space S. If , and , then find the following:                   Fill in the Venn diagram with the appropriate probabilities in each region.                               "
 },
 {
-  "id": "shorttitlelowercase-3-39",
+  "id": "shorttitlelowercase-3-9-1",
   "level": "2",
-  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-39",
+  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-9-1",
   "type": "Worksheet Exercise",
   "number": "2.11",
   "title": "",
   "body": "  Suppose A and B are subsets of the sample space S. If , , then find       "
 },
 {
-  "id": "shorttitlelowercase-3-40",
+  "id": "shorttitlelowercase-3-9-2",
   "level": "2",
-  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-40",
+  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-9-2",
   "type": "Worksheet Exercise",
   "number": "2.12",
   "title": "",
   "body": "  An insurance company looks at its auto insurance customers and finds that   all insure at least one car    85% insure more than one car    23% insure a sports car    17% insure more than one car, including a sports car    Find the probability that a customer selected at random insures exactly one car and it is not a sports car.   Hint : Let the sample space be the set of all people who insure at least one car. Let be the set of people insuring more than one car and be the set of people insuring a sports car. Draw a Venn diagram.    "
 },
 {
-  "id": "shorttitlelowercase-3-41",
+  "id": "shorttitlelowercase-3-9-3",
   "level": "2",
-  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-41",
+  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-9-3",
   "type": "Worksheet Exercise",
   "number": "2.13",
   "title": "",
   "body": "  A survey of 1000 people found that 400 people had a pet, 300 people had a child, and 200 people had both a pet and a child.     If a person is selected at random, find the probability that the person has either a pet or a child.      Is it reasonable to assume that all of the outcomes in your sample space are equally likely? Explain    "
 },
 {
-  "id": "shorttitlelowercase-3-42",
+  "id": "shorttitlelowercase-3-10-1",
   "level": "2",
-  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-42",
+  "url": "shorttitlelowercase-3.html#shorttitlelowercase-3-10-1",
   "type": "Worksheet Exercise",
   "number": "2.14",
   "title": "",
