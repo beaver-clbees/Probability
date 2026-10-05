@@ -1,0 +1,241 @@
+<worksheet xml:id="Practice-counting-methods">
+  <title>Methods of Enumeration Practice and Summary (1.2)</title>
+<page>
+  <introduction>
+    <p>
+      Use the counting principles from this section to determine the number of ways
+      an event can occur. For each problem consider whether order matters, whether
+      repetition is allowed, and if you are sampling with or without replacement.
+    </p>        
+  </introduction>
+
+  <exercise xml:id="counting-1" workspace="0.5in">
+    <statement>
+      <p>
+        A 4-digit security code is created using the digits 0 through 9. Digits may
+        be repeated, and the code cannot start with 0.
+      </p>
+      <p>
+        How many different codes are possible?
+      </p>
+    </statement>
+    <!--hint>
+      <p>
+        The first digit has 9 choices (1 through 9), and each of the remaining 3 digits has 10 choices.
+      </p>
+    </hint-->
+    <!--solution>
+      <p>
+        The first digit has 9 choices (1 through 9), and each of the remaining 3
+        digits has 10 choices. Thus,
+        <me>9 \cdot 10 \cdot 10 \cdot 10 = 9000.</me>
+      </p>
+    </solution-->
+  </exercise>
+
+  <exercise xml:id="counting-2" workspace="0.5in">
+    <statement>
+      <p>
+        A committee of 3 students is chosen from a class of 12 students. How many
+        different committees are possible if the order of the committee members does not matter?
+      </p>
+    </statement>
+    <!--hint>
+      <p>
+        Use the combination formula <m>{n \choose r} = \frac{n!}{r!(n-r)!}</m> with <m>n=12</m> and <m>r=3</m>.
+      </p>
+    </hint-->
+    <!--solution>
+      <p>
+        This is a combination:
+        <me>{12 \choose 3} = \frac{12!}{3!9!} = 220.</me>
+      </p>
+    </solution-->
+  </exercise>
+
+  <exercise xml:id="counting-3" workspace="0.5in">
+    <statement>
+      <p>
+        In how many ways can I choose 4 sweaters from my collection of 8 to give to 4 of my friends?
+      </p>
+    </statement>
+   
+  </exercise>
+
+<exercise xml:id="counting-4" workspace="0.5in">
+    <statement>
+      <p>
+        In how many ways can I choose 4 sweaters from my collection of 8 to give to give to my friend Susan?
+      </p>
+    </statement>
+  </exercise>
+    <exercise xml:id="counting-5" workspace="0.5in">
+    <statement>
+      <p>
+        A restaurant offers 8 different toppings for pizza. How many different
+        3-topping pizzas are possible? (No duplicate toppings.)
+      </p>
+    </statement>
+    <!--solution>
+      <p>
+        Choose 3 toppings from 8 without regard to order:
+        <me>{8 \choose 3} = 56.</me>
+      </p>
+    </solution-->
+  </exercise>
+  </page>
+  <page>
+ <exercise xml:id="counting-6" workspace="0.5in">
+    <statement>
+      <p>
+        A restaurant offers 8 different toppings for pizza. How many different
+       pizzas are possible using 0 to 8 of the toppings?  (No duplicate toppings.)
+      </p>
+    </statement>
+    <!--solution>
+      <p>
+        Choose 3 toppings from 8 without regard to order:
+        <me>{8 \choose 3} = 56.</me>
+      </p>
+    </solution-->
+  </exercise>
+
+    <exercise xml:id="counting-7" workspace="1in">
+    <statement>
+      <p>
+        Show that <m>_{n}C_{r}=_{n}C_{n-r}.</m>
+      </p>
+    </statement>
+    
+  </exercise>
+
+ <exercise xml:id="counting-9" workspace="0.5in">
+    <statement>
+      <p>
+        How many different ways are there to arrange the letters in the word MATH?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="counting-10" workspace="0.5in">
+    <statement>
+      <p>
+        How many different ways are there to arrange the letters in the word WESTERN? Note that are two $'s - if you switched the places of 
+        the two E's you couldn't tell the permutations apart. The permutations you <em>can</em> tell apart are called <alert> distinguishable permutations</alert>. 
+        Count the number of distinguishable permutations.
+      </p>
+    </statement>
+  </exercise>
+<exercise  xml:id="counting-11" workspace="0.5in">
+    <statement>
+      <p>
+        How many different (distinguishable) ways are there to arrange the letters in the word SUCCESS? 
+      </p>
+    </statement>
+
+    </exercise>
+<exercise xml:id="counting-12" workspace=".75in">
+    <statement>
+      <p>
+        Suppose I have 10 candy bars - 6 are Twix and 4 are Snickers. How many different ways can I arrange these candy bars in a line? 
+      </p>
+    </statement>
+  </exercise>
+</page>
+<page>
+  <exercise xml:id="counting-13" workspace="1in">
+    <statement>
+      <p>
+        Suppose you have <m>n</m> objects where <m>n_{1}</m> are of one type, <m>n_{2}</m> are of another type,...,<m>n_{k}</m> are of the <m>k</m>-th type, where <m>n=n_{1}+n_{2}+\cdots+n_{k}.</m> How many distinguishable permutations of the objects are there? Give a formula.
+      </p>
+    </statement>
+  </exercise> 
+  <p>
+    The above formula is called the <em>multinomial coefficient</em> and is denoted by 
+    <m>\binom{n}{n_{1}, n_{2}, \ldots, n_{k}}.</m>
+  </p>
+  <exercise xml:id="counting-14" workspace="0.5in">
+    <statement>
+      <p>
+       There are 3 people in the Smith family, 5 people in the Jones family and 2 people in the McCall family.
+      </p>
+    </statement>
+    <task workspace="0.5in">
+      <statement>
+        <p>
+          How many ways are there to line up all the people to take a picture?
+        </p>
+      </statement>
+    </task>
+    <task workspace="0.5in">
+      <statement>
+        <p>
+          How many ways are there to line up all the people if the members of each family must stay together?
+        </p>
+      </statement>
+    </task>
+  </exercise>
+<exercise xml:id="counting-15" workspace="1.5in">
+    <introduction>
+      <p>
+        I have tubs of chocolate, vanilla, strawberry, and mint ice cream. How many ways can I make a bowl with 6 scoops of ice cream? (order doesn't matter)
+      </p>
+    </introduction>
+</exercise>
+</page>
+<page>
+    <exercise xml:id="counting-16" workspace="0.5in">
+    <introduction>
+      <p>
+       A 5-card hand is to be dealt from a standard 52-card deck. Find the probability of getting each of the following hands.
+      </p>
+    </introduction>
+    <task workspace="1in">
+    <statement>
+      <p>
+        One pair (one pair of cards with the same rank plus three cards of different ranks.
+      </p>
+    </statement>
+    </task>
+    <task workspace="1in">
+    <statement>
+      <p>
+        Two pairs (two different pairs of cards with the same rank plus one card of a different rank).
+      </p>
+    </statement>
+    </task> 
+</exercise>
+</page>
+<page>
+  
+<exercise workspace="2in">
+<statement>
+        <p>
+           <em>Binomial Coefficients</em>
+        </p>
+        <p>
+      <m>(a+b)^{n} =</m>
+    </p>
+      </statement>
+</exercise>
+  <exercise workspace="1in">
+    <statement>
+         <p>
+      <em>Multinomial Coefficients</em>
+    </p>
+    <p>
+      We saw in the in class examples that we if we have <m>n</m> objects,
+      <m>n_{1}</m> of which are similar, <m>n_{2}</m> are similar, <m>n_{3}</m>
+      are similar, .., <m>n_{s}</m> similar where
+      <m>n_{1}+n_{2}+\cdots n_{s}=n</m> then the number of distinguishable
+      permutations of the <m>n</m> objects are
+    </p>
+    </statement>
+</exercise>
+    <p>
+      This is called a <alert>multinomial coefficient</alert> because it arises
+      as the coefficient of <m>a_{1}^{n_1}a_{2}^{n_2}\cdots a_{s}^{n_s}</m> in
+      the expansion of <m>(a_{1}+a_{2}+\cdots a_{s})^{n}</m>
+    </p>
+</page>
+</worksheet>

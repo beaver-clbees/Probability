@@ -1,0 +1,325 @@
+<worksheet><title>Methods of Enumeration (1.2)</title>
+ <page>
+    <p>
+      <alert>Multiplication Principle:</alert> Suppose 2 experiments are
+      performed, <m>E_{1}</m> and <m>E_{2}</m>. If <m>E_{1}</m> has <m>n_{1}</m>
+      possible outcomes and <m>E_{2}</m> has <m>n_{2}</m> possible outcomes,
+      then the composite experiment of performing <m>E_{1}</m> followed by
+      <m>E_{2}</m> has <fillin characters="12"/> possible outcomes.
+    </p>
+<exercise>
+<introduction>
+    <p>
+      <em>Example</em> Let <m>E_{1}</m> be the experiment of selecting at random
+      a pair of socks out of your drawer containing yellow(y), pink(p) and
+      white(w) socks. Let <m>E_{2}</m> be the experiment of selecting either
+      black(bl) or grey(gr) shoes. Then the sample space for the experiment of
+      doing <m>E_{1}</m> followed by <m>E_{2}</m> is all (sock,shoe) possible
+      combinations. 
+    </p>
+</introduction>
+<task workspace="1in">
+<statement>
+     <p>
+        List all outcomes in the sample space:
+     </p>
+</statement>
+</task>
+<task workspace="1.5in">
+    <statement>
+        <p>
+           Alternatively we could model it with a tree diagram:  
+        </p>
+    </statement>
+</task>
+</exercise>
+<exercise workspace="0.5in">
+<statement>
+    <p>
+      <alert>General Multiplication rule:</alert> If experiments
+      <m>E_{1}, E_{2}, E_{3}, ..., E_{k}</m> has <m>n_{1}, n_{2}, ..., n_{k}</m>
+      outcomes respectively after previous experiments have been performed, then
+      the composite experiment of performing <m>E_{1}</m> followed by
+      <m>E_{2}</m>, ... <m>E_{k}</m> has the following number of possible
+      outcomes:
+    </p>
+    </statement>
+</exercise>
+</page>
+<page>
+<exercise>
+  <introduction>
+    <p>
+     <em>Examples:</em> 
+    </p>
+  </introduction>
+ <task workspace="0.5in">
+    <statement>
+      <p>
+            How many different <m>7-</m> digit phone numbers are possible if the
+            first number cannot be a <m>0</m> or <m>1</m>?
+          </p>
+        </statement>
+    </task>
+    <task workspace="0.5in">
+    <statement>
+      <p>
+        How many different license plates of the form LETTER LETTER LETTER
+            DIGIT DIGIT DIGIT are there?
+      </p>
+    </statement>
+    </task>
+   
+     <task workspace="0.5in">
+    <statement>
+          <p>
+           I have <m>4</m> different pictures to hang on the wall. In how many
+            different ways can I arrange them in a row?
+          </p>
+          </statement>
+    </task>
+    <task workspace="0.5in">
+    <statement>
+      <p>
+            In a class of <m>30</m> students, how many ways are there to elect a
+            president, vice president, and treasurer? (Assume no student can hold more than one office.)
+          </p>
+        </statement>
+    </task> 
+  </exercise>
+ 
+    <p>
+      More generally suppose we want to arrange <m>n</m> different things in a
+      row. How many ways?
+    </p>
+
+     <md>
+    \begin{array}{ccccc}\underline{\hspace{.75in}} &amp; \underline{\hspace{.75in}} &amp; \underline{\hspace{.75in}} &amp; \cdots &amp; \underline{\hspace{.75in}} \\ 1^{\text{st}} &amp; 2^{\text{nd}} &amp; 3^{\text{rd}} &amp; \cdots &amp; n^{\text{th}}\\\end{array}
+  </md>
+
+<definition xml:id="def-permutation">
+<title>Permutation (B:1.2.1)</title>
+<statement>
+    <p>
+      A <alert> permutation </alert>  is an arrangement of objects in a
+      row where order matters.
+    </p>
+</statement>
+</definition>
+</page>
+<page>
+<exercise workspace=".5in">
+  <statement>
+    <p> The total number of permutations on <m>n</m> different objects is:</p>
+      </statement>
+</exercise>
+ <exercise workspace="1in">
+  <statement>
+    <p>
+       If we had <m>n</m> different things and wanted to arrange just <m>r</m> of them in a
+      row, we'd have this many ways:
+       </p>
+  <md>
+    \begin{array}{ccccc}\underline{\hspace{1in}} &amp; \underline{\hspace{1in}} &amp; \underline{\hspace{1in}} &amp; \cdots &amp; \underline{\hspace{1in}} \\ 1^{\text{st}} &amp; 2^{\text{nd}} &amp; 3^{\text{rd}} &amp; \cdots &amp; r^{\text{th}}\\\end{array}
+  </md>
+    
+    <p>We denote the number of such arrangements by</p>
+  </statement>
+ </exercise>
+   
+<definition xml:id="perm-on-n-objects">
+<title>(B:1.2-2)</title>
+
+
+<statement>
+    <p>
+      Each of the <m>_{n}P_{r}</m> arrangements is
+      called a <em>permutation on <m>n</m> objects taken <m>r</m> at a time.</em>
+    </p>
+</statement>
+</definition>
+
+      <exercise workspace=".5in">
+        <statement>
+          <p>
+            There are <m>10</m> people in a race. How many finishing
+      orders are there? <!--10!\\-->
+          </p>
+        </statement>
+      </exercise>
+ <exercise workspace=".5in">
+  <statement>
+    <p>
+      There are <m>10</m> people in a race. How many ways to
+      award first, second, and third place?
+    </p>
+  </statement>
+ </exercise>
+
+<definition xml:id ="ordered-sample">
+<title>(B:1.2-3)</title>
+    <statement>
+      <p>
+       If <m>r</m> objects are selected from a set of
+      <m>n</m> objects, and if the order of the selection is noted, then the
+      selected set of <m>r</m> objects is called
+    </p>
+     <p>
+      <fillin characters="100"/> <!--an {\bf ordered sample of size $r$}.\\-->
+    </p>
+
+    </statement>
+  </definition>
+   </page>
+   <page>
+<definition xml:id="sampling-with-without-replacement">
+<title>(B:1.2-4/5)</title>
+    <statement>
+    <p>
+      <alert>Sampling with replacement</alert>
+      occurs when an object is selected and then replaced before the next object
+      is selected. <alert>Sampling without replacement</alert> occurs when an
+      object is not replaced after it has been selected.
+    </p>
+</statement>
+</definition>
+    <p>
+      <em>Examples:</em>
+    </p>
+<exercise workspace=".5in">
+<statement>
+    <p>
+      A state lottery selects <m>3</m> balls numbered <m>0-9</m>
+      one at a time. After each ball is selected, it is put back. How many
+      possible outcomes are there? (Assume order matters)
+    </p>
+</statement>
+</exercise>
+<exercise workspace=".5in">
+  <statement>
+    <p>
+      Suppose in the above lottery the balls are not put back
+      after being selected. How many possible outcomes are there? (Assume order
+      matters)
+    </p>
+  </statement>
+</exercise>
+
+    <p>
+      We note that given <m>n</m> different objects, the number of
+      <em>ordered</em> samples of size <m>r</m> is:
+    </p>
+
+    <p>
+      with replacement: <fillin characters="10"/> <!--$n^r$ (multiplication principle)\\-->
+    </p>
+
+    <p>
+      without replacement: <fillin characters="10"/>
+    </p>
+
+    <p>
+      <em>Example - Unordered sets</em>
+    </p>
+<exercise workspace="1.5in">
+<statement>
+    <p>
+      How many ways are there to select three people from the set
+      <md>
+        \{Alex (A), Betty (B), Carol(C), Danny (D)\}
+      </md>
+    </p>
+</statement>
+</exercise>
+</page>
+<page>
+<exercise workspace="1in">
+<statement>
+    <p>
+      Denote by <fillin characters="10"/> the <em>number</em> of unordered sets of size
+      <m>r</m>.
+    </p>
+
+    <p>
+      Then the number of <em>ordered</em> sets is
+    </p>
+</statement>
+</exercise>
+<definition xml:id="unordered-subset">
+<title>(B:1.2-6)</title>
+    <statement>
+    <p>
+       Each of the <m>_{n}C_{r}</m> unordered subsets
+      is called a
+    </p>
+
+    <p>
+      <fillin characters="100"/>
+    </p>
+</statement>
+</definition>
+    <p>
+      <em>Examples:</em>
+    </p>
+
+    <exercise workspace="1in">
+      <statement>
+        <p>
+          A committee of <m>3</m> is to be chosen from a group of <m>5</m>
+            people - how many ways?
+        </p>
+      </statement>
+    </exercise>
+     
+     <exercise workspace="1in">
+      <statement>
+        <p>
+           How many different ways are there to deal a <m>5-</m> card hand from
+            a standard <m>52</m> card deck?
+        </p>
+      </statement>
+     </exercise>
+</page>
+  
+<page>
+    <p>
+      <alert>Back to probability.</alert> Let <m>N(A)</m> be the number of
+      outcomes in event <m>A</m>. If all outcomes in a sample space are equally
+      likely, then the probability of an event <m>A</m> is
+      <m>\displaystyle{P(A)=\frac{N(A)}{N(S)}}</m>. So knowing how to count
+      helps us compute probabilities.
+    </p>
+<exercise workspace="1in">
+<statement> 
+          <p>
+            A committee of <m>3</m> is to be chosen from
+            <m>\{Alice (A), Bob (B), Chuck (C), David (D), Edgar (E) \}</m>.
+            What is the probability that <m>AB</m> will be chosen?
+          </p>
+        </statement>
+        </exercise>
+<exercise workspace="1in">
+<statement>
+          <p>
+            What is the probability that a random <m>5</m>-card hand (from a
+            standard <m>52-</m> card deck) consists of all diamonds?
+          </p>
+        </statement>
+</exercise>
+<p><alert>Notation</alert>
+    </p>
+   <ul>
+    <li>
+      <p> The number of permutations on <m>n</m> distinct objects taken <m>r</m> at a time is denoted by <m>_{n}P_{r}</m> or <m>P(n,r)</m> and is given by
+      <m>_{n}P_{r} = \frac{n!}{(n-r)!}</m>.
+      </p>
+    </li>
+    <li>
+      <p> The number of combinations (unordered sets) of <m>n</m> distinct objects taken <m>r</m> at a time is denoted by <m>_{n}C_{r}</m>, <m>C(n,r)</m>, or <m>\binom{n}{r}</m> (read "n choose r") and is given by
+      <m>_{n}C_{r} = \frac{n!}{r!(n-r)!}</m>.
+      </p>
+    </li>
+   </ul>
+  </page>
+  
+</worksheet>

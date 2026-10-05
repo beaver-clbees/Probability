@@ -1,6 +1,6 @@
 <worksheet>
  
-    <title>Basic Definitions</title>
+    <title>Basic Definitions (1.1a)</title>
 <page>
     <definition xml:id="def-ranexp">
       <title>Random Experiment</title>    
@@ -98,8 +98,8 @@
         <p>
           <m>A \subset</m> B indicates A is a subset of B. Draw and shade set A so it is a subset of B.
         </p>
-        <image width="25%">
-  <latex-image xml:id="venn-subset">\begin{tikzpicture}[fill=gray, scale = 0.5]
+        <image xml:id="venn-subset" width="25%">
+  <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
 \draw (0,0) circle (1.5) (-.5,1.25)  node [font=\tiny,text=black,above] {$B$}
       (-2,-2) rectangle (3,2) node [font=\tiny,text=black,above] {$S$};
 \end{tikzpicture} </latex-image>
@@ -111,7 +111,7 @@
         <p>
           <m>A \cup B</m> is the union of sets A and B. Elements in the union might be in A or in B or in both A and B. Shade <m> A \cup B. </m> 
         </p>
-        <image width="25%">
+        <image xml:id="vennunion" width="25%">
           <latex-image>\begin{tikzpicture}[fill=gray, scale=0.5]
 \draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
       (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
@@ -126,13 +126,13 @@
       <p>
       <m> A \cap B </m> is the intersection of A and B. Elements in the intersection are in A and also in B. Shade <m> A \cap B </m>.  
       </p>
-    <image width="25%">
-      <latex-image>\begin{tikzpicture}[fill=gray, scale = 0.5]
+    <image xml:id="vennint" width="25%">
+          <latex-image>\begin{tikzpicture}[fill=gray, scale=0.5]
 \draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
       (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
 \draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
 \end{tikzpicture} </latex-image>
-          </image>
+    </image>
     </statement>
       </exercise>
 </page>
@@ -177,7 +177,8 @@
   </exercise>
 <p>
   These definitions extend to larger numbers of subsets. For example, given <m> A_1,A_2,...,A_k \subseteq S</m> 
-  <ol>
+ </p>
+  <ul>
     <li>
       <p>
          <m>A_1, A_2,...,A_k</m> are mutually exclusive events if <m>A_i \cap A_j = \emptyset</m> for <m>i \neq j</m> (they are pairwise disjoint).
@@ -188,8 +189,8 @@
         <m>A_1, A_2,...,A_k</m> are exhaustive events if <m>A_1 \cup A_2 \cup \cdots \cup A_k=S</m>
       </p>
     </li>
-  </ol>
-</p>
+  </ul>
+
 </page>
 <page>
 
@@ -235,6 +236,7 @@ Let N(A) be the number of times an outcome of the experiment is in the event (su
           that assigns to each event A in the sample space S,
           a number P(A), called the probability of the event A
            such that the following properties are satisfied:
+            </p>
            <ol>
             <li>
               <p>
@@ -259,13 +261,13 @@ for any countable (possibly infinite) number of events.
               </p>
             </li>
            </ol>
-        </p>
+       
       </statement>
     </definition>
     </page>
 <page>
-    <exercisegroup cols="2">
-    <introduction>
+
+
           <p>
           Sometimes you can use mathematics to determine what the probability function should be under given conditions.
           For example in the 6-sided die example, if the die is fair, then
@@ -274,11 +276,12 @@ for any countable (possibly infinite) number of events.
 
     Let <m>E = \{ 1,2 \}, F = \{3,4\}.</m> Let G be the set of odd outcomes.
     </p> 
-    </introduction>
+
+    <sidebyside widths="45% 45%" margins="auto">
     <exercise workspace="0.5in">
-      <statement>
+      <statement> 
         <p>
-          <m>P(E)=</m>
+           <m>P(E)=</m>
         </p>
       </statement>
     </exercise>
@@ -289,6 +292,8 @@ for any countable (possibly infinite) number of events.
       </p>
     </statement>
     </exercise>
+    </sidebyside>
+    <sidebyside widths="45% 45%" margins="auto">
      <exercise workspace="0.5in">
       <statement>
         <p>
@@ -303,21 +308,27 @@ for any countable (possibly infinite) number of events.
       </p>
     </statement>
     </exercise>
+    </sidebyside>
+    <sidebyside widths="45% 45%" margins="auto" >
      <exercise workspace="0.5in">
       <statement>
         <p>
           <m>P(E\cap F)=</m>
-        </p>
+      </p>
       </statement>
     </exercise>
     <exercise workspace="0.5in">
-    <statement>
-      <p>
-        <m>P(G\cup F)=</m>
-      </p>
-    </statement>
+      <statement>
+        <p>
+          <m>P(G\cup F)=</m>
+        </p>
+      </statement>
     </exercise>
-   </exercisegroup>
+    </sidebyside>
+
+      
+   
+  
      
     <p>    
       <alert>Equally Likely Outcomes</alert>
@@ -348,65 +359,78 @@ for any countable (possibly infinite) number of events.
        <image source="deck_of_cards.png" />
      </figure>
  
-   <exercisegroup cols="2">
-    <introduction>
-    
-      <p>
-        Draw one card at random from a standard 52 card deck. The sample space is the collection of 52 cards. Assume that each card is equally likely to be chosen (i.e., that a card is drawn 'at random'). Thus the probability function assigns a probability of <m>\frac{1}{52}</m>
-        to each of the outcomes. Let 
+    <p>
+      Draw one card at random from a standard 52 card deck. The sample space is the collection of 52 cards. Assume that each card is equally likely to be chosen (i.e., that a card is drawn 'at random'). Thus the probability function assigns a probability of <m>\frac{1}{52}</m>
+      to each of the outcomes.
+    </p>
+    <p>
+      Let
+    </p>
     <ul>
-    <li>
-      <p>
-        <m>A=\{x \mid x \hbox{ is a jack, queen, or king}\}</m>
-      </p>
-    </li>
-    <li>
-      <p>
-        <m>B=\{x \mid (x \hbox{ is a }9, 10, \hbox{ or jack) AND RED}\}</m>
-      </p>
-    </li> 
-    <li>
-      <p>
-        <m>C=\{x \mid x \hbox{ is a club}\}</m>
-      </p>
-    </li> 
-    <li>
-      <p>
-     <m>D=\{x \mid x \hbox{ is a diamond, a heart, or a spade}\}</m>
-      </p>
-    </li>
-     </ul>
-     Determine the following probabilities. Write answer as a fraction (do not reduce).
-     </p>
-</introduction>
+      <li>
+        <p>
+          <m>A=\{x \mid x \hbox{ is a jack, queen, or king}\}</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>B=\{x \mid (x \hbox{ is a }9, 10, \hbox{ or jack) AND RED}\}</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>C=\{x \mid x \hbox{ is a club}\}</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>D=\{x \mid x \hbox{ is a diamond, a heart, or a spade}\}</m>
+        </p>
+      </li>
+    </ul>
+    <p>
+      Determine the following probabilities. Write answer as a fraction (do not reduce).
+    </p>
     
-    <exercise workspace=".1in">
-    <p>
-       <m>P(A)=</m>
-    </p>
-    </exercise>
-
-     <exercise workspace=".1in">
-     <p>
-        <m>P(A \cap B')=</m>
-     </p>
-     </exercise> 
-  <exercise workspace=".1in">
-    <p>
-        <m>P(A \cup B)=</m>
-    </p>
-    </exercise>
-    <exercise workspace=".1in">
-    <p>
-        <m>P(C \cup D)=</m>
-    </p>
-    </exercise>
-    <exercise workspace=".1in">
-    <p>
-        <m>P(C \cap D)=</m>
-    </p>
-    </exercise>
-   </exercisegroup>
+      <sidebyside widths="45% 45%" halign="left">
+        <exercise workspace=".1in">
+          <statement>
+            <p>
+               <m>P(A)=</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise workspace=".1in">
+          <statement>
+            <p>
+              <m>P(A \cap B')=</m>
+            </p>
+          </statement>
+        </exercise>
+        </sidebyside>
+        <sidebyside widths="45% 45%" halign="left">
+        <exercise workspace=".1in">
+          <statement>
+            <p>
+              <m>P(A \cup B)=</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise workspace=".1in">
+          <statement>
+            <p>
+              <m>P(C \cup D)=</m>
+            </p>
+          </statement>
+        </exercise>                
+  </sidebyside>
+        <exercise workspace=".1in">
+          <statement>
+            <p>
+              <m>P(C \cap D)=</m>
+            </p>
+          </statement>
+        </exercise>  
  
   </page>
 <page>
