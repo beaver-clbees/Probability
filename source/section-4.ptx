@@ -120,7 +120,7 @@
   <exercise xml:id="counting-10" workspace="0.5in">
     <statement>
       <p>
-        How many different ways are there to arrange the letters in the word WESTERN? Note that are two $'s - if you switched the places of 
+        How many different ways are there to arrange the letters in the word WESTERN? Note that are two E's - if you switched the places of 
         the two E's you couldn't tell the permutations apart. The permutations you <em>can</em> tell apart are called <alert> distinguishable permutations</alert>. 
         Count the number of distinguishable permutations.
       </p>
@@ -155,11 +155,11 @@
     <m>\binom{n}{n_{1}, n_{2}, \ldots, n_{k}}.</m>
   </p>
   <exercise xml:id="counting-14" workspace="0.5in">
-    <statement>
+    <introduction>
       <p>
-       There are 3 people in the Smith family, 5 people in the Jones family and 2 people in the McCall family.
+       There are 3 people in the Smith family, 5 people in the Jones family, and 2 people in the McCall family.
       </p>
-    </statement>
+    </introduction>
     <task workspace="0.5in">
       <statement>
         <p>
@@ -187,20 +187,20 @@
     <exercise xml:id="counting-16" workspace="0.5in">
     <introduction>
       <p>
-       A 5-card hand is to be dealt from a standard 52-card deck. Find the probability of getting each of the following hands.
+       A 5-card hand is to be dealt from a standard 52-card deck. Find the probability of getting each of the following hands. Note that by rank or face value, we mean the value showing on the card (A,2,3,4,5,6,7,8,9,10,J,Q,K)
       </p>
     </introduction>
     <task workspace="1in">
     <statement>
       <p>
-        One pair (one pair of cards with the same rank plus three cards of different ranks.
+        One pair (one pair of cards with the same face value plus three cards of different face values).
       </p>
     </statement>
     </task>
     <task workspace="1in">
     <statement>
       <p>
-        Two pairs (two different pairs of cards with the same rank plus one card of a different rank).
+        Two pairs (two different pairs of cards with the same face values plus one card of a different face value).
       </p>
     </statement>
     </task> 
