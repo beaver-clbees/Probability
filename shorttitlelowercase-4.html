@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Properties of Probability</title>
+<title>Methods of Enumeration (1.2)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -30,8 +30,8 @@ lang: "en-US",
 </script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="article">
-<meta name="twitter:title" content="The title of my groundbreaking paper">
-<meta property="og:title" content="The title of my groundbreaking paper">
+<meta name="twitter:title" content="Probability">
+<meta property="og:title" content="Probability">
 <meta name="twitter:card" content="summary">
 <script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.49"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.49"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
@@ -55,22 +55,22 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.10';
+eBookConfig.runestone_version = '8.3.3';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/prefix-runtime.dd07797f77620576.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.11d27cdc38930c2c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.347e2ecdeacfed99.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="authorslastnamelowercase-ShortTitleCamelCase" class="pretext article ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
-<div class="heading ptx-banner-heading"><a href="shorttitlelowercase.html"><span class="title">The title of my groundbreaking paper</span></a></div>
-<p class="byline">Author X. Lastname</p>
+<div class="heading ptx-banner-heading"><a href="shorttitlelowercase.html"><span class="title">Probability</span></a></div>
+<p class="byline"></p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
 <div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
@@ -110,7 +110,7 @@ eBookConfig.enable_chatcodes =  false;
 <legend>Assistive technologies</legend>
 <label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
 </fieldset>
-<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="intro.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="shorttitlelowercase.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="section-2.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="shorttitlelowercase-3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="shorttitlelowercase.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="Practice-counting-methods.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\foo}{b^{ar}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -120,13 +120,10 @@ eBookConfig.enable_chatcodes =  false;
 \)</span></div>
 <div class="ptx-page">
 <div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth1 focused" data-preexpanded-levels="0" data-max-levels="1"><ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-frontmatter">
-<div class="toc-title-box"><a href="shorttitlelowercase-2.html" class="internal"><span class="title">Front Matter</span></a></div>
-<ul id="ptx-toc-group-shorttitlelowercase-2" class="structural toc-item-list"><li class="toc-item toc-abstract"><div class="toc-title-box"><a href="shorttitlelowercase-2.html#shorttitlelowercase-2-2" class="internal"><span class="title">Abstract</span></a></div></li></ul>
-</li>
-<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
-<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="shorttitlelowercase-4.html" class="internal"><span class="codenumber">1</span> <span class="title">Properties of Probability</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-2.html" class="internal"><span class="codenumber">2</span> <span class="title">My Additional Section</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="shorttitlelowercase-2.html" class="internal"><span class="codenumber">1</span> <span class="title">Basic Definitions (1.1a)</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="shorttitlelowercase-3.html" class="internal"><span class="codenumber">2</span> <span class="title">Properties of Sets (1.1b)</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="shorttitlelowercase-4.html" class="internal"><span class="codenumber">3</span> <span class="title">Methods of Enumeration (1.2)</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="Practice-counting-methods.html" class="internal"><span class="codenumber">4</span> <span class="title">Methods of Enumeration Practice and Summary (1.2)</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content">
 <div class="print-preview-header">
@@ -155,91 +152,247 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <section class="worksheet" id="shorttitlelowercase-4" data-margins="0.75in 0.75in 0.75in 0.75in">
 <h1 class="heading hide-type">
-<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Properties of Probability</span><div class="print-links"><a href="?printpreview=shorttitlelowercase-4" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Methods of Enumeration (1.2)</span><div class="print-links"><a href="?printpreview=shorttitlelowercase-4" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h1>
-<article class="definition definition-like" id="def-ranexp"><h2 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Random Experiment.</span>
+<section class="onepage" id="shorttitlelowercase-4-2">
+<div class="para" id="shorttitlelowercase-4-2-1">
+<em class="alert">Multiplication Principle:</em> Suppose 2 experiments are performed, <span class="process-math">\(E_{1}\)</span> and <span class="process-math">\(E_{2}\text{.}\)</span> If <span class="process-math">\(E_{1}\)</span> has <span class="process-math">\(n_{1}\)</span> possible outcomes and <span class="process-math">\(E_{2}\)</span> has <span class="process-math">\(n_{2}\)</span> possible outcomes, then the composite experiment of performing <span class="process-math">\(E_{1}\)</span> followed by <span class="process-math">\(E_{2}\)</span> has <span class="fillin underline" role="img" aria-label="12-character blank" style="width: 5.454545454545454em;"></span> possible outcomes.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="shorttitlelowercase-4-2-2"><h2 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="introduction" id="shorttitlelowercase-4-2-2-1">
+<div class="para" id="shorttitlelowercase-4-2-2-1-1">
+<em class="emphasis">Example</em> Let <span class="process-math">\(E_{1}\)</span> be the experiment of selecting at random a pair of socks out of your drawer containing yellow(y), pink(p) and white(w) socks. Let <span class="process-math">\(E_{2}\)</span> be the experiment of selecting either black(bl) or grey(gr) shoes. Then the sample space for the experiment of doing <span class="process-math">\(E_{1}\)</span> followed by <span class="process-math">\(E_{2}\)</span> is all (sock,shoe) possible combinations.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="shorttitlelowercase-4-2-2-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="shorttitlelowercase-4-2-2-2-1-1">List all outcomes in the sample space:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-2-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.1.a"><a tabindex="-1" href="#shorttitlelowercase-4-2-2-2" title="Copy heading and permalink for Task 3.1.a" aria-label="Copy heading and permalink for Task 3.1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="shorttitlelowercase-4-2-2-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="shorttitlelowercase-4-2-2-3-1-1">Alternatively we could model it with a tree diagram:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-2-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.1.b"><a tabindex="-1" href="#shorttitlelowercase-4-2-2-3" title="Copy heading and permalink for Task 3.1.b" aria-label="Copy heading and permalink for Task 3.1.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3.1"><a tabindex="-1" href="#shorttitlelowercase-4-2-2" title="Copy heading and permalink for Worksheet Exercise 3.1" aria-label="Copy heading and permalink for Worksheet Exercise 3.1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="shorttitlelowercase-4-2-3"><h2 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="shorttitlelowercase-4-2-3-1-1">
+<em class="alert">General Multiplication rule:</em> If experiments <span class="process-math">\(E_{1}, E_{2}, E_{3}, ..., E_{k}\)</span> has <span class="process-math">\(n_{1}, n_{2}, ..., n_{k}\)</span> outcomes respectively after previous experiments have been performed, then the composite experiment of performing <span class="process-math">\(E_{1}\)</span> followed by <span class="process-math">\(E_{2}\text{,}\)</span> ... <span class="process-math">\(E_{k}\)</span> has the following number of possible outcomes:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3.2"><a tabindex="-1" href="#shorttitlelowercase-4-2-3" title="Copy heading and permalink for Worksheet Exercise 3.2" aria-label="Copy heading and permalink for Worksheet Exercise 3.2">🔗</a></div>
+</article></section><section class="onepage" id="shorttitlelowercase-4-3">
+<article class="exercise exercise-like" id="shorttitlelowercase-4-3-1"><h2 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="introduction" id="shorttitlelowercase-4-3-1-1">
+<div class="para" id="shorttitlelowercase-4-3-1-1-1">
+<em class="emphasis">Examples:</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="shorttitlelowercase-4-3-1-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="shorttitlelowercase-4-3-1-2-1-1">How many different <span class="process-math">\(7-\)</span> digit phone numbers are possible if the first number cannot be a <span class="process-math">\(0\)</span> or <span class="process-math">\(1\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-3-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.3.a"><a tabindex="-1" href="#shorttitlelowercase-4-3-1-2" title="Copy heading and permalink for Task 3.3.a" aria-label="Copy heading and permalink for Task 3.3.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="shorttitlelowercase-4-3-1-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="shorttitlelowercase-4-3-1-3-1-1">How many different license plates of the form LETTER LETTER LETTER DIGIT DIGIT DIGIT are there?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-3-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.3.b"><a tabindex="-1" href="#shorttitlelowercase-4-3-1-3" title="Copy heading and permalink for Task 3.3.b" aria-label="Copy heading and permalink for Task 3.3.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="shorttitlelowercase-4-3-1-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="shorttitlelowercase-4-3-1-4-1-1">I have <span class="process-math">\(4\)</span> different pictures to hang on the wall. In how many different ways can I arrange them in a row?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-3-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.3.c"><a tabindex="-1" href="#shorttitlelowercase-4-3-1-4" title="Copy heading and permalink for Task 3.3.c" aria-label="Copy heading and permalink for Task 3.3.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="shorttitlelowercase-4-3-1-5"><h3 class="heading"><span class="codenumber">(d)</span></h3>
+<div class="para" id="shorttitlelowercase-4-3-1-5-1-1">In a class of <span class="process-math">\(30\)</span> students, how many ways are there to elect a president, vice president, and treasurer? (Assume no student can hold more than one office.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-3-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.3.d"><a tabindex="-1" href="#shorttitlelowercase-4-3-1-5" title="Copy heading and permalink for Task 3.3.d" aria-label="Copy heading and permalink for Task 3.3.d">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3.3"><a tabindex="-1" href="#shorttitlelowercase-4-3-1" title="Copy heading and permalink for Worksheet Exercise 3.3" aria-label="Copy heading and permalink for Worksheet Exercise 3.3">🔗</a></div>
+</article>
+<div class="para" id="shorttitlelowercase-4-3-2">More generally suppose we want to arrange <span class="process-math">\(n\)</span> different things in a row. How many ways?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="shorttitlelowercase-4-3-3">
+\begin{equation*}
+\begin{array}{ccccc}\underline{\hspace{.75in}} &amp; \underline{\hspace{.75in}} &amp; \underline{\hspace{.75in}} &amp; \cdots &amp; \underline{\hspace{.75in}} \\ 1^{\text{st}} &amp; 2^{\text{nd}} &amp; 3^{\text{rd}} &amp; \cdots &amp; n^{\text{th}}\\\end{array}
+\end{equation*}
+</div>
+<article class="definition definition-like" id="def-permutation"><h2 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Permutation (B:1.2.1).</span>
 </h2>
-<div class="para" id="def-ranexp-2-1">An experiment where the outcome cannot be predicted with certainty.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-ranexp-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="def-permutation-2-1">A <em class="alert">permutation</em>  is an arrangement of objects in a row where order matters.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-permutation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Definition 1.1: Random Experiment"><a tabindex="-1" href="#def-ranexp" title="Copy heading and permalink for Definition 1.1: Random Experiment" aria-label="Copy heading and permalink for Definition 1.1: Random Experiment">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 3.1: Permutation (B:1.2.1)"><a tabindex="-1" href="#def-permutation" title="Copy heading and permalink for Definition 3.1: Permutation (B:1.2.1)" aria-label="Copy heading and permalink for Definition 3.1: Permutation (B:1.2.1)">🔗</a></div>
+</article></section><section class="onepage" id="shorttitlelowercase-4-4">
+<article class="exercise exercise-like" id="shorttitlelowercase-4-4-1"><h2 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="shorttitlelowercase-4-4-1-1-1">The total number of permutations on <span class="process-math">\(n\)</span> different objects is:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space=".5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3.4"><a tabindex="-1" href="#shorttitlelowercase-4-4-1" title="Copy heading and permalink for Worksheet Exercise 3.4" aria-label="Copy heading and permalink for Worksheet Exercise 3.4">🔗</a></div>
 </article>
-<article class="definition definition-like" id="def-samplespace"><h2 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sample Space.</span>
+<article class="exercise exercise-like" id="shorttitlelowercase-4-4-2"><h2 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="shorttitlelowercase-4-4-2-1-1">If we had <span class="process-math">\(n\)</span> different things and wanted to arrange just <span class="process-math">\(r\)</span> of them in a row, we’d have this many ways:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="shorttitlelowercase-4-4-2-1-2">
+\begin{equation*}
+\begin{array}{ccccc}\underline{\hspace{1in}} &amp; \underline{\hspace{1in}} &amp; \underline{\hspace{1in}} &amp; \cdots &amp; \underline{\hspace{1in}} \\ 1^{\text{st}} &amp; 2^{\text{nd}} &amp; 3^{\text{rd}} &amp; \cdots &amp; r^{\text{th}}\\\end{array}
+\end{equation*}
+</div>
+<div class="para" id="shorttitlelowercase-4-4-2-1-3">We denote the number of such arrangements by<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-4-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3.5"><a tabindex="-1" href="#shorttitlelowercase-4-4-2" title="Copy heading and permalink for Worksheet Exercise 3.5" aria-label="Copy heading and permalink for Worksheet Exercise 3.5">🔗</a></div>
+</article>
+<article class="definition definition-like" id="perm-on-n-objects"><h2 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">(B:1.2-2).</span>
 </h2>
-<div class="para" id="def-samplespace-2-1">The set of all possible outcomes of a random experiment is called a sample space, S (also called outcome space, or just space).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-samplespace-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="perm-on-n-objects-2-1">Each of the <span class="process-math">\(_{n}P_{r}\)</span> arrangements is called a <em class="emphasis">permutation on <span class="process-math">\(n\)</span> objects taken <span class="process-math">\(r\)</span> at a time.</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#perm-on-n-objects-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Definition 1.2: Sample Space"><a tabindex="-1" href="#def-samplespace" title="Copy heading and permalink for Definition 1.2: Sample Space" aria-label="Copy heading and permalink for Definition 1.2: Sample Space">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 3.2: (B:1.2-2)"><a tabindex="-1" href="#perm-on-n-objects" title="Copy heading and permalink for Definition 3.2: (B:1.2-2)" aria-label="Copy heading and permalink for Definition 3.2: (B:1.2-2)">🔗</a></div>
 </article>
-<figure class="figure figure-like" id="complement"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/complement-2.svg" role="img" class="contained" alt="shortdescription"></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>complement<div class="autopermalink" aria-hidden="true" data-description="Figure 1.3"><a tabindex="-1" href="#complement" title="Copy heading and permalink for Figure 1.3" aria-label="Copy heading and permalink for Figure 1.3">🔗</a></div></figcaption>
-</figure>
-<article class="exercise exercise-like" id="shorttitlelowercase-4-5"><h2 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="para" id="shorttitlelowercase-4-5-1-1">Flip a coin and record the face that is showing:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="shorttitlelowercase-4-4-4"><h2 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="shorttitlelowercase-4-4-4-1-1">There are <span class="process-math">\(10\)</span> people in a race. How many finishing orders are there? <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="workspace" data-space="0.5in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1.1"><a tabindex="-1" href="#shorttitlelowercase-4-5" title="Copy heading and permalink for Worksheet Exercise 1.1" aria-label="Copy heading and permalink for Worksheet Exercise 1.1">🔗</a></div>
+<div class="workspace" data-space=".5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3.6"><a tabindex="-1" href="#shorttitlelowercase-4-4-4" title="Copy heading and permalink for Worksheet Exercise 3.6" aria-label="Copy heading and permalink for Worksheet Exercise 3.6">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="shorttitlelowercase-4-6"><h2 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="para" id="shorttitlelowercase-4-6-1-1">Roll two dice and add the faces showing: <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="shorttitlelowercase-4-4-5"><h2 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="shorttitlelowercase-4-4-5-1-1">There are <span class="process-math">\(10\)</span> people in a race. How many ways to award first, second, and third place?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="workspace" data-space="0.5in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1.2"><a tabindex="-1" href="#shorttitlelowercase-4-6" title="Copy heading and permalink for Worksheet Exercise 1.2" aria-label="Copy heading and permalink for Worksheet Exercise 1.2">🔗</a></div>
+<div class="workspace" data-space=".5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3.7"><a tabindex="-1" href="#shorttitlelowercase-4-4-5" title="Copy heading and permalink for Worksheet Exercise 3.7" aria-label="Copy heading and permalink for Worksheet Exercise 3.7">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="shorttitlelowercase-4-7"><h2 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="para" id="shorttitlelowercase-4-7-1-1">Flip two coins. Record the faces:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="definition definition-like" id="ordered-sample"><h2 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">(B:1.2-3).</span>
+</h2>
+<div class="para" id="ordered-sample-2-1">If <span class="process-math">\(r\)</span> objects are selected from a set of <span class="process-math">\(n\)</span> objects, and if the order of the selection is noted, then the selected set of <span class="process-math">\(r\)</span> objects is called<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ordered-sample-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="ordered-sample-2-2">
+<span class="fillin underline" role="img" aria-label="100-character blank" style="width: 45.4545454545455em;"></span> <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ordered-sample-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="workspace" data-space="0.5in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1.3"><a tabindex="-1" href="#shorttitlelowercase-4-7" title="Copy heading and permalink for Worksheet Exercise 1.3" aria-label="Copy heading and permalink for Worksheet Exercise 1.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 3.3: (B:1.2-3)"><a tabindex="-1" href="#ordered-sample" title="Copy heading and permalink for Definition 3.3: (B:1.2-3)" aria-label="Copy heading and permalink for Definition 3.3: (B:1.2-3)">🔗</a></div>
+</article></section><section class="onepage" id="shorttitlelowercase-4-5">
+<article class="definition definition-like" id="sampling-with-without-replacement"><h2 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">(B:1.2-4/5).</span>
+</h2>
+<div class="para" id="sampling-with-without-replacement-2-1">
+<em class="alert">Sampling with replacement</em> occurs when an object is selected and then replaced before the next object is selected. <em class="alert">Sampling without replacement</em> occurs when an object is not replaced after it has been selected.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sampling-with-without-replacement-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 3.4: (B:1.2-4/5)"><a tabindex="-1" href="#sampling-with-without-replacement" title="Copy heading and permalink for Definition 3.4: (B:1.2-4/5)" aria-label="Copy heading and permalink for Definition 3.4: (B:1.2-4/5)">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="shorttitlelowercase-4-8"><h2 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="para" id="shorttitlelowercase-4-8-1-1">Flip two coins. Determine if they are the same:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="shorttitlelowercase-4-5-2">
+<em class="emphasis">Examples:</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="workspace" data-space="0.5in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1.4"><a tabindex="-1" href="#shorttitlelowercase-4-8" title="Copy heading and permalink for Worksheet Exercise 1.4" aria-label="Copy heading and permalink for Worksheet Exercise 1.4">🔗</a></div>
+<article class="exercise exercise-like" id="shorttitlelowercase-4-5-3"><h2 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="shorttitlelowercase-4-5-3-1-1">A state lottery selects <span class="process-math">\(3\)</span> balls numbered <span class="process-math">\(0-9\)</span> one at a time. After each ball is selected, it is put back. How many possible outcomes are there? (Assume order matters)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space=".5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3.8"><a tabindex="-1" href="#shorttitlelowercase-4-5-3" title="Copy heading and permalink for Worksheet Exercise 3.8" aria-label="Copy heading and permalink for Worksheet Exercise 3.8">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="shorttitlelowercase-4-9"><h2 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="para" id="shorttitlelowercase-4-9-1-1">Flip a coin until a heads appears. Record the number of flips needed:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="shorttitlelowercase-4-5-4"><h2 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="shorttitlelowercase-4-5-4-1-1">Suppose in the above lottery the balls are not put back after being selected. How many possible outcomes are there? (Assume order matters)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="workspace" data-space="0.5in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1.5"><a tabindex="-1" href="#shorttitlelowercase-4-9" title="Copy heading and permalink for Worksheet Exercise 1.5" aria-label="Copy heading and permalink for Worksheet Exercise 1.5">🔗</a></div>
+<div class="workspace" data-space=".5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3.9"><a tabindex="-1" href="#shorttitlelowercase-4-5-4" title="Copy heading and permalink for Worksheet Exercise 3.9" aria-label="Copy heading and permalink for Worksheet Exercise 3.9">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="shorttitlelowercase-4-10"><h2 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="para" id="shorttitlelowercase-4-10-1-1">Flip a coin until you get two heads in a row. Record how long (time) it takes:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="shorttitlelowercase-4-5-5">We note that given <span class="process-math">\(n\)</span> different objects, the number of <em class="emphasis">ordered</em> samples of size <span class="process-math">\(r\)</span> is:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="workspace" data-space="0.5in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1.6"><a tabindex="-1" href="#shorttitlelowercase-4-10" title="Copy heading and permalink for Worksheet Exercise 1.6" aria-label="Copy heading and permalink for Worksheet Exercise 1.6">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet 1: Properties of Probability"><a tabindex="-1" href="#shorttitlelowercase-4" title="Copy heading and permalink for Worksheet 1: Properties of Probability" aria-label="Copy heading and permalink for Worksheet 1: Properties of Probability">🔗</a></div>
+<div class="para" id="shorttitlelowercase-4-5-6">with replacement: <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="shorttitlelowercase-4-5-7">without replacement: <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-5-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="shorttitlelowercase-4-5-8">
+<em class="emphasis">Example - Unordered sets</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="shorttitlelowercase-4-5-9"><h2 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="shorttitlelowercase-4-5-9-1-1">
+<div class="para">How many ways are there to select three people from the set</div>
+<div class="displaymath process-math" id="shorttitlelowercase-4-5-9-1-1-1">
+\begin{equation*}
+\{Alex (A), Betty (B), Carol(C), Danny (D)\}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-5-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3.10"><a tabindex="-1" href="#shorttitlelowercase-4-5-9" title="Copy heading and permalink for Worksheet Exercise 3.10" aria-label="Copy heading and permalink for Worksheet Exercise 3.10">🔗</a></div>
+</article></section><section class="onepage" id="shorttitlelowercase-4-6">
+<article class="exercise exercise-like" id="shorttitlelowercase-4-6-1"><h2 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="shorttitlelowercase-4-6-1-1-1">Denote by <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> the <em class="emphasis">number</em> of unordered sets of size <span class="process-math">\(r\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-6-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="shorttitlelowercase-4-6-1-1-2">Then the number of <em class="emphasis">ordered</em> sets is<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-6-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3.11"><a tabindex="-1" href="#shorttitlelowercase-4-6-1" title="Copy heading and permalink for Worksheet Exercise 3.11" aria-label="Copy heading and permalink for Worksheet Exercise 3.11">🔗</a></div>
+</article>
+<article class="definition definition-like" id="unordered-subset"><h2 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">(B:1.2-6).</span>
+</h2>
+<div class="para" id="unordered-subset-2-1">Each of the <span class="process-math">\(_{n}C_{r}\)</span> unordered subsets is called a<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#unordered-subset-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="unordered-subset-2-2">
+<span class="fillin underline" role="img" aria-label="100-character blank" style="width: 45.4545454545455em;"></span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#unordered-subset-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 3.5: (B:1.2-6)"><a tabindex="-1" href="#unordered-subset" title="Copy heading and permalink for Definition 3.5: (B:1.2-6)" aria-label="Copy heading and permalink for Definition 3.5: (B:1.2-6)">🔗</a></div>
+</article>
+<div class="para" id="shorttitlelowercase-4-6-3">
+<em class="emphasis">Examples:</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="shorttitlelowercase-4-6-4"><h2 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="shorttitlelowercase-4-6-4-1-1">A committee of <span class="process-math">\(3\)</span> is to be chosen from a group of <span class="process-math">\(5\)</span> people - how many ways?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3.12"><a tabindex="-1" href="#shorttitlelowercase-4-6-4" title="Copy heading and permalink for Worksheet Exercise 3.12" aria-label="Copy heading and permalink for Worksheet Exercise 3.12">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="shorttitlelowercase-4-6-5"><h2 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="shorttitlelowercase-4-6-5-1-1">How many different ways are there to deal a <span class="process-math">\(5-\)</span> card hand from a standard <span class="process-math">\(52\)</span> card deck?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-6-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3.13"><a tabindex="-1" href="#shorttitlelowercase-4-6-5" title="Copy heading and permalink for Worksheet Exercise 3.13" aria-label="Copy heading and permalink for Worksheet Exercise 3.13">🔗</a></div>
+</article></section><section class="onepage" id="shorttitlelowercase-4-7">
+<div class="para" id="shorttitlelowercase-4-7-1">
+<em class="alert">Back to probability.</em> Let <span class="process-math">\(N(A)\)</span> be the number of outcomes in event <span class="process-math">\(A\text{.}\)</span> If all outcomes in a sample space are equally likely, then the probability of an event <span class="process-math">\(A\)</span> is <span class="process-math">\(\displaystyle{P(A)=\frac{N(A)}{N(S)}}\text{.}\)</span> So knowing how to count helps us compute probabilities.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="shorttitlelowercase-4-7-2"><h2 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="shorttitlelowercase-4-7-2-1-1">A committee of <span class="process-math">\(3\)</span> is to be chosen from <span class="process-math">\(\{Alice (A), Bob (B), Chuck (C), David (D), Edgar (E) \}\text{.}\)</span> What is the probability that <span class="process-math">\(AB\)</span> will be chosen?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3.14"><a tabindex="-1" href="#shorttitlelowercase-4-7-2" title="Copy heading and permalink for Worksheet Exercise 3.14" aria-label="Copy heading and permalink for Worksheet Exercise 3.14">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="shorttitlelowercase-4-7-3"><h2 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="shorttitlelowercase-4-7-3-1-1">What is the probability that a random <span class="process-math">\(5\)</span>-card hand (from a standard <span class="process-math">\(52-\)</span> card deck) consists of all diamonds?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3.15"><a tabindex="-1" href="#shorttitlelowercase-4-7-3" title="Copy heading and permalink for Worksheet Exercise 3.15" aria-label="Copy heading and permalink for Worksheet Exercise 3.15">🔗</a></div>
+</article>
+<div class="para" id="shorttitlelowercase-4-7-4">
+<em class="alert">Notation</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-7-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="shorttitlelowercase-4-7-5">
+<li id="shorttitlelowercase-4-7-5-1">
+<div class="para" id="shorttitlelowercase-4-7-5-1-1">The number of permutations on <span class="process-math">\(n\)</span> distinct objects taken <span class="process-math">\(r\)</span> at a time is denoted by <span class="process-math">\(_{n}P_{r}\)</span> or <span class="process-math">\(P(n,r)\)</span> and is given by <span class="process-math">\(_{n}P_{r} = \frac{n!}{(n-r)!}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-7-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#shorttitlelowercase-4-7-5-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="shorttitlelowercase-4-7-5-2">
+<div class="para" id="shorttitlelowercase-4-7-5-2-1">The number of combinations (unordered sets) of <span class="process-math">\(n\)</span> distinct objects taken <span class="process-math">\(r\)</span> at a time is denoted by <span class="process-math">\(_{n}C_{r}\text{,}\)</span> <span class="process-math">\(C(n,r)\text{,}\)</span> or <span class="process-math">\(\binom{n}{r}\)</span> (read "n choose r") and is given by <span class="process-math">\(_{n}C_{r} = \frac{n!}{r!(n-r)!}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#shorttitlelowercase-4-7-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#shorttitlelowercase-4-7-5-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul></section><div class="autopermalink" aria-hidden="true" data-description="Worksheet 3: Methods of Enumeration (1.2)"><a tabindex="-1" href="#shorttitlelowercase-4" title="Copy heading and permalink for Worksheet 3: Methods of Enumeration (1.2)" aria-label="Copy heading and permalink for Worksheet 3: Methods of Enumeration (1.2)">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="intro.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-2.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="shorttitlelowercase-3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="Practice-counting-methods.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
 <a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
-<script data-pretext-tools-frame-bridge="true">
-(function () {
-  if (window.__ptxFrameBridge) { return; }
-  window.__ptxFrameBridge = true;
-  function report() {
-    try {
-      parent.postMessage({
-        command: 'ptxFramePath',
-        path: location.pathname + location.search + location.hash
-      }, '*');
-    } catch (e) { /* not framed */ }
-  }
-  report();
-  window.addEventListener('hashchange', report);
-  window.addEventListener('pageshow', report);
-  window.addEventListener('message', function (event) {
-    if (event.data && event.data.command === 'ptxFrameReload') {
-      location.reload();
-    }
-  });
-})();
-</script>
 </body>
 </html>
