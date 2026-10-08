@@ -1,0 +1,427 @@
+   <worksheet xml:id="conditional-probability">
+    <title>Conditional Probability (1.3)</title>
+    <page>
+    <exercise workspace="2in">
+    <statement>
+    <p>
+      What is the probability that in three tosses of a coin,
+      exactly <m>2</m> are heads?
+    </p>
+    </statement>
+    </exercise>
+
+  <exercise workspace="2in">
+  <statement>
+    <p>
+    Suppose that you know that at least one of the three tosses
+      was a head. Now what is the probability that exactly <m>2</m> were heads?
+    </p>
+    </statement>
+    </exercise>
+    </page>
+    <page>
+<exercise workspace="0.5in">
+<definition xml:id="conditional-prob-def">
+<title>Conditional Probability(B:1.3-1)</title>
+<statement>
+    <p>
+      The conditional probability of an event <m>A</m>, given that
+      event <m>B</m> has occurred, is defined by
+    </p>
+</statement>
+</definition>
+</exercise>
+    <p>
+      Note: If <m>P(B) \gt 0</m>, then
+      <ol>
+        <li>
+          <p>
+            <m>P(A\mid B) \geq 0</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>P(B\mid B) = 1</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If <m>A_{1},A_{2},...,A_{k}</m> are disjoint, then
+            <m>P((A_{1} \cup A_{2} \cup \cdots \cup A_{k}) \mid B) = P(A_{1} \mid B) + P(A_{2} \mid B) + \cdots + P(A_{k} \mid B)</m>.
+          </p>
+        </li>
+      </ol>
+      In other words, <m>P(A\mid B)</m> satisfies all of the rules of a
+      probability function.
+    </p>
+<exercise>
+<introduction>
+<p>
+Suppose <m>P(A) = 0.5</m>, <m>P(B) = 0.2</m>, and
+            <m>P(A\cap B) = 0.15</m>.
+</p>
+</introduction>
+<task workspace="0.25in">
+<statement>
+    <p>
+      Do you expect <m>P(A\mid B)</m> to be less than, greater than,
+      or equal to <m>P(A)</m>?
+    </p>
+</statement>
+</task>
+<task workspace="0.5in">
+<statement>
+  <p>
+  Find <m>P(A\mid B)</m>
+  </p>
+     <image xml:id="venn2-sec5" width="40%">
+    <latex-image>
+       \begin{tikzpicture}[fill=gray, scale = 0.5]
+\draw[black] (0,0) circle (1.5) (-1,1.25)  node [font=\tiny,text=black,above] {$A$}
+      (2,0) circle (1.5) (3,1.25)  node [font=\tiny, text=black,above] {$B$};
+\draw (-2,-2) rectangle (4,2) node [font=\tiny,text=black,above] {$S$};
+\end{tikzpicture}
+    </latex-image>
+    </image>
+</statement>                
+</task>
+</exercise>
+</page>
+<page>
+<exercise>
+<introduction>
+<p> Consider the current US House of Representatives ( <m>119th</m>
+            congress). As of now there are <m>218</m> Republicans and <m>214</m>
+            Democrats, <m> 1</m> Independent, and <m>2</m> vacancies. Suppose on a particular bill,
+            the votes were as follows:
+</p>      
+          <tabular>
+            <col halign="center" right="minor"/>
+            <col halign="center" right="minor"/>
+            <col halign="center" right="minor"/>
+            <col halign="center"/>
+            <row bottom="minor">
+              <cell/>
+              <cell>Democrat</cell>
+              <cell>Republican</cell>
+              <cell>Independent</cell>
+            </row>
+
+            <row bottom="minor">
+              <cell>Yes</cell>
+              <cell>173</cell>
+              <cell>22</cell>
+              <cell>0</cell>
+            </row>
+
+            <row>
+              <cell>No</cell>
+              <cell>41</cell>
+              <cell>196</cell>
+              <cell>1</cell>
+            </row>
+          </tabular>
+</introduction>
+         <task workspace="0.5in">
+         <statement>
+         <p>
+          What is the probability that a Representative voted YES given
+                  that they were a Democrat?
+         </p>
+         </statement>
+         </task>
+        <task workspace="0.5in">
+        <statement>
+                <p>
+                  What is the probability that a Representative was a Republican
+                  given that they voted YES?
+                </p>
+          </statement>
+          </task>
+          </exercise>
+
+  <exercise workspace="1in">
+  <statement>
+    <p>
+      Sometimes its actually easier to compute <m>P(A \mid B)</m> and use it to
+      find other unknowns:
+    </p>
+  </statement>
+  </exercise>   
+  </page>
+  <page> 
+    <p>
+The previous calculation shows:
+    </p>
+<exercise workspace="1in">
+<definition xml:id="mult-rule-cond-prob">
+<title>Multiplicaion Rule (B:1.3-2)</title>
+<statement>
+    <p>
+      The probability that two events, <m>A</m>
+      and <m>B</m>, both occur is given by the multiplication rule:
+    </p>
+</statement>
+</definition>
+</exercise>
+
+<exercise>
+<introduction>
+<p>
+An urn contains <m>3</m> red and <m>4</m> blue balls. You draw two
+at random.
+</p>
+</introduction>
+<task workspace="0.5in">
+<statement>
+          <p>
+           What is the probability that the first ball is red and the
+            second is blue?
+          </p>
+</statement>
+</task>
+<task workspace="1in">
+<statement>
+          <p>
+           What is the probability that both balls are red?
+          </p>
+</statement>
+</task>
+</exercise>
+
+</page>
+<page>
+<exercise workspace="2in">
+<statement>
+          <p>
+            A grade school boy has five blue and four white marbles in his left
+            pocket and four blue and five white marbles in his right pocket. If
+            he transfers one marble at random from his left to his right pocket,
+            what is the probability of his then drawing a blue marble from his
+            right pocket?
+          </p>
+
+          <p>
+            Let BL = blue from left, BR = blue from right, WL = white from left
+          </p>
+        </statement>
+    </exercise>
+</page>
+<page>
+
+<exercise>
+<introduction>
+  <p>
+     Suppose <m>P(A)=0.5, P(B)=0.7, P(A\cup B)=0.85)</m>. 
+  </p>
+</introduction>       
+<task>
+<statement>
+     <p>
+         Fill in the Venn Diagram with the correct probabilities in
+          each region.
+      </p>
+        <image xml:id="venn-diagram-cond" margins="35%">
+            <latex-image>
+             \begin{tikzpicture}
+        \draw (-1,-1) rectangle (2,1) node [above] {$S$};
+        \draw (0,0) circle (0.75);
+        \draw (0,.85) node[font=] {$A$};
+        \draw (1,0) circle (0.75) (1,.85) node[font=] {$B$};
+               \end{tikzpicture}
+               </latex-image>
+            </image>
+</statement>
+</task>
+
+<task workspace="0.25in">
+<statement>
+        <p>
+          Find <m>P(A\mid B)=</m>
+          </p>
+</statement>
+</task>
+
+<task workspace="0.25in">
+<statement>
+  <p>
+                  Find <m>P(B\mid A)=</m>
+  </p>
+</statement>   
+</task>
+</exercise>
+
+<exercise>
+  <introduction>
+    <p>
+      Two cards are dealt at random and without replacement from a
+            standard 52 card deck.
+    </p>
+  </introduction>
+
+         <task workspace="0.5in">
+           <statement>
+                <p>
+                  What is the probability the second card is an Ace given the
+                  first card is an Ace?
+                </p>
+           </statement>
+         </task>
+
+         <task workspace="0.5in">
+           <statement>
+                <p>
+                  What is the probability the first card is an Ace and the
+                  second is a four?
+                </p>
+           </statement>
+         </task>
+
+         <task workspace="1in">
+           <statement>
+                <p>
+                  What is the probability the first card is an Ace and the
+                  second is a Heart? (Think about what the possible outcomes
+                  look like - this is similar to the marble in the pockets
+                  example)
+                </p>
+           </statement>
+         </task>
+</exercise>
+      </page>
+      <page>
+    <exercise>
+      <introduction>
+        <p>
+           Certain medical conditions are hard to diagnose with certainty but
+        there are tests that can predict whether or not someone has or is
+        likely to get the condition. Insurance companies and doctors debate
+        the value and suggested frequency of these screening tests. The
+        following table shows the results from 1000 people who had a
+        diagnostic test for a disease and whether or not the person actually
+        had the disease. A negative test result means the test indicates the
+        person likely does NOT have the disease.
+      </p>
+
+ <tabular top="minor" left="minor">
+  <col halign="center" right="minor"/>
+  <col halign="center" right="minor"/>
+  <col halign="center" right="minor"/>
+  <col halign="center" right="minor"/>
+  <row bottom="minor">
+    <cell>Each cell depicts</cell>
+   <cell colspan="3">Did the person actually have the disease?</cell>
+  </row>
+
+  <row bottom="minor">
+    <cell><m>\#</m> of people</cell>
+    <cell>YES</cell>
+    <cell>NO</cell>
+    <cell>TOTALS</cell>
+  </row>
+
+  <row bottom="minor">
+    <cell>Positive test result</cell>
+    <cell>7</cell>
+    <cell>69</cell>
+    <cell>76</cell>
+  </row>
+
+  <row bottom="minor">
+    <cell>Negative test result</cell>
+    <cell>1</cell>
+    <cell>923</cell>
+    <cell>924</cell>
+  </row>
+
+  <row bottom="minor">
+    <cell>Totals</cell>
+    <cell>8</cell>
+    <cell>992</cell>
+    <cell>1000</cell>
+  </row>
+</tabular>
+      </introduction>
+      <task workspace="0.5in">
+  <statement>
+                <p>
+                  What is the probability that the person has the disease?
+                </p>
+  </statement>
+</task>
+
+        <task workspace="0.5in">
+          <statement>
+                <p>
+                  What is the probability the person had a positive test result?
+                </p>
+          </statement>
+        </task>
+
+        <task workspace="0.5in">
+          <statement>
+                <p>
+                  What is the probability the test will come back positive given
+                  a person does not have the disease? (This is a false positive.)
+                </p>
+          </statement>
+        </task>
+
+      <task workspace="0.5in">
+          <statement>
+                <p>
+                  What is the probability the test will come back positive given
+                  a person has the disease? (This is known as the sensitivity of the test.)
+                </p>
+          </statement>
+        </task>
+
+        <task workspace="0.5in">
+          <statement>
+                <p>
+                  What is the probability the test will come back negative given
+                  a person does not have the disease? (This is known as the specificity of the test.)
+                </p>
+          </statement>
+        </task>
+
+        <task workspace="0.5in">
+          <statement>
+                <p>
+                  What is the probability a person has the disease given the
+                  test came back positive?
+                </p>
+          </statement>
+        </task>
+</exercise>
+</page>
+<page>
+<exercise workspace="0.5in">
+<statement>
+   <p>
+     What is the probability that two randomly selected people have the
+     same birthday? Ignore leap years.
+   </p>
+</statement>
+</exercise>
+
+<exercise workspace="1in">
+  <statement>
+          <p>
+            What is the probability that in a room of <m>10</m> people, two share
+            the same birthday? Ignore leap years. Hint: Think of the complementary event.      
+          </p>
+  </statement>
+</exercise>
+
+<exercise workspace="1in">
+  <statement>
+          <p>
+            How many people must be in a room before the probability that two share a birthday (ignoring leap years) is greater than 50%? 
+          </p>
+  </statement>
+</exercise>
+</page>
+  </worksheet>
