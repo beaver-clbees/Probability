@@ -890,6 +890,150 @@ var ptx_lunr_docs = [
   "number": "4.17",
   "title": "",
   "body": "   Multinomial Coefficients   We saw in the in class examples that we if we have objects, of which are similar, are similar, are similar, .., similar where then the number of distinguishable permutations of the objects are   "
+},
+{
+  "id": "conditional-probability",
+  "level": "1",
+  "url": "conditional-probability.html",
+  "type": "Worksheet",
+  "number": "5",
+  "title": "Conditional Probability (1.3)",
+  "body": " Conditional Probability (1.3)     What is the probability that in three tosses of a coin, exactly are heads?      Suppose that you know that at least one of the three tosses was a head. Now what is the probability that exactly were heads?        Conditional Probability(B:1.3-1)   The conditional probability of an event , given that event has occurred, is defined by     Note: If , then             If are disjoint, then .   In other words, satisfies all of the rules of a probability function.    Suppose , , and .     Do you expect to be less than, greater than, or equal to ?      Find             Consider the current US House of Representatives ( congress). As of now there are Republicans and Democrats, Independent, and vacancies. Suppose on a particular bill, the votes were as follows:         Democrat  Republican  Independent    Yes  173  22  0    No  41  196  1       What is the probability that a Representative voted YES given that they were a Democrat?      What is the probability that a Representative was a Republican given that they voted YES?       Sometimes its actually easier to compute and use it to find other unknowns:      The previous calculation shows:    Multiplicaion Rule (B:1.3-2)   The probability that two events, and , both occur is given by the multiplication rule:       An urn contains red and blue balls. You draw two at random.     What is the probability that the first ball is red and the second is blue?      What is the probability that both balls are red?         A grade school boy has five blue and four white marbles in his left pocket and four blue and five white marbles in his right pocket. If he transfers one marble at random from his left to his right pocket, what is the probability of his then drawing a blue marble from his right pocket?  Let BL = blue from left, BR = blue from right, WL = white from left        Suppose .     Fill in the Venn Diagram with the correct probabilities in each region.         Find       Find        Two cards are dealt at random and without replacement from a standard 52 card deck.     What is the probability the second card is an Ace given the first card is an Ace?      What is the probability the first card is an Ace and the second is a four?      What is the probability the first card is an Ace and the second is a Heart? (Think about what the possible outcomes look like - this is similar to the marble in the pockets example)         Certain medical conditions are hard to diagnose with certainty but there are tests that can predict whether or not someone has or is likely to get the condition. Insurance companies and doctors debate the value and suggested frequency of these screening tests. The following table shows the results from 1000 people who had a diagnostic test for a disease and whether or not the person actually had the disease. A negative test result means the test indicates the person likely does NOT have the disease.        Each cell depicts  Did the person actually have the disease?    of people  YES  NO  TOTALS    Positive test result  7  69  76    Negative test result  1  923  924    Totals  8  992  1000       What is the probability that the person has the disease?      What is the probability the person had a positive test result?      What is the probability the test will come back positive given a person does not have the disease? (This is a false positive.)      What is the probability the test will come back positive given a person has the disease? (This is known as the sensitivity of the test.)      What is the probability the test will come back negative given a person does not have the disease? (This is known as the specificity of the test.)      What is the probability a person has the disease given the test came back positive?         What is the probability that two randomly selected people have the same birthday? Ignore leap years.      What is the probability that in a room of people, two share the same birthday? Ignore leap years. Hint: Think of the complementary event.      How many people must be in a room before the probability that two share a birthday (ignoring leap years) is greater than 50%?     "
+},
+{
+  "id": "conditional-probability-2-1",
+  "level": "2",
+  "url": "conditional-probability.html#conditional-probability-2-1",
+  "type": "Worksheet Exercise",
+  "number": "5.1",
+  "title": "",
+  "body": "  What is the probability that in three tosses of a coin, exactly are heads?   "
+},
+{
+  "id": "conditional-probability-2-2",
+  "level": "2",
+  "url": "conditional-probability.html#conditional-probability-2-2",
+  "type": "Worksheet Exercise",
+  "number": "5.2",
+  "title": "",
+  "body": "  Suppose that you know that at least one of the three tosses was a head. Now what is the probability that exactly were heads?   "
+},
+{
+  "id": "conditional-probability-3-1",
+  "level": "2",
+  "url": "conditional-probability.html#conditional-probability-3-1",
+  "type": "Worksheet Exercise",
+  "number": "5.3",
+  "title": "",
+  "body": "  Conditional Probability(B:1.3-1)   The conditional probability of an event , given that event has occurred, is defined by    "
+},
+{
+  "id": "conditional-probability-3-3",
+  "level": "2",
+  "url": "conditional-probability.html#conditional-probability-3-3",
+  "type": "Worksheet Exercise",
+  "number": "5.4",
+  "title": "",
+  "body": "  Suppose , , and .     Do you expect to be less than, greater than, or equal to ?      Find        "
+},
+{
+  "id": "conditional-probability-4-1",
+  "level": "2",
+  "url": "conditional-probability.html#conditional-probability-4-1",
+  "type": "Worksheet Exercise",
+  "number": "5.5",
+  "title": "",
+  "body": "  Consider the current US House of Representatives ( congress). As of now there are Republicans and Democrats, Independent, and vacancies. Suppose on a particular bill, the votes were as follows:         Democrat  Republican  Independent    Yes  173  22  0    No  41  196  1       What is the probability that a Representative voted YES given that they were a Democrat?      What is the probability that a Representative was a Republican given that they voted YES?    "
+},
+{
+  "id": "conditional-probability-4-2",
+  "level": "2",
+  "url": "conditional-probability.html#conditional-probability-4-2",
+  "type": "Worksheet Exercise",
+  "number": "5.6",
+  "title": "",
+  "body": "  Sometimes its actually easier to compute and use it to find other unknowns:   "
+},
+{
+  "id": "conditional-probability-5-2",
+  "level": "2",
+  "url": "conditional-probability.html#conditional-probability-5-2",
+  "type": "Worksheet Exercise",
+  "number": "5.7",
+  "title": "",
+  "body": "  Multiplicaion Rule (B:1.3-2)   The probability that two events, and , both occur is given by the multiplication rule:    "
+},
+{
+  "id": "conditional-probability-5-3",
+  "level": "2",
+  "url": "conditional-probability.html#conditional-probability-5-3",
+  "type": "Worksheet Exercise",
+  "number": "5.8",
+  "title": "",
+  "body": "  An urn contains red and blue balls. You draw two at random.     What is the probability that the first ball is red and the second is blue?      What is the probability that both balls are red?    "
+},
+{
+  "id": "conditional-probability-6-1",
+  "level": "2",
+  "url": "conditional-probability.html#conditional-probability-6-1",
+  "type": "Worksheet Exercise",
+  "number": "5.9",
+  "title": "",
+  "body": "  A grade school boy has five blue and four white marbles in his left pocket and four blue and five white marbles in his right pocket. If he transfers one marble at random from his left to his right pocket, what is the probability of his then drawing a blue marble from his right pocket?  Let BL = blue from left, BR = blue from right, WL = white from left   "
+},
+{
+  "id": "conditional-probability-7-1",
+  "level": "2",
+  "url": "conditional-probability.html#conditional-probability-7-1",
+  "type": "Worksheet Exercise",
+  "number": "5.10",
+  "title": "",
+  "body": "  Suppose .     Fill in the Venn Diagram with the correct probabilities in each region.         Find       Find     "
+},
+{
+  "id": "conditional-probability-7-2",
+  "level": "2",
+  "url": "conditional-probability.html#conditional-probability-7-2",
+  "type": "Worksheet Exercise",
+  "number": "5.11",
+  "title": "",
+  "body": "  Two cards are dealt at random and without replacement from a standard 52 card deck.     What is the probability the second card is an Ace given the first card is an Ace?      What is the probability the first card is an Ace and the second is a four?      What is the probability the first card is an Ace and the second is a Heart? (Think about what the possible outcomes look like - this is similar to the marble in the pockets example)    "
+},
+{
+  "id": "conditional-probability-8-1",
+  "level": "2",
+  "url": "conditional-probability.html#conditional-probability-8-1",
+  "type": "Worksheet Exercise",
+  "number": "5.12",
+  "title": "",
+  "body": "  Certain medical conditions are hard to diagnose with certainty but there are tests that can predict whether or not someone has or is likely to get the condition. Insurance companies and doctors debate the value and suggested frequency of these screening tests. The following table shows the results from 1000 people who had a diagnostic test for a disease and whether or not the person actually had the disease. A negative test result means the test indicates the person likely does NOT have the disease.        Each cell depicts  Did the person actually have the disease?    of people  YES  NO  TOTALS    Positive test result  7  69  76    Negative test result  1  923  924    Totals  8  992  1000       What is the probability that the person has the disease?      What is the probability the person had a positive test result?      What is the probability the test will come back positive given a person does not have the disease? (This is a false positive.)      What is the probability the test will come back positive given a person has the disease? (This is known as the sensitivity of the test.)      What is the probability the test will come back negative given a person does not have the disease? (This is known as the specificity of the test.)      What is the probability a person has the disease given the test came back positive?    "
+},
+{
+  "id": "conditional-probability-9-1",
+  "level": "2",
+  "url": "conditional-probability.html#conditional-probability-9-1",
+  "type": "Worksheet Exercise",
+  "number": "5.13",
+  "title": "",
+  "body": "  What is the probability that two randomly selected people have the same birthday? Ignore leap years.   "
+},
+{
+  "id": "conditional-probability-9-2",
+  "level": "2",
+  "url": "conditional-probability.html#conditional-probability-9-2",
+  "type": "Worksheet Exercise",
+  "number": "5.14",
+  "title": "",
+  "body": "  What is the probability that in a room of people, two share the same birthday? Ignore leap years. Hint: Think of the complementary event.   "
+},
+{
+  "id": "conditional-probability-9-3",
+  "level": "2",
+  "url": "conditional-probability.html#conditional-probability-9-3",
+  "type": "Worksheet Exercise",
+  "number": "5.15",
+  "title": "",
+  "body": "  How many people must be in a room before the probability that two share a birthday (ignoring leap years) is greater than 50%?   "
 }
 ]
 
