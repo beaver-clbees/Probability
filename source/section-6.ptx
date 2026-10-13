@@ -1,0 +1,298 @@
+     <worksheet xml:id="independent-events">
+    <title>Independent Events (1.4)</title>
+<page>
+    <p>
+      Two events <m>A</m> and <m>B</m> are said to be <fillin characters="25"/> events if the
+      outcome of one does not change the probability of occurrence of the other.
+    </p>
+<exercise xml:id="independent-events-examples"> 
+<introduction>
+    <p>
+      Examples <m>\&amp;</m> Non-examples
+    </p>
+</introduction>
+     <task workspace="0.25in">
+     <statement>
+          <p>
+            Suppose you toss a coin twice. Let <m>A</m> be the event that the
+            first toss is a head. Let <m>B</m> be the event that the second toss
+            is a head. Are <m>A</m> and <m>B</m> independent?
+          </p>
+        </statement>
+     </task>
+<task workspace="0.25in">
+<statement>
+          <p>
+            Suppose you draw two cards from a deck without replacement. Let
+            <m>A</m> be the event that the first card is a Jack. Let <m>B</m> be
+            the event that the second card is a Jack. Are <m>A</m> and <m>B</m>
+            independent events?
+          </p>
+          </statement>
+     </task>
+
+     <task workspace="0.25in">
+     <statement>
+          <p>
+            Suppose in the second example we replace the first card before we
+            draw the second. Are <m>A</m> and <m>B</m> independent?
+          </p>
+        </statement>
+     </task>
+</exercise> 
+    <exercise workspace="1in">
+    <statement>
+       <p>
+      Connecting this to the ideas from the last section we can see that
+      <m>A</m> and <m>B</m> are independent if <em/>
+    </p>
+    </statement>
+    
+    </exercise>
+    <exercise workspace=".25in">
+<definition xml:id="independent-events-definition">
+    <title>Independent Events Definition (B:1.4-1)</title>    
+    <statement>
+        <p>
+            Events <m>A</m> and <m>B</m> are independent if and only if
+        </p>
+    </statement>
+    </definition>   
+    </exercise>
+
+     <p>
+      If <m>A</m> and <m>B</m> are not independent, we say <m>A</m> and <m>B</m> are <fillin characters="25"/> events.
+    </p>
+</page>
+<page>
+   <exercise>
+   <introduction>
+    <p>
+      The sample space for rolling a red and green 6-sided die (red,green) is as
+      follows:
+      <m>\begin{array}{rccccl}\{(1,1) &amp; (1,2) &amp; (1,3) &amp; (1,4) &amp; (1,5) &amp; (1,6) \\ (2,1) &amp; (2,2) &amp; (2,3) &amp; (2,4) &amp; (2,5) &amp; (2,6) \\ (3,1) &amp; (3,2) &amp; (3,3) &amp; (3,4) &amp; (3,5) &amp; (3,6) \\ (4,1) &amp; (4,2) &amp; (4,3) &amp; (4,4) &amp; (4,5) &amp; (4,6) \\ (5,1) &amp; (5,2) &amp; (5,3) &amp; (5,4) &amp; (5,5) &amp; (5,6) \\ (6,1) &amp; (6,2) &amp; (6,3) &amp; (6,4) &amp; (6,5) &amp; (6,6)\} \\\end{array}</m>
+    </p>
+
+   </introduction>>
+<task workspace="1.5in">
+    
+ <statement>
+          <p>
+            Let <m>A = \{</m> 2 on the red die <m>\}</m> and <m>B=\{</m> sum of
+            the dice is odd <m>\}</m>. Are <m>A</m> and <m>B</m> independent
+            events?
+          </p>
+        </statement>
+</task> 
+
+      <task workspace="1.5in">
+      <statement>
+        <p>
+             Let <m>A=\{</m> 4 on red die <m>\}</m> and <m>B = \{</m> sum of the
+            dice is 10 <m>\}</m> Are <m>A</m> and <m>B</m> independent? 
+        </p>
+      </statement>
+       </task>
+       </exercise> 
+       </page>
+
+       <page>
+<theorem xml:id="independent-events-theorem">
+    <title>Independent Events Theorem (B:1.4-1)</title> 
+    <statement>
+      <p>
+        If <m>A</m> and <m>B</m> are independent events, then the following
+        pairs of events are also independent:
+      </p>
+      <ol>
+        <li/>
+        <li/>
+        <li/>
+      </ol>
+    </statement>
+    </theorem>
+
+    <exercise workspace="2in">
+    <statement>
+    <p>
+      <em>Proof of (a):</em>
+    </p>
+    </statement>
+    </exercise>
+
+    <exercise>
+      <definition xml:id="mutually-independent-events-definition">
+        <title>Mutually Independent Events Definition (B:1.4-2)</title>
+        <statement>
+          <p>
+            Events <m>A</m>, <m>B</m>, and <m>C</m> are mutually independent if
+            and only if the following two conditions hold:
+          </p>
+         </statement>
+         <task workspace="1in">
+          <statement>
+               <p>
+                <m>A</m>, <m>B</m>, and <m>C</m> are pairwise independent, that
+                is
+              </p>
+            </statement>
+          </task>
+          <task workspace=".1in">
+            <statement>
+              <p>
+                
+              </p>
+            </statement>
+          </task>
+        </definition>
+    </exercise>
+
+    <p>
+      We can extend the definition to more than <m>3</m> events, but you need to
+      check all pairs, triples, etc. when you extend it. If the context is
+      clear, then we often just say <alert>independent</alert> instead of
+      <alert>mutually independent</alert>. 
+    </p>
+</page>
+
+<page>
+<exercise>
+<introduction>
+    <p>
+      The probability that my internet will fail (F) at my house on any given
+      day is <m>P(F)=\frac{3}{4}</m>. If we assume that the probability of
+      failure on any day is independent of any other day, find the following:
+    </p>
+</introduction>
+<task workspace="1.5in">
+    <statement>
+      <p>
+         What is the probability that my internet will fail on Monday and
+            Tuesday, but not on Wednesday or Thursday?
+      </p>
+    </statement>
+</task>
+      <task workspace="1.5in">
+      <statement>
+          <p>
+            What is the probability that my internet will fail at least one time
+            in the next four days?
+          </p>
+        </statement>
+      </task>
+
+      <task workspace="1.5in">
+      <statement>
+          <p>
+            What is the probability my internet will fail two of the next five
+            days?
+          </p>
+        </statement>
+      </task>
+</exercise> 
+</page>
+
+<page>
+    <exercise workspace="1in">
+    <statement>
+          <p>
+            Suppose that <m>P(A)=0.45, P(B)=0.80,</m> and
+            <m>P(A \cap B)=0.36</m>. Are <m>A</m> and <m>B</m> independent?
+            Explain.
+          </p>
+        </statement>
+    </exercise>
+
+        <exercise>
+        <introduction>
+          <p>
+            Suppose <m>A</m> and <m>B</m> are independent with <m>P(A)=0.2</m>
+            and <m>P(B)=0.3</m>. Find the following:
+          </p>
+        </introduction>
+          <task workspace=".5in">
+          <statement>
+            <p>
+                <m>P(A \cup B)=</m>
+            </p>
+          </statement>
+          </task>
+          <task workspace=".5in">
+          <statement> 
+              <p>
+                  <m>P(A \mid B)=</m>
+                </p>
+          </statement>                  
+          </task>   
+
+          <task workspace=".5in">
+          <statement>
+              <p>
+                  <m>P(A' \cap B)=</m>
+                </p>
+          </statement>
+          </task>
+      </exercise>
+ <exercise workspace="2in">
+        <statement>
+            <p>
+              Prove part (c) of the Independent Events Theorem (B:1.4-1) using the definition of independence. You may use parts (a) and (b) of the theorem in your proof.
+            </p>
+          </statement>
+      </exercise>
+      </page>
+
+      <page>
+  <exercise>
+    <introduction>
+             <p>
+            A rocket has built-in redundant systems. In this system, if
+            component <m>K_{1}</m> fails, then it is bypassed and component
+            <m>K_{2}</m> is used. If component <m>K_{2}</m> fails, it is
+            bypassed and component <m>K_{3}</m> is used. The system only fails
+            if all of the components <m>K_{1}, K_{2},</m> and <m>K_{3}</m> fail.
+            Suppose the probability that any given component is faulty (and
+            would fail if needed) is <m>0.15</m> and assume that the failures of
+            components are mutually independent events.
+            </p>
+            </introduction>
+            <task workspace="1in">
+            <statement>
+                <p>
+                  What is the probability that one of the components is faulty
+                  (but not the other 2)?
+                </p>
+              </statement>
+            </task>
+
+            <task workspace="1in">
+            <statement>
+                <p>
+                  What is the probability that two of the components are faulty
+                  (but not the third)?
+                </p>
+              </statement>
+            </task>
+
+            <task workspace="1in">
+              <statement>
+                <p>
+                  What is the probability that whole the system fails?
+                </p>
+              </statement>
+            </task>
+
+            <task workspace="1in">
+              <statement>
+                <p>
+                  Suppose instead there are 5 components (
+                  <m>K_{1},K_{2}, K_{3}, K_{4}, K_{5})</m>. What is the
+                  probability that exactly two are faulty?
+                </p>
+              </statement>
+            </task>
+          </exercise>
+     </page>
+     
+      
+    </worksheet>
