@@ -1042,7 +1042,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "6",
   "title": "Independent Events (1.4)",
-  "body": " Independent Events (1.4)   Two events and are said to be events if the outcome of one does not change the probability of occurrence of the other.    Examples Non-examples     Suppose you toss a coin twice. Let be the event that the first toss is a head. Let be the event that the second toss is a head. Are and independent?      Suppose you draw two cards from a deck without replacement. Let be the event that the first card is a Jack. Let be the event that the second card is a Jack. Are and independent events?      Suppose in the second example we replace the first card before we draw the second. Are and independent?       Connecting this to the ideas from the last section we can see that and are independent if       Independent Events Definition (B:1.4-1)   Events and are independent if and only if     If and are not independent, we say and are events.      The sample space for rolling a red and green 6-sided die (red,green) is as follows:   >   Let 2 on the red die and sum of the dice is odd . Are and independent events?      Let 4 on red die and sum of the dice is 10 Are and independent?        Independent Events Theorem (B:1.4-1)   If and are independent events, then the following pairs of events are also independent:            Proof of (a):       Mutually Independent Events Definition (B:1.4-2)   Events , , and are mutually independent if and only if the following two conditions hold:      , , and are pairwise independent, that is            We can extend the definition to more than events, but you need to check all pairs, triples, etc. when you extend it. If the context is clear, then we often just say independent instead of mutually independent .      The probability that my internet will fail (F) at my house on any given day is . If we assume that the probability of failure on any day is independent of any other day, find the following:     What is the probability that my internet will fail on Monday and Tuesday, but not on Wednesday or Thursday?      What is the probability that my internet will fail at least one time in the next four days?      What is the probability my internet will fail two of the next five days?         Suppose that and . Are and independent? Explain.      Suppose and are independent with and . Find the following:                           Prove part (c) of the Independent Events Theorem (B:1.4-1) using the definition of independence. You may use parts (a) and (b) of the theorem in your proof.        A rocket has built-in redundant systems. In this system, if component fails, then it is bypassed and component is used. If component fails, it is bypassed and component is used. The system only fails if all of the components and fail. Suppose the probability that any given component is faulty (and would fail if needed) is and assume that the failures of components are mutually independent events.     What is the probability that one of the components is faulty (but not the other 2)?      What is the probability that two of the components are faulty (but not the third)?      What is the probability that whole the system fails?      Suppose instead there are 5 components ( . What is the probability that exactly two are faulty?      "
+  "body": " Independent Events (1.4)   Two events and are said to be events if the outcome of one does not change the probability of occurrence of the other.    Examples Non-examples     Suppose you toss a coin twice. Let be the event that the first toss is a head. Let be the event that the second toss is a head. Are and independent?      Suppose you draw two cards from a deck without replacement. Let be the event that the first card is a Jack. Let be the event that the second card is a Jack. Are and independent events?      Suppose in the second example we replace the first card before we draw the second. Are and independent?       Connecting this to the ideas from the last section we can see that and are independent if       Independent Events Definition (B:1.4-1)   Events and are independent if and only if     If and are not independent, we say and are events.      The sample space for rolling a red and green 6-sided die (red,green) is as follows:   >   Let 2 on the red die and sum of the dice is odd . Are and independent events?      Let 4 on red die and sum of the dice is 10 Are and independent?        Independent Events Theorem (B:1.4-1)   If and are independent events, then the following pairs of events are also independent:            Proof of (a):       Mutually Independent Events Definition (B:1.4-2)   Events , , and are mutually independent if and only if the following two conditions hold:      , , and are pairwise independent, that is            We can extend the definition to more than events, but you need to check all pairs, triples, etc. when you extend it. If the context is clear, then we often just say independent instead of mutually independent .      The probability that my internet will fail (F) at my house on any given day is . If we assume that the probability of failure on any day is independent of any other day, find the following:     What is the probability that my internet will fail on Monday and Tuesday, but not on Wednesday or Thursday?      What is the probability that my internet will fail at least one time in the next four days?      What is the probability my internet will fail two of the next five days?         Suppose that and . Are and independent? Explain.      Suppose that and . Are and independent? Explain.      Suppose and are independent with and . Find the following:                           Prove part (c) of the Independent Events Theorem (B:1.4-1) using the definition of independence. You may use parts (a) and (b) of the theorem in your proof.        A rocket has built-in redundant systems. In this system, if component fails, then it is bypassed and component is used. If component fails, it is bypassed and component is used. The system only fails if all of the components and fail. Suppose the probability that any given component is faulty (and would fail if needed) is and assume that the failures of components are mutually independent events.     What is the probability that one of the components is faulty (but not the other 2)?      What is the probability that two of the components are faulty (but not the third)?      What is the probability that whole the system fails?      Suppose instead there are 5 components ( . What is the probability that exactly two are faulty?      "
 },
 {
   "id": "independent-events-examples",
@@ -1132,7 +1132,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "6.9",
   "title": "",
-  "body": "  Suppose and are independent with and . Find the following:                        "
+  "body": "  Suppose that and . Are and independent? Explain.   "
 },
 {
   "id": "independent-events-6-3",
@@ -1141,6 +1141,15 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "6.10",
   "title": "",
+  "body": "  Suppose and are independent with and . Find the following:                        "
+},
+{
+  "id": "independent-events-6-4",
+  "level": "2",
+  "url": "independent-events.html#independent-events-6-4",
+  "type": "Worksheet Exercise",
+  "number": "6.11",
+  "title": "",
   "body": "  Prove part (c) of the Independent Events Theorem (B:1.4-1) using the definition of independence. You may use parts (a) and (b) of the theorem in your proof.   "
 },
 {
@@ -1148,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "independent-events.html#independent-events-7-1",
   "type": "Worksheet Exercise",
-  "number": "6.11",
+  "number": "6.12",
   "title": "",
   "body": "  A rocket has built-in redundant systems. In this system, if component fails, then it is bypassed and component is used. If component fails, it is bypassed and component is used. The system only fails if all of the components and fail. Suppose the probability that any given component is faulty (and would fail if needed) is and assume that the failures of components are mutually independent events.     What is the probability that one of the components is faulty (but not the other 2)?      What is the probability that two of the components are faulty (but not the third)?      What is the probability that whole the system fails?      Suppose instead there are 5 components ( . What is the probability that exactly two are faulty?    "
 }
