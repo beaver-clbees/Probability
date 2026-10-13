@@ -193,11 +193,20 @@
 </page>
 
 <page>
-    <exercise workspace="1in">
+    <exercise workspace=".75in">
     <statement>
           <p>
             Suppose that <m>P(A)=0.45, P(B)=0.80,</m> and
             <m>P(A \cap B)=0.36</m>. Are <m>A</m> and <m>B</m> independent?
+            Explain.
+          </p>
+        </statement>
+    </exercise>
+<exercise workspace="1in">
+    <statement>
+          <p>
+            Suppose that <m>P(A)=0.25, P(B)=0.40,</m> and
+            <m>P(A \cup B)=0.45</m>. Are <m>A</m> and <m>B</m> independent?
             Explain.
           </p>
         </statement>
@@ -210,14 +219,14 @@
             and <m>P(B)=0.3</m>. Find the following:
           </p>
         </introduction>
-          <task workspace=".5in">
+          <task workspace=".25in">
           <statement>
             <p>
                 <m>P(A \cup B)=</m>
             </p>
           </statement>
           </task>
-          <task workspace=".5in">
+          <task workspace=".25in">
           <statement> 
               <p>
                   <m>P(A \mid B)=</m>
@@ -225,7 +234,7 @@
           </statement>                  
           </task>   
 
-          <task workspace=".5in">
+          <task workspace=".25in">
           <statement>
               <p>
                   <m>P(A' \cap B)=</m>
