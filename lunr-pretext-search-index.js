@@ -1160,6 +1160,285 @@ var ptx_lunr_docs = [
   "number": "6.12",
   "title": "",
   "body": "  A rocket has built-in redundant systems. In this system, if component fails, then it is bypassed and component is used. If component fails, it is bypassed and component is used. The system only fails if all of the components and fail. Suppose the probability that any given component is faulty (and would fail if needed) is and assume that the failures of components are mutually independent events.     What is the probability that one of the components is faulty (but not the other 2)?      What is the probability that two of the components are faulty (but not the third)?      What is the probability that whole the system fails?      Suppose instead there are 5 components ( . What is the probability that exactly two are faulty?    "
+},
+{
+  "id": "bayes-theorem",
+  "level": "1",
+  "url": "bayes-theorem.html",
+  "type": "Worksheet",
+  "number": "7",
+  "title": "Bayes’ Theorem (1.5)",
+  "body": " Bayes' Theorem (1.5)     There are three bowls:   Bowl ( ) contains red and white chips    Bowl ( ) contains red and white chips    Bowl ( ) contains red and white chips   Suppose a chip is chosen as follows: Choose a bowl, choose a chip. Further suppose the probability of choosing each bowl is as follows:                      What is the probability of getting a red chip given that bowl 1 was chosen ( )? (recall this is conditional probability)      What is the probability of getting a red chip given that bowl 2 was chosen?      What is the probability of getting a red chip given that bowl 3 was chosen?      What is the probability of getting a red chip?       Now suppose we know that a red chip was drawn. Does knowing the outcome of the experiment change any of these probabilities? Which bowl do you think the chip most likely came from?         We would like to compute the conditional probability that bowl three was chosen given the outcome of the experiment was red : . This probability is called the          Bayes' Theorem These ideas generalize: Suppose that events are mutually exclusive and exhaustive (Recall that this means that their union is the whole sample space and no two sets overlap) and is an event:     Then any event A can be written as a union of mutually exclusive sets:        At a hospital emergency room patients are classified and it is found that are classified as \"critical'', are classified as \"serious'' and are classified as \"stable''. Of those classified as critical, die, of those classified as serious, die, and of those classified as stable, die. Given that a patient dies, what is the probability that they were classified as critical?  Let C = classified critical; S = classified serious; St=classified stable; D=patient dies        During a blackout people are arrested on suspicion of looting. Each person takes a polygraph test. Suppose it is known that the results of the polygraph are reliable when administered to a guilty person and reliable when given to an innocent person. Further suppose we know that the probability that any given suspect is guilty is . A random suspect is tested and the polygraph result says that the person is guilty. Find the probability that the suspect is actually innocent.  Let PG = polygraph predicted guilt; PI = polygraph predicted innocence; G = the person is guilty; I = the person is innocent        It rains a lot in Oregon. Of the last 365 days, it was cloudy or rainy in the morning on 220 of those days and sunny in the morning on the others. Of the days that started out cloudy or rainy, it rained for more than 3 hours during the day on 150 of those days. Of the days that started out sunny, it rained for more than 3 hours during the day on 50 of those days. Suppose we choose one of the last 365 days at random and find that it rained more than 3 hours that day. What is the conditional probability that the day started out sunny?      Assume that a teacher of a Spanish class knows the following correlation between High School GPA and the probability of getting an A in their class. Further they know what fraction of their class had a particular HS GPA.   Given that a particular student got an A, what is the probability that the student's high school GPA was in the 3.0-4.0 range?        A certain disease is known to occur in 1 in 1000 people. A test for the disease indicates the presence of the disease (a positive test) 95% of the time when the disease is present and the presence of the disease 4% of the time when the disease is not present.     This test is given to a random person in the population and they test positive for the disease. What is the probability that they actually have the disease?      This test is given to a random person in the population and they test negative for the disease. What is the probability that they actually do not have the disease?      "
+},
+{
+  "id": "bayes-theorem-2-1",
+  "level": "2",
+  "url": "bayes-theorem.html#bayes-theorem-2-1",
+  "type": "Worksheet Exercise",
+  "number": "7.1",
+  "title": "",
+  "body": "  There are three bowls:   Bowl ( ) contains red and white chips    Bowl ( ) contains red and white chips    Bowl ( ) contains red and white chips   Suppose a chip is chosen as follows: Choose a bowl, choose a chip. Further suppose the probability of choosing each bowl is as follows:                      What is the probability of getting a red chip given that bowl 1 was chosen ( )? (recall this is conditional probability)      What is the probability of getting a red chip given that bowl 2 was chosen?      What is the probability of getting a red chip given that bowl 3 was chosen?      What is the probability of getting a red chip?       Now suppose we know that a red chip was drawn. Does knowing the outcome of the experiment change any of these probabilities? Which bowl do you think the chip most likely came from?    "
+},
+{
+  "id": "bayes-theorem-3-1",
+  "level": "2",
+  "url": "bayes-theorem.html#bayes-theorem-3-1",
+  "type": "Worksheet Exercise",
+  "number": "7.2",
+  "title": "",
+  "body": "  We would like to compute the conditional probability that bowl three was chosen given the outcome of the experiment was red : . This probability is called the      "
+},
+{
+  "id": "bayes-theorem-3-2",
+  "level": "2",
+  "url": "bayes-theorem.html#bayes-theorem-3-2",
+  "type": "Worksheet Exercise",
+  "number": "7.3",
+  "title": "",
+  "body": "   Bayes' Theorem These ideas generalize: Suppose that events are mutually exclusive and exhaustive (Recall that this means that their union is the whole sample space and no two sets overlap) and is an event:     Then any event A can be written as a union of mutually exclusive sets:   "
+},
+{
+  "id": "bayes-theorem-4-1",
+  "level": "2",
+  "url": "bayes-theorem.html#bayes-theorem-4-1",
+  "type": "Worksheet Exercise",
+  "number": "7.4",
+  "title": "",
+  "body": "  At a hospital emergency room patients are classified and it is found that are classified as \"critical'', are classified as \"serious'' and are classified as \"stable''. Of those classified as critical, die, of those classified as serious, die, and of those classified as stable, die. Given that a patient dies, what is the probability that they were classified as critical?  Let C = classified critical; S = classified serious; St=classified stable; D=patient dies   "
+},
+{
+  "id": "bayes-theorem-5-1",
+  "level": "2",
+  "url": "bayes-theorem.html#bayes-theorem-5-1",
+  "type": "Worksheet Exercise",
+  "number": "7.5",
+  "title": "",
+  "body": "  During a blackout people are arrested on suspicion of looting. Each person takes a polygraph test. Suppose it is known that the results of the polygraph are reliable when administered to a guilty person and reliable when given to an innocent person. Further suppose we know that the probability that any given suspect is guilty is . A random suspect is tested and the polygraph result says that the person is guilty. Find the probability that the suspect is actually innocent.  Let PG = polygraph predicted guilt; PI = polygraph predicted innocence; G = the person is guilty; I = the person is innocent   "
+},
+{
+  "id": "bayes-theorem-6-1",
+  "level": "2",
+  "url": "bayes-theorem.html#bayes-theorem-6-1",
+  "type": "Worksheet Exercise",
+  "number": "7.6",
+  "title": "",
+  "body": "  It rains a lot in Oregon. Of the last 365 days, it was cloudy or rainy in the morning on 220 of those days and sunny in the morning on the others. Of the days that started out cloudy or rainy, it rained for more than 3 hours during the day on 150 of those days. Of the days that started out sunny, it rained for more than 3 hours during the day on 50 of those days. Suppose we choose one of the last 365 days at random and find that it rained more than 3 hours that day. What is the conditional probability that the day started out sunny?   "
+},
+{
+  "id": "bayes-theorem-6-2",
+  "level": "2",
+  "url": "bayes-theorem.html#bayes-theorem-6-2",
+  "type": "Worksheet Exercise",
+  "number": "7.7",
+  "title": "",
+  "body": "  Assume that a teacher of a Spanish class knows the following correlation between High School GPA and the probability of getting an A in their class. Further they know what fraction of their class had a particular HS GPA.   Given that a particular student got an A, what is the probability that the student's high school GPA was in the 3.0-4.0 range?   "
+},
+{
+  "id": "bayes-theorem-7-1",
+  "level": "2",
+  "url": "bayes-theorem.html#bayes-theorem-7-1",
+  "type": "Worksheet Exercise",
+  "number": "7.8",
+  "title": "",
+  "body": "  A certain disease is known to occur in 1 in 1000 people. A test for the disease indicates the presence of the disease (a positive test) 95% of the time when the disease is present and the presence of the disease 4% of the time when the disease is not present.     This test is given to a random person in the population and they test positive for the disease. What is the probability that they actually have the disease?      This test is given to a random person in the population and they test negative for the disease. What is the probability that they actually do not have the disease?    "
+},
+{
+  "id": "random-variables-discrete",
+  "level": "1",
+  "url": "random-variables-discrete.html",
+  "type": "Worksheet",
+  "number": "8",
+  "title": "Random Variables of the Discrete Type (2.1)",
+  "body": " Random Variables of the Discrete Type (2.1)    Random Variable Definition (2.1-1)   Let be the sample space for a random experiment. A function that assigns to each exactly one real number is called a Random Variable (RV) . The space of is the set of real numbers .    Notation: Typically, we use capital letters to denote random variables and lower case letters to denote a value the random variable can take on. For example, is a random variable and is a value of .     Example: Three balls are randomly chosen without replacement from an urn containing white, red, and black balls.      Let be a random variable with one-dimensional space where is a subset of the real numbers. If contains a countable number of points (this means we can list them out in an order, or equivalently put them into a one-to-one correspondence with the positive integers) then we say is a random variable of the type, or that is a random variable.    Note that now we are calling the space for the random variable . In other words we will just think about the sample space in terms of the possible outcomes for , the measurement under consideration.     Probability Mass Function (pmf) (2.1-2)   For a discrete R.V. , we define the probability mass function (pmf) , , of by for all in as a function that satisfies the following properties:         Note: We assume that if then and we sometimes call the support of .    Cumulative Distribution Function (cdf)   For a discrete R.V. , we define the cumulative distribution function (cdf) , , of by     We also sometimes just call the cdf the distribution function of .   Examples:     Flip a coin. Let if its heads and if its tails. Find the pmf of .        Roll a fair, sided die. Let be the number on top.     What is the pmf of ?      Find .      Definiton: If the pmf of is constant, then is said to have a distribution.    Suppose has a uniform distribution on .     Find the pmf of .      Find the cdf of .         Roll a fair, 8=sided die. Let be the number on top.     Find the pmf and cdf of .      What is the probability that a is showing on top?      What is the probability that the value is less than 4?      What is the probability that the value is at least 2?       Now let's consider a non-uniform example:    Suppose there are winning lottery tickets in a stack of . Draw at random without replacement. Let be the number of winning lottery tickets.     What is the space of ?      Find .      Find the probability that at least one is a winner.       Draw cards at random from a standard card deck. Let be the number of hearts. What is the space of ? Find the pmf of .         Definition: In a collection of objects, suppose that are alike and are alike so that . Suppose we draw at random without replacement. Let be the number of type . If we assume that each of the ways of selecting objects from has the same probability, then we say has a distribution. Further, the pmf of is:     Quick Check: Determine if the following describes a uniform, hypergeometric, or neither random variable . If uniform or hypergeometric, give the pmf of .    An urn contains red and white chips. You reach in and draw chips without replacement. Let be the number of red chips.      A coin is flipped. Let if it is heads, if it is tails.        A coin is flipped four times. Let be the number of heads.      There are people in a class, of which are freshman, are sophomores, and are juniors. Five people are selected at random and is the number that are freshman.     Displays of Distributions: A histogram is a good way to display the distribution of a random variable (how the probabilities are distributed over all possible outcomes). List each point in the space of on the x axis and then put a bar of height over it.    Make a sketch of the probability histogram for a R.V. with a uniform distribution over       The probability distribution histogram for a hypergeometric distribution changes depending on the values of and :    If we don't know how to compute the pmf we might make a histogram where the heights of the bars are the relative frequency of the outcomes in repeated trials of the experiment.   A line graph is similar to a histogram but instead of a bar, just draw a vertical line above up to the height of .         A coin is tossed two times. Let be the number of heads.     What is the space of ?      Find the pmf for (recall this just means find for all possible outcomes of ). Verify the sum of all values of is .      Find .       What value does need to be to make this a valid pmf for a random variable on          For each of the following determine if the variable described has a uniform, hypergeometric, or neither distribution. If uniform or hypergeometric, write down the pmf for (include the support\/space of (values of the pmf that are not 0 (think domain)).     In a carton of eggs, are cracked. eggs are selected at random. Let be the number cracked.      Each question on a multiple choice test has 4 possible answers. Your randomly guess the answer to each question. There are 5 such questions on the test. Let be the number of questions you get correct.      A person is chosen at random among all people who own one cell phone. Let be the last digit of their cell phone number.         In a carton of eggs, are cracked. eggs are selected at random. Let be the number cracked. For each part, first write the question as or for the correct value of , then solve. Recall that and .     Find the probability that 3 eggs are cracked.      Find the probability that no more than is cracked.      Find the probability that at least one is cracked.      "
+},
+{
+  "id": "random-variable-definition",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variable-definition",
+  "type": "Definition",
+  "number": "8.1",
+  "title": "Random Variable Definition (2.1-1).",
+  "body": " Random Variable Definition (2.1-1)   Let be the sample space for a random experiment. A function that assigns to each exactly one real number is called a Random Variable (RV) . The space of is the set of real numbers .   "
+},
+{
+  "id": "random-variables-discrete-2-3",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-2-3",
+  "type": "Worksheet Exercise",
+  "number": "8.1",
+  "title": "",
+  "body": "   Example: Three balls are randomly chosen without replacement from an urn containing white, red, and black balls.   "
+},
+{
+  "id": "discrete-random-variable-definition",
+  "level": "2",
+  "url": "random-variables-discrete.html#discrete-random-variable-definition",
+  "type": "Definition",
+  "number": "8.2",
+  "title": "",
+  "body": "  Let be a random variable with one-dimensional space where is a subset of the real numbers. If contains a countable number of points (this means we can list them out in an order, or equivalently put them into a one-to-one correspondence with the positive integers) then we say is a random variable of the type, or that is a random variable.   "
+},
+{
+  "id": "def-pmf",
+  "level": "2",
+  "url": "random-variables-discrete.html#def-pmf",
+  "type": "Definition",
+  "number": "8.3",
+  "title": "Probability Mass Function (pmf) (2.1-2).",
+  "body": " Probability Mass Function (pmf) (2.1-2)   For a discrete R.V. , we define the probability mass function (pmf) , , of by for all in as a function that satisfies the following properties:        "
+},
+{
+  "id": "random-variables-discrete-3-3",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-3-3",
+  "type": "Worksheet Exercise",
+  "number": "8.2",
+  "title": "",
+  "body": "  Cumulative Distribution Function (cdf)   For a discrete R.V. , we define the cumulative distribution function (cdf) , , of by    "
+},
+{
+  "id": "random-variables-discrete-3-6",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-3-6",
+  "type": "Worksheet Exercise",
+  "number": "8.3",
+  "title": "",
+  "body": "  Flip a coin. Let if its heads and if its tails. Find the pmf of .   "
+},
+{
+  "id": "random-variables-discrete-4-1",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-4-1",
+  "type": "Worksheet Exercise",
+  "number": "8.4",
+  "title": "",
+  "body": "  Roll a fair, sided die. Let be the number on top.     What is the pmf of ?      Find .    "
+},
+{
+  "id": "random-variables-discrete-4-3",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-4-3",
+  "type": "Worksheet Exercise",
+  "number": "8.5",
+  "title": "",
+  "body": "  Suppose has a uniform distribution on .     Find the pmf of .      Find the cdf of .    "
+},
+{
+  "id": "random-variables-discrete-5-1",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-5-1",
+  "type": "Worksheet Exercise",
+  "number": "8.6",
+  "title": "",
+  "body": "  Roll a fair, 8=sided die. Let be the number on top.     Find the pmf and cdf of .      What is the probability that a is showing on top?      What is the probability that the value is less than 4?      What is the probability that the value is at least 2?    "
+},
+{
+  "id": "random-variables-discrete-6-2",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-6-2",
+  "type": "Worksheet Exercise",
+  "number": "8.7",
+  "title": "",
+  "body": "  Suppose there are winning lottery tickets in a stack of . Draw at random without replacement. Let be the number of winning lottery tickets.     What is the space of ?      Find .      Find the probability that at least one is a winner.    "
+},
+{
+  "id": "random-variables-discrete-6-3",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-6-3",
+  "type": "Worksheet Exercise",
+  "number": "8.8",
+  "title": "",
+  "body": "  Draw cards at random from a standard card deck. Let be the number of hearts. What is the space of ? Find the pmf of .   "
+},
+{
+  "id": "random-variables-discrete-7-1",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-7-1",
+  "type": "Worksheet Exercise",
+  "number": "8.9",
+  "title": "",
+  "body": "   Definition: In a collection of objects, suppose that are alike and are alike so that . Suppose we draw at random without replacement. Let be the number of type . If we assume that each of the ways of selecting objects from has the same probability, then we say has a distribution. Further, the pmf of is:   "
+},
+{
+  "id": "random-variables-discrete-7-3",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-7-3",
+  "type": "Worksheet Exercise",
+  "number": "8.10",
+  "title": "",
+  "body": "  An urn contains red and white chips. You reach in and draw chips without replacement. Let be the number of red chips.   "
+},
+{
+  "id": "random-variables-discrete-7-4",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-7-4",
+  "type": "Worksheet Exercise",
+  "number": "8.11",
+  "title": "",
+  "body": "  A coin is flipped. Let if it is heads, if it is tails.   "
+},
+{
+  "id": "random-variables-discrete-8-1",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-8-1",
+  "type": "Worksheet Exercise",
+  "number": "8.12",
+  "title": "",
+  "body": "  A coin is flipped four times. Let be the number of heads.   "
+},
+{
+  "id": "random-variables-discrete-8-2",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-8-2",
+  "type": "Worksheet Exercise",
+  "number": "8.13",
+  "title": "",
+  "body": "  There are people in a class, of which are freshman, are sophomores, and are juniors. Five people are selected at random and is the number that are freshman.   "
+},
+{
+  "id": "random-variables-discrete-8-4",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-8-4",
+  "type": "Worksheet Exercise",
+  "number": "8.14",
+  "title": "",
+  "body": "  Make a sketch of the probability histogram for a R.V. with a uniform distribution over    "
+},
+{
+  "id": "random-variables-discrete-10-1",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-10-1",
+  "type": "Worksheet Exercise",
+  "number": "8.15",
+  "title": "",
+  "body": "  A coin is tossed two times. Let be the number of heads.     What is the space of ?      Find the pmf for (recall this just means find for all possible outcomes of ). Verify the sum of all values of is .      Find .    "
+},
+{
+  "id": "random-variables-discrete-10-2",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-10-2",
+  "type": "Worksheet Exercise",
+  "number": "8.16",
+  "title": "",
+  "body": "  What value does need to be to make this a valid pmf for a random variable on     "
+},
+{
+  "id": "random-variables-discrete-11-1",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-11-1",
+  "type": "Worksheet Exercise",
+  "number": "8.17",
+  "title": "",
+  "body": "  For each of the following determine if the variable described has a uniform, hypergeometric, or neither distribution. If uniform or hypergeometric, write down the pmf for (include the support\/space of (values of the pmf that are not 0 (think domain)).     In a carton of eggs, are cracked. eggs are selected at random. Let be the number cracked.      Each question on a multiple choice test has 4 possible answers. Your randomly guess the answer to each question. There are 5 such questions on the test. Let be the number of questions you get correct.      A person is chosen at random among all people who own one cell phone. Let be the last digit of their cell phone number.    "
+},
+{
+  "id": "random-variables-discrete-12-1",
+  "level": "2",
+  "url": "random-variables-discrete.html#random-variables-discrete-12-1",
+  "type": "Worksheet Exercise",
+  "number": "8.18",
+  "title": "",
+  "body": "  In a carton of eggs, are cracked. eggs are selected at random. Let be the number cracked. For each part, first write the question as or for the correct value of , then solve. Recall that and .     Find the probability that 3 eggs are cracked.      Find the probability that no more than is cracked.      Find the probability that at least one is cracked.    "
 }
 ]
 
