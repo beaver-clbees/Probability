@@ -1,0 +1,248 @@
+<worksheet xml:id="bayes-theorem">
+    <title>Bayes' Theorem (1.5)</title>
+    <page>
+    <exercise>
+        <introduction>
+            <p>
+                There are three bowls:
+    <ul>
+      <li>
+        <p>
+          Bowl <m>1</m> ( <m>B_{1}</m> ) contains <m>2</m> red and <m>4</m>
+          white chips
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Bowl <m>2</m> ( <m>B_{2}</m> ) contains <m>1</m> red and <m>2</m>
+          white chips
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Bowl <m>3</m> ( <m>B_{3}</m> ) contains <m>5</m> red and <m>4</m>
+          white chips
+        </p>
+      </li>
+    </ul>
+    Suppose a chip is chosen as follows: Choose a bowl, choose a chip. Further
+    suppose the probability of choosing each bowl is as follows:
+    <ul>
+      <li>
+        <p>
+          <m>P(B_{1}) = \frac{1}{3}</m>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <m>P(B_{2}) = \frac{1}{6}</m>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <m>P(B_{3}) = \frac{1}{2}</m>
+        </p>
+      </li>
+    </ul>
+  </p>
+          
+        </introduction>
+        <task workspace=".25in">
+            <statement>
+                <p>
+                    What is the probability of getting a red chip given that bowl 1
+    was chosen ( <m>P(R \mid B_{1})</m> )? (recall this is conditional
+    probability)
+                </p>
+            </statement>
+        </task>
+        <task workspace=".25in">
+            <statement>
+                <p>
+                   What is the probability of getting a red chip given that bowl 2
+    was chosen?
+                </p>
+            </statement>
+        </task>
+        <task workspace=".25in">
+            <statement>
+                <p>
+                   What is the probability of getting a red chip given that bowl 3
+    was chosen?
+                </p>
+            </statement>
+        </task> 
+        <task workspace="1in">
+            <statement>
+                <p>
+                   What is the probability of getting a red chip?
+                </p>
+            </statement>
+        </task>
+         <task>
+            <statement>
+                <p>
+                   <alert>Now suppose we know that a red chip was drawn.</alert> Does knowing
+    the outcome of the experiment change any of these probabilities? Which bowl
+    do you think the chip most likely came from?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+ 
+</page>
+<page>
+    <exercise workspace="2in">
+        <statement>
+            <p>
+                We would like to compute the
+    <em>conditional probability that bowl three was chosen given the outcome of the experiment was red</em>:
+    <m>P(B_{3} \mid R)</m>. This probability is called the
+  </p>
+
+  <p>
+    <fillin characters="90"/>  
+  </p>
+</statement>
+    </exercise> 
+    <exercise workspace="3in">
+        <statement>
+            <p>
+    <alert>Bayes' Theorem</alert> These ideas generalize: Suppose that events
+    <m>B_{1},B_{2},...,B_{m}</m> are mutually exclusive and exhaustive (Recall
+    that this means that their union is the whole sample space and no two sets
+    overlap) and <m>A</m> is an event:
+  </p>
+
+  <image xml:id="bayes-theorem-image-1" margins="20%">
+    <latex-image> 
+    \begin{tikzpicture} 
+    \draw (-4,-1) rectangle (1,1);
+    \draw (-3,1)--(-3,-1)
+    (-2,1)--(-2,-1)
+    (-1,1)--(-1,-1)
+        (0,1)--(0,-1);
+     \draw (-1.5,-.1) ellipse (2cm and .75cm);
+     \draw (-3.5,.75) node[font=\tiny] {$B_1$}
+     (-2.5,.75) node[font=\tiny] {$B_2$}
+           (-1.5,.75) node[font=\tiny] {$B_3$}
+           (-.5,.75) node[font=\tiny] {$\cdots$}
+           (.5,.75) node[font=\tiny] {$B_m$}
+           (-1.5,0) node[font=\tiny] {$A$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+
+  <p>
+    Then any event A can be written as a union of mutually exclusive sets:
+  </p>
+  </statement>
+    </exercise>
+</page>
+<page>
+<exercise workspace="2in">
+    <statement>
+        <p>
+             At a hospital emergency room patients are classified and it is found
+          that <m>20\%</m> are classified as "critical'', <m>30\%</m> are
+          classified as "serious'' and <m>50\%</m> are classified as
+          "stable''. Of those classified as critical, <m>30\%</m> die, of those
+          classified as serious, <m>10\%</m> die, and of those classified as
+          stable, <m>1\%</m> die. Given that a patient dies, what is the
+          probability that they were classified as critical?
+        </p>
+        <p>
+          Let C = classified critical; S = classified serious; St=classified
+          stable; D=patient dies
+        </p>
+    </statement>
+    </exercise>
+    </page>
+    <page>
+ <exercise workspace="2in">
+    <statement>
+        <p>
+              During a blackout <m>100</m> people are arrested on suspicion of
+          looting. Each person takes a polygraph test. Suppose it is known that
+          the results of the polygraph are <m>90\%</m> reliable when
+          administered to a guilty person and <m>98\%</m> reliable when given to
+          an innocent person. Further suppose we know that the probability that
+          any given suspect is guilty is <m>0.12</m>. A random suspect is tested
+          and the polygraph result says that the person is guilty. Find the
+          probability that the suspect is actually innocent.
+        </p>
+        <p>
+          Let PG = polygraph predicted guilt; PI = polygraph predicted
+          innocence; G = the person is guilty; I = the person is innocent
+        </p>
+    </statement>
+ </exercise>
+ </page>
+       <page>
+ <exercise workspace="3in">
+ <statement>
+    <p>
+          It rains a lot in Oregon. Of the last 365 days, it was cloudy or rainy
+          in the morning on 220 of those days and sunny in the morning on the
+          others. Of the days that started out cloudy or rainy, it rained for
+          more than 3 hours during the day on 150 of those days. Of the days
+          that started out sunny, it rained for more than 3 hours during the day
+          on 50 of those days. Suppose we choose one of the last 365 days at
+          random and find that it rained more than 3 hours that day. What is the
+          conditional probability that the day started out sunny?
+    </p>
+ </statement>
+ </exercise>
+     <exercise workspace="1.5in">
+     <statement>
+        <p>
+            Assume that a teacher of a Spanish class knows the following
+          correlation between High School GPA and the probability of getting an
+          A in their class. Further they know what fraction of their class had a
+          particular HS GPA.
+        </p>
+         <p>
+          <md>
+            \begin{array}{ccc}\hbox{HS GPA}&amp;\hbox{Fraction of Class} &amp; \hbox{Probability of A}\\ \hline3.0 - 4.0 &amp; 0.50 &amp; 0.75\\ 2.0-2.99 &amp; 0.35 &amp; 0.50\\ \hbox{Below} 2.0 &amp; 0.15 &amp; 0.25\end{array}
+          </md>
+          Given that a particular student got an A, what is the probability that
+          the student's high school GPA was in the 3.0-4.0 range?
+        </p>
+     </statement>
+        </exercise>
+</page>
+<page>
+    <exercise>
+        <introduction>
+            <p>
+                A certain disease is known to occur in 1 in 1000 people. A test for
+              the disease indicates the presence of the disease (a positive test) 95% of the time when the disease 
+              is present and the presence of the disease 4% of the time when the disease is not present. 
+              
+            </p>
+        </introduction>
+        <task workspace="1.5in">
+        <statement>
+          <p>
+            This test is given to a random person in the population and they test positive for the disease. 
+              What is the probability that they actually have the disease?
+          </p>
+        </statement>
+        </task>
+         <task workspace="1.5in">
+        <statement>
+          <p>
+            This test is given to a random person in the population and they test negative for the disease. 
+              What is the probability that they actually do not have the disease?
+          </p>
+        </statement> 
+        </task>
+    </exercise>
+        </page>
+        
+  </worksheet>

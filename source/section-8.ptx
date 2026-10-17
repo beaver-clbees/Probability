@@ -1,0 +1,460 @@
+<worksheet xml:id="random-variables-discrete">
+    <title>Random Variables of the Discrete Type (2.1)</title>
+<page>
+<definition xml:id="random-variable-definition">
+<title>Random Variable Definition (2.1-1)</title>
+    <statement>
+    <p>
+      Let <m>S</m> be the sample space for a
+      random experiment. A function <m>X</m> that assigns to each <m>s \in S</m>
+      exactly one real number <m>X(s)=x</m> is called a <alert>Random Variable (RV)</alert>. The <alert>space</alert> of <m>X</m> is the set of real numbers
+      <m>\{x\mid X(s)=x, s \in S\}</m>.
+    </p>
+    </statement>
+</definition>
+<p>Notation: Typically, we use capital letters to denote random variables and lower case letters to denote a value the random variable can take on. For example, <m>X</m> is a random variable and <m>x</m> is a value of <m>X</m>.</p>
+   
+
+<exercise workspace ="3in">
+<statement>
+    <p>
+      <alert>Example:</alert> Three balls are randomly chosen without
+      replacement from an urn containing <m>3</m> white, <m>3</m> red, and
+      <m>5</m> black balls.
+    </p>
+</statement>
+</exercise>
+
+<definition xml:id="discrete-random-variable-definition">
+    
+    <statement>
+    <p>
+     Let <m>X</m> be a random variable with one-dimensional
+      space <m>S</m> where <m>S</m> is a subset of the real numbers. If <m>S</m>
+      contains a countable number of points (this means we can list them out in
+      an order, or equivalently put them into a one-to-one correspondence with
+      the positive integers) then we say <m>X</m> is a random variable of the
+      <fillin characters="25"/> type, or that <m>X</m> is a <fillin characters="25"/> random variable.
+    </p>
+    </statement>
+    </definition>
+    <p>
+          Note that now we are calling
+      <m>S</m> the space for the random variable <m>X</m>. In other words we
+      will just think about the sample space in terms of the possible outcomes
+      for <m>X</m>, the measurement under consideration.
+    </p>
+</page>
+<page>
+    <definition xml:id="def-pmf">
+    <title>Probability Mass Function (pmf) (2.1-2)</title>
+      
+        <statement>
+            <p>
+                 For a discrete R.V. <m>X</m>, we define the <em>probability mass function (pmf) </em>, 
+                 <m>f(x)</m>, of <m>X</m> by <m>f(x) = P(X=x)</m> for all <m>x</m> 
+                  in <m>S</m> as a function that satisfies the following properties:
+            </p>
+        </statement>
+   
+
+   
+      <ol>
+        <li/>
+        <li/>
+        <li/>
+      </ol>
+
+ </definition>
+    
+<p> Note: We assume that if <m>x\not\in S</m> then <fillin characters="25"/>and we sometimes call <m>S</m> the <em>support</em> of <m>X</m>.</p>
+
+<exercise workspace="1.5in">
+   
+<definition xml:id="def-cdf">
+    <title>Cumulative Distribution Function (cdf)</title>
+    <statement>
+    <p>
+      For a discrete R.V. <m>X</m>, we define the <em>cumulative distribution function (cdf)</em>, 
+      <m>F(x)</m>, of <m>X</m> by 
+    </p>
+</statement>
+</definition>
+</exercise>
+ 
+
+    <p>
+      We also sometimes just call the cdf the <em>distribution function</em> of
+      <m>X</m>.
+    </p>
+
+    <p>
+      <em>Examples:</em>
+    </p>
+
+  <exercise workspace="1in">
+  <statement>
+    <p>
+        Flip a coin. Let <m>X = 1</m> if its heads and <m>X=0</m> if its
+            tails. Find the pmf of <m>X</m>.
+    </p>
+  </statement>
+  </exercise>
+  </page>
+  <page>
+       <exercise>
+  <introduction>
+    <p>
+        Roll a fair, <m>6-</m> sided die. Let <m>X</m> be the number on top. 
+    </p>
+  </introduction>
+  <task workspace="0.5in">
+    <statement>
+      <p>
+        What is the pmf of <m>X</m>?
+      </p>
+    </statement>
+  </task>
+  <task workspace="0.5in">
+    <statement>
+      <p>
+        Find <m>F(3)</m>.
+      </p>
+    </statement>
+    </task>
+  </exercise>  
+
+    
+    <p>
+      <alert>Definiton:</alert> If the pmf of <m>X</m> is constant, then
+      <m>X</m> is said to have a <fillin characters="25" /> distribution.
+    </p>
+<exercise>
+<introduction>
+    <p>
+       Suppose <m>X</m> has a uniform distribution on <m>1,2,...,m</m>.
+    </p>
+</introduction>
+<task workspace="1.5in">
+<statement>
+          <p>
+            Find the pmf of <m>X</m>.
+          </p>
+</statement>
+</task>
+
+<task workspace="1.5in">
+<statement>
+          <p>
+            Find the cdf of <m>X</m>.
+          </p>
+</statement>
+</task>
+</exercise>
+</page>
+<page>
+<exercise>
+<introduction>
+    <p>
+      Roll a fair, 8=sided die. Let <m>X</m> be the number on top.
+    </p>
+</introduction>
+<task workspace="2.5in">
+<statement> <p>
+            Find the pmf and cdf of <m>X</m>.
+          </p>
+</statement>
+</task>
+<task workspace="0.75in">
+<statement>
+          <p>
+            What is the probability that a <m>2</m> is showing on top?
+          </p>
+ </statement>
+</task>
+<task workspace="0.75in">
+<statement>
+          <p>
+            What is the probability that the value is less than 4?
+          </p>
+    </statement>
+</task>
+<task workspace="0.75in">
+<statement>
+          <p>
+            What is the probability that the value is at least 2?
+          </p>
+</statement>
+</task>
+</exercise>
+</page>
+<page>
+
+    <p>
+      Now let's consider a non-uniform example:
+    </p>
+
+    <exercise>
+    <introduction>
+        <p>
+            Suppose there are <m>6</m> winning lottery tickets in a
+      stack of <m>50</m>. Draw <m>5</m> at random without replacement. Let
+      <m>X</m> be the number of winning lottery tickets.
+        </p>
+    </introduction>
+    <task workspace="0.5in">
+        <statement>
+            <p>
+                What is the space of <m>X</m>?
+            </p>
+        </statement>
+    </task>
+    <task workspace="1.5in">
+        <statement>
+            <p>
+                Find <m>f(1)=P(X=1)</m>.
+            </p>
+        </statement>
+    </task>
+     <task workspace="1in">
+        <statement>
+          <p>
+            Find the probability that at least one is a winner.
+          </p>
+        </statement>
+    </task>
+    </exercise>
+
+<exercise workspace="2in">
+<statement>
+          <p>
+            Draw <m>2</m> cards at random from a standard <m>52</m> card deck.
+            Let <m>X</m> be the number of hearts. What is the space of <m>X</m>? Find the pmf of <m>X</m>.
+          </p>
+</statement>
+</exercise>
+      </page>
+    <page> 
+<exercise workspace="2in">
+<statement>
+    <p>
+      <alert>Definition:</alert> In a collection of <m>N</m> objects, suppose
+      that <m>N_{1}</m> are alike and <m>N_{2}</m> are alike so that
+      <m>N_{1} + N_{2} = N</m>. Suppose we draw <m>n</m> at random without
+      replacement. Let <m>X</m> be the number of type <m>N_{1}</m>. If we assume
+      that each of the <m>\left( \begin{array}{c}N\\n\end{array} \right)</m>
+      ways of selecting <m>n</m> objects from <m>N</m> has the same probability,
+      then we say <m>X</m> has a      <fillin characters="35"/> distribution.
+      Further, the pmf of <m>X</m> is:
+    </p>
+</statement>
+</exercise>
+
+
+    <p>
+      <alert>Quick Check:</alert> Determine if the following describes a uniform,
+      hypergeometric, or neither random variable <m>X</m>. If uniform or
+      hypergeometric, give the pmf of <m>X</m>.
+    </p>
+
+  <exercise workspace="1.5in">
+  <statement>
+          <p>
+            An urn contains <m>4</m> red and <m>5</m> white chips. You reach in
+            and draw <m>2</m> chips without replacement. Let <m>X</m> be the
+            number of red chips.
+          </p>
+    </statement>
+    </exercise>
+
+  <exercise workspace="1.5in">
+  <statement>
+          <p>
+             A coin is flipped. Let <m>X=1</m> if it is heads, <m>X=2</m> if it
+            is tails.
+          </p>
+    </statement>
+    </exercise>
+    </page>
+    <page>
+      <exercise workspace="1.5in">
+  <statement>
+          <p>
+              A coin is flipped four times.
+                            Let <m>X</m> be the number of heads.
+          </p>
+    </statement>
+    </exercise> 
+  <exercise workspace="1.5in">
+  <statement>
+          <p>
+            There are <m>20</m> people in a class, <m>8</m> of which are
+            freshman, <m>10</m> are sophomores, and <m>2</m> are juniors. Five people are selected at random
+            and <m>X</m> is the number that are freshman.
+          </p>
+    </statement>
+    </exercise> 
+ 
+
+    <p>
+      <alert>Displays of Distributions:</alert> A histogram is a good way to display
+      the distribution of a random variable <m>X</m> (how the probabilities are distributed over all possible outcomes). List each point in the
+      space of <m>X</m> on the x axis and then put a bar of height <m>f(x)</m>
+      over it.
+    </p>
+<exercise workspace="1.5in">
+<statement>
+    <p>
+      Make a sketch of the probability histogram for a R.V. <m>X</m> with a
+      uniform distribution over <m>S=\{1,2,3,4,5\}</m>
+    </p>
+</statement>
+</exercise>
+</page>
+<page>
+    <p>
+      The probability distribution histogram for a hypergeometric distribution
+      changes depending on the values of <m>n, N_{1},</m> and <m>N_{2}</m>:
+    </p>
+
+
+      <image source="hyperhists.PNG" width="75%"/>
+  
+
+    <p>
+      <m>\bullet</m> If we don't know how to compute the pmf we might make a
+      histogram where the heights of the bars are the relative frequency of the
+      outcomes in repeated trials of the experiment.
+    </p>
+
+    <p>
+      <m>\bullet</m> A line graph is similar to a histogram but instead of a
+      bar, just draw a vertical line above <m>x</m> up to the height of
+      <m>f(x)</m>.
+    </p>
+
+    <p>
+      <image scale="0.75" source="linehist.PNG" width="75%"/>
+    </p>
+</page>
+<page> 
+  <exercise>
+    <introduction>
+          <p>
+            A coin is tossed two times. Let <m>X</m> be the number of heads.
+            </p>
+    </introduction>
+    <task workspace="1in">
+            <statement>
+            <p>
+                 What is the space of <m>X</m>?
+            </p>
+        </statement>
+    </task>
+     <task workspace="1.5in">
+            <statement>
+            <p>
+                 Find the pmf for <m>X</m> (recall this just means find
+                  <m>f(x)=P(X=x)</m> for all possible outcomes of <m>X</m> ).
+                  Verify the sum of all values of <m>f(x)</m> is <m>1</m>.
+            </p>
+        </statement>
+    </task>  
+    <task workspace="1in">
+            <statement>
+            <p>
+               Find <m>P(X>0)</m>.
+        </p>
+      </statement>
+    </task>
+    </exercise>
+              
+    <exercise workspace="1in">
+        <statement>
+            <p>
+                What value does <m>c</m> need to be to make this a valid pmf for a
+            random variable <m>X</m> on <m>\{1, 2, 3 \}?</m>
+            <md>
+              \begin{array}{rl}f(1) &amp; =1/c\\ f(2) &amp; =2/c\\ f(3) &amp; =3/c\end{array}
+            </md>
+            </p>
+        </statement>
+    </exercise>
+    </page>
+    <page>
+    <exercise>
+    <introduction>
+          <p>
+            For each of the following determine if the variable <m>X</m>
+            described has a uniform, hypergeometric, or neither distribution. If
+            uniform or hypergeometric, write down the pmf for <m>X</m> (include
+            the support/space of <m>X</m> (values of the pmf that are not 0 (think
+            domain)).
+            </p>
+    </introduction>
+    <task workspace="1in">
+        <statement>
+            <p>
+                In a carton of <m>12</m> eggs, <m>5</m> are cracked. <m>4</m>
+                  eggs are selected at random. Let <m>X</m> be the number
+                  cracked.
+            </p>
+        </statement>
+    </task>
+     <task workspace="1in">
+        <statement>
+            <p>
+                Each question on a multiple choice test has 4 possible
+                  answers. Your randomly guess the answer to each question.
+                  There are 5 such questions on the test. Let <m>X</m> be the
+                  number of questions you get correct.
+            </p>
+        </statement>
+    </task> 
+    <task workspace="1in">
+        <statement>
+                <p>
+                  A person is chosen at random among all people who own one cell
+                  phone. Let <m>X</m> be the last digit of their cell phone
+                  number.
+                </p>
+        </statement>
+    </task>
+    </exercise>
+    </page>
+    <page>
+    <exercise>
+        <introduction>
+            <p>
+                 In a carton of <m>12</m> eggs, <m>5</m> are cracked. <m>4</m> eggs
+            are selected at random. Let <m>X</m> be the number cracked. For each
+            part, first write the question as <m>f(k), F(k), </m> or <m>1-F(k)</m> for the correct value of <m>k</m>, then solve. Recall
+             that <m> f(k) = P(X=k), F(k) = P(X\le k)</m> and <m>1-F(k) = P(X>k)</m>.
+            </p>
+        </introduction>
+  
+         <task workspace="1.5in">
+          <statement>
+            <p>
+                Find the probability that 3 eggs are cracked.
+            </p>
+          </statement>
+        </task>
+        <task workspace="1.5in">
+          <statement>
+            <p>
+               Find the probability that no more than <m>1</m> is cracked.
+            </p>
+          </statement>
+        </task>
+         <task workspace="1.5in">
+          <statement>
+            <p>
+               Find the probability that at least one is cracked.
+            </p>
+          </statement>
+        </task>      
+     
+      </exercise>
+      </page>
+</worksheet>
