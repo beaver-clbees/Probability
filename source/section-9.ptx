@@ -1,0 +1,303 @@
+<worksheet xml:id="expected-value">
+    <title>Mathematical Expectation (2.2)</title>
+   <page>
+    <p>
+      One of the most important concepts in probability theory is the expected
+      value of a random variable. One can think of expected value as follows: If
+      we perform an experiment numerous times, the <q>average</q> result is the
+      expected value (arithmetic mean).
+    </p>
+    <exercise workspace=".25in">
+      <statement>
+        <p>
+          Suppose we flip a fair coin and let <m>X=1</m> if a heads appears and
+          <m>X=0</m> if tails. What does your intuition tell you the <q>expected</q>
+          value of <m>X</m> should be if the coin is flipped repeatedly?
+        </p>
+      </statement>
+    </exercise>
+   
+
+      <definition xml:id="def-expected-value">
+   
+    <title>Expected Value (B:2.2-1)</title>
+    <statement>
+    <p>
+      If <m>X</m> is a discrete random
+      variable, having a probability mass function <m>f(x)</m> and space
+      <m>S</m>, and <m>u(X)</m> is any function on <m>X</m>, so that 
+      <m>\sum_{x \in S} u(x) f(x)</m> exists, then
+      <alert>expected value or mathematical expectation</alert> of <m>u(X)</m>,
+      denoted <m>E[u(X)],</m> is 
+        </p>
+        <p>
+          <md>
+            E[u(X)] = \sum_{x \in S} u(x) f(x)
+          </md>
+        </p>
+      </statement>
+      </definition>
+ 
+    
+<exercise workspace="1in">
+
+      <statement>
+        <p>
+      Often we are just looking at <m>E[X]=</m> 
+    </p>
+ </statement>
+ </exercise>
+ <exercise workspace="2in">
+      <statement>
+        <p>
+  Find <m>E[X]</m>, where <m>X</m> is the outcome when we roll a fair
+            die.
+        </p>
+      </statement>
+  </exercise>
+  </page>
+  <page>
+  <exercise workspace="2in">
+      <statement>
+        <p>
+ We play a game where a fair coin is flipped and if a heads appear we
+            get <m>\$2</m> and if tails appears we pay <m>\$1</m>. Let <m>Y</m>
+            be the payment made on each game. What is the expected value of
+            <m>Y</m>.
+        </p>
+      </statement>
+  </exercise>
+  <exercise workspace="2in">
+      <statement>
+        <p>
+ We play a game where a fair die is rolled. If it comes up <m>1</m>
+            you win <m>\$5</m>, if it comes up <m>2</m> or <m>3</m> you win
+            <m>\$2</m>, otherwise you pay <m>\$3</m>. What is the expected value
+            of the game?
+        </p>
+      </statement>
+  </exercise>
+
+  <alert>Notes:</alert>
+  <ol>
+    <li>
+      <p>
+        The expected value of a random variable is not necessarily a value that
+        the random variable can take on.
+      </p>
+    </li>
+    <li>
+      <p>
+    Let <m>Y</m> be the expected payment from a game. The game is called <em>fair</em> 
+    if <fillin characters="20"/>.
+      </p>
+    </li>
+  </ol>
+    
+    <theorem xml:id="thm-expected-value-properties">
+      <title>Properties of Expected Value (B:2.2-1)</title>
+           
+      <statement>
+        <p>
+           If
+      the mathematical expectation <m>E</m> exists, then it satisfies the
+      following properties:
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            <m>E(c) = c</m> where <m>c</m> is a constant
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If <m>X</m> is a discrete random variable and <m>c</m> is a
+            constant, then <m>E[cu(X)] = cE[u(X)].</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If <m>c_{1}</m> and <m>c_{2}</m> are constants and <m>u_{1}</m> and
+            <m>u_{2}</m> are functions of <m>X</m>, then
+            <md>
+              E[(c_{1}u_{1}(X) + c_{2}u_{2}(X)] = c_{1}E[u_{1}(X)]+c_{2}E[u_{2}(X)].
+            </md>
+          </p>
+        </li>
+      </ol>
+        </p>
+      </statement>
+    </theorem>
+ </page>
+ <page>
+<exercise workspace="3in">
+  <statement>
+    <p>
+      <alert>Proofs</alert>:
+    </p>
+  </statement>
+</exercise>
+   
+   <exercise workspace="3IN">
+    <statement>
+      <p>
+        Let <m>X</m> denote a random variable that takes on any of the values
+      <m>-1, 0, 1</m> with pmf
+      <md>
+        f(-1) = .2,\,\, f(0) = .5,\,\, f(1) = .3
+      </md>
+      Compute <m>E[X^{2} + 3X - 5]</m> directly and using Theorem 2.2-1.
+      </p>
+    </statement>
+   </exercise>
+</page>
+<page>
+  
+   
+<exercise>
+  <introduction>
+    <p>
+      A game is played where you toss a coin. If it comes up heads you get
+            <m>\$1</m>, if it comes up tails you pay <m>\$1</m>. Let <m>X</m> be
+            the payment of the game (amount you win or lose). 
+    </p>
+  </introduction>
+  <task workspace="0.5in">
+    <statement>
+      <p>
+        What is the space of <m>X</m>?
+      </p>
+    </statement>
+  </task>
+  <task workspace="0.5in">
+    <statement>
+      <p>
+      What is the pmf of <m>X</m>?
+      </p>
+    </statement>
+  </task>
+  <task workspace="0.5in">
+    <statement>
+      <p>
+       What is <m>E[X]</m>?
+      </p>
+    </statement>
+  </task>
+  <task workspace="0.5in">
+    <statement>
+      <p>
+         What does <m>E[X]</m> mean? Does the value you found make
+                  sense? Why?
+      </p>
+    </statement>
+  </task>
+</exercise>       
+<exercise workspace="2in">
+<statement>
+  <p>
+     Let <m>X</m> denote a random variable that takes on any of the
+            values <m>0, 1, 2</m> with pmf
+            <md>
+             f(0)= .3,\,\, f(1) = .5, \,\, f(2) = .2
+            </md>
+            Compute <m>E[3X^{2} + 2X - 4]</m> directly and using Theorem 2.2-1.
+  </p>
+</statement>
+</exercise>
+</page>
+<page>
+<exercise>
+  <introduction>
+    <p>
+      Suppose in a stack of <m>10</m> lottery tickets, <m>2</m> are
+            winners. You reach in and grab two tickets at random. Let <m>X</m>
+            be the number of winning tickets. Find the space of <m>X</m>, the
+            pmf of <m>X</m> and <m>E[X]</m>.
+    </p>
+  </introduction>
+  <task workspace="0.5in">
+    <statement>
+      <p>
+         What is the space of <m>X</m>?
+      </p>
+    </statement>
+  </task>
+    <task workspace="0.5in">
+    <statement>
+      <p>
+          What is the pmf of <m>X</m>?
+      </p>
+    </statement>
+  </task>
+    <task workspace="0.5in">
+    <statement>
+      <p>
+         What is <m>E[X]</m>?
+      </p>
+    </statement>
+  </task>
+    <task workspace="0.5in">
+    <statement>
+      <p>
+        What does <m>E[X]</m> mean? Does the value you found make
+                  sense? Why?
+      </p>
+    </statement>
+  </task>
+</exercise>
+       
+
+     
+<exercise>
+  <introduction>
+    <p>
+      For these problems, make a guess for the expected value of the random variable <m>X</m>. You do not need to
+      show any work.
+    </p>
+  </introduction>
+  <task workspace="0.5in">
+    <statement>
+      <p>
+          A CD has <m>12</m> songs. You like <m>8</m> of them and don't like
+            <m>4</m> of them. Play <m>6</m> songs chosen at random and let
+            <m>X</m> be the number of songs that you like. Make a guess for <m>E[X]</m>.
+      </p>
+    </statement>
+  </task>
+  <task workspace="0.5in">
+    <statement>
+      <p>
+         A store has <m>20</m> cartons of eggs. Four of these cartons contain
+            cracked eggs. You grab five cartons of eggs at random without
+            checking. Let <m>X</m> be the number of cartons that contain cracked
+            eggs. Make a guess for <m>E[X]</m>.
+      </p>
+    </statement>
+  </task>
+</exercise>
+        </page>
+        <page>
+          <exercise workspace="6in">
+          <statement>
+    <p>
+      Suppose <m>X</m> is a R.V. with a hypergeometric distribution.
+      <m>N=N_{1}+N_{2}</m> objects ( <m>N_{1}</m> alike and <m>N_{2}</m> alike)
+      and suppose you choose <m>n</m> at random. Then we know that
+      <m>P(X=x) = \frac{\left(\begin{array}{c}N_1\\x\end{array} \right)\left(\begin{array}{c}N_2\\n-x\end{array} \right)}{\left(\begin{array}{c}N\\n\end{array} \right)}</m>
+      so:
+      <md>
+        E[X]=\sum_{x=0}^{N_1}x \cdot \frac{\left(\begin{array}{c}N_1\\x\end{array} \right)\left(\begin{array}{c}N_2\\n-x\end{array} \right)}{\left(\begin{array}{c}N\\n\end{array} \right)}
+      </md>
+      We will compute <m>E[X]</m>.[See slides on Canvas page if you don't to take notes.]
+    </p>
+</statement>
+          </exercise>
+    <p>
+      Conclusion: <m>E[X]=</m>
+    </p>
+    </page>
+</worksheet>

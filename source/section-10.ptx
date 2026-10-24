@@ -1,0 +1,191 @@
+<worksheet xml:id="special-expected-values">
+    <title>Special Mathematical Expectations (2.3) Part 1</title>
+    <page>
+    <p>
+        We'll start by recalling (or learning) some useful formulas.
+    </p>
+  <exercise workspace="2in">
+    <statement>
+        <p>
+             The sum of the first <m>n</m> numbers
+      <m>1 + 2 + 3 + \cdots + n = \displaystyle{\sum_{x=1}^n x}</m>
+        </p>
+    </statement>
+  </exercise>
+
+    <exercise workspace="1in">
+    <statement>
+        <p>
+              One can check (use induction) that
+      <m>1^{2} + 2^{2} + 3^{2} + \cdots + n^{2} = \displaystyle{\sum_{x=1}^n x^2}=</m>
+        </p>
+    </statement>
+    </exercise>
+
+    <exercise workspace="3in">
+    <statement>
+        <p>
+             Find the sum: <m>S= a+ar+ar^{2}+ar^{3} + \cdots</m> (where <m>|r|\lt 1</m>).
+    </p>
+    <p>
+      Start with a finite sum:
+      <m>S_{n}= a + a\cdot r + a\cdot r^{2} + \cdots + a\cdot r^{n-1}</m>
+    </p>
+    </statement>
+    </exercise>
+     
+</page>
+<page>
+     <definition xml:id="def-mean">
+     <title>Mean</title>
+     <statement>
+        <p>
+      Let <m>X</m> be a discrete random variable with space
+      <m>S=\{x_{1},x_{2},...,x_{k},...\}</m> and with pmf <m>f(x)</m>.
+    </p>
+
+    <p>
+      The <fillin characters="12"/> <m>X</m>, denoted <m>\mu_X</m>, or just <m>\mu</m> if the context is clear, is just the expected value of <m>X</m> 
+      <md>
+        E(X)=\mu=\sum_{x\in S}xf(x)=x_{1}f(x_{1})+x_{2}f(x_{2})+\cdots x_{k}f(x_{k})+\cdots.
+      </md>
+    </p>
+     </statement>
+     </definition>         
+    
+
+     <exercise workspace="0.5in">
+     <definition xml:id="def-variance">
+     <title>Variance</title>
+     <statement>
+        <p>
+      Let <m>X</m> be a discrete random variable with space
+      <m>S=\{x_{1},x_{2},...,x_{k},...\}</m> and with pmf <m>f(x)</m>.
+    </p>
+  <p>
+      The <fillin characters="20"/> of <m>X</m>, denoted <m>\sigma^{2}</m> is the weighted mean
+      of the square of the distance of each point in the space of <m>X</m> to the mean:
+    </p>
+     </statement>
+     </definition>         
+     </exercise>
+
+    <definition xml:id="def-standard-deviation">
+    <title>Standard Deviation</title>
+    
+    
+        <statement>
+            <p>
+            
+      Let <m>X</m> be a discrete random variable with space
+      <m>S=\{x_{1},x_{2},...,x_{k},...\}</m> and with pmf <m>f(x)</m>. The positive square root of the variance is the
+      <alert> standard deviation </alert> of <m>X</m> and is denoted by
+      <m>\sigma</m>. </p>
+        </statement>
+    </definition>
+
+  <exercise workspace="1.5in">
+    <statement>
+          <p>
+      Note that because of the linear properties of expected value we get:
+    </p>
+
+    <p>
+      <m>E[(X-\mu)^{2}]=</m>
+    </p>
+    </statement>
+  </exercise>
+</page>
+<page>
+  <exercise workspace="3in">
+    <statement>
+        <p>
+             Let <m>X</m> have uniform distribution on the space
+      <m>\{1,2,3,4,5\}</m>. Find the mean and variance of <m>X</m>.
+        </p>
+    </statement>
+  </exercise>
+
+<exercise workspace ="5in">
+    <statement>
+        <p>
+      More generally suppose that <m>X</m> has a uniform distribution on the
+      first <m>m</m> positive integers. The mean of <m>X</m> is:
+    </p>
+    </statement>
+</exercise>
+</page>
+<page>
+   <exercise>
+    <introduction>
+        <p>
+              Recall that <m>X</m> has a <em>hypergeometric distribution</em> in the
+      situation where you are selecting <m>n</m> objects at random without
+      replacement from a set of <m>N</m> objects composed of <m>N_{1}</m> of one
+      type and <m>N_{2}</m> of another ( <m>N=N_{1}+N_{2})</m>. <m>X</m> is the
+      number of objects of type <m>N_{1}</m>. 
+        </p>
+    </introduction>
+    <task workspace="0.25in">
+    <statement>
+        <p>
+            We saw in the last section that <m>\mu=E[X]=</m>
+        </p>
+    </statement>
+    </task>
+     <task workspace="0.25in">
+    <statement>
+        <p>
+             It can be shown (see book) that <m>\sigma^{2} = Var(X) =</m>
+        </p>
+    </statement>
+    </task>
+    
+   </exercise>
+
+<exercise workspace="2in">
+<statement>
+    <p>
+        Suppose you have a stack of <m>100</m> lottery tickets
+      of which <m>15</m> are winners. You draw <m>5</m> at random. Let <m>X</m>
+      be the number of winning tickets. Find <m>\mu, \sigma^{2}</m>.
+    </p>
+</statement>
+</exercise>
+</page>
+<page>
+
+    <p><alert>
+      Practice
+      </alert>
+    </p>
+    <exercise workspace="1.5in">
+    <statement>
+        <p>
+             Suppose <m>X</m> is a discrete RV with pmf given by
+            <m>f(x)=\frac{4-x}{6}</m> for <m>x=1,2,3</m>. Find the mean and the
+            variance of <m>X</m>.
+        </p>
+    </statement>
+    </exercise>
+
+    <exercise workspace="1.5in">
+    <statement>
+        <p>
+            Suppose a fair, 12 sided die is rolled. Let <m>X</m> be the top
+            face. Find the mean and Variance of <m>X</m>.
+        </p>
+    </statement>
+    </exercise>
+
+    <exercise workspace="1.5in">
+    <statement>
+        <p>
+            In a bowl of <q>fun size</q> candy, there are 15 Twix bars and 20
+            Snickers. I reach in and grab 5 candies at random. Let <m>X</m> be
+            the number of Twix. Find the mean and Variance of <m>X</m>.
+        </p>
+    </statement>
+    </exercise>
+    </page>
+     </worksheet>

@@ -1,0 +1,286 @@
+
+     <worksheet xml:id="moment-generating-function">
+         <title>The Moment Generating Function | Special Mathematical Expectations (2.3) Part 2 </title>
+     
+     <page>
+    <definition xml:id="def-moment-generating-function">
+    <title>Moment Generating Function (B:2.3-1)</title>   
+        <statement>
+            <p>
+                Let <m>X</m> be a discrete R.V.
+      with space <m>S</m> and pmf <m>f(x)</m>. If there exists a positive number
+      <m>h</m> such that
+      <md>
+        E(e^{tX}) = \sum_{x\in S}e^{tx}f(x)
+      </md>
+      exists and is finite for <m>-h \lt t \lt h</m> (interval around zero),
+      then <m>M(t) = E(e^{tX})</m> is called the
+      <alert>moment generating function of <m>X</m> (mgf)</alert>.
+            </p>
+        </statement>
+    </definition>
+  
+
+    <p>
+      Suppose your sample space is <m>\{x_{1}, x_{2}, \dots, x_{k}\}</m>. Then
+      <md>
+        M(t) = e^{tx_1}f(x_{1}) + e^{tx_2}f(x_{2}) + ... + e^{tx_k}f(x_{k}).
+      </md>
+      Therefore the coefficient of <m>e^{tx_i}</m> is <fillin/>.
+    </p>
+<exercise workspace="2in">
+    <statement>
+        <p>
+            <alert>Example 1</alert>: Suppose <m>X</m> is a RV with the following
+      moment generating function. Find the pmf.
+      <md>
+        M(t) = \frac{1}{2}+ \frac{1}{8}e^{t} + \frac{1}{4}e^{2t}+ \frac{1}{8}e^{4t}
+      </md>
+        </p>
+    </statement>
+</exercise>
+</page>
+<page>
+  <exercise workspace="4in">
+    <statement>
+        <p>
+            <alert>Example 2</alert>: Suppose <m>X</m> is a RV with the following
+      moment generating function. Find the pmf.
+      <md>
+        M(t) = \frac{0.3e^{t}}{1-0.7e^{t}}.
+      </md>
+        </p>
+    </statement>
+</exercise>
+</page>
+<page>
+<exercise>
+    <introduction>
+        <p>
+             <alert>Neat little trick with Moment Generating Functions</alert>: Using
+      the theory of Laplace Transforms, it is known that if <m>M(t)</m> exists
+      for <m>-h \lt t \lt h,</m> then the <m>k^{th}</m> derivative of
+      <m>M(t),</m> <m>M^{(k)}(t)</m> exists when <m>t=0.</m> Let's look at two
+      of these derivatives.
+        </p>
+    </introduction>
+    <task workspace="3in">
+        <statement>
+            <p>
+                  <m>M'(t) =</m>
+            </p>
+        </statement>
+    </task>
+    
+     <task workspace="2.5in">
+        <statement>
+            <p>
+                  <m>M''(t) =</m>
+            </p>
+        </statement>
+    </task>
+     <task workspace="1in">
+        <statement>
+            <p>
+                  Summary:
+            </p>
+        </statement>
+    </task>
+</exercise>
+</page>
+
+<page>
+<exercise workspace="3.5in">
+    <statement>
+        <p>
+            Back to Example 1 where <m>X</m> had the mgf
+      below. Let's use the moment generating function to find
+      <m>\mu, \sigma^{2}</m>:
+    </p>
+
+    <p>
+      <m>{M(t) = \frac{1}{2} + \frac{1}{8}e^t + \frac{1}{4}e^{2t}+ \frac{1}{8}e^{4t}}</m>
+        </p>
+    </statement>
+</exercise>
+</page>
+
+<page>
+<exercise workspace="3.5in">
+    <statement>
+        <p>
+            Roll a fair die. Let <m>X</m> be the number of trials needed until we see
+      the first six. Let us denote by <m>S</m> a <q>success</q> (rolling a <m>6</m>
+      ) and <m>F</m> be a <q>failure</q> (rolling anything other than a <m>6</m> ).
+    </p>
+
+    <p>
+      What is the space of <m>X</m>? What is the pmf? What is the mgf?
+        </p>
+    </statement>
+</exercise>
+<definition xml:id="def-geometric">
+    <statement>
+        <p>
+            Suppose the pmf of a random variable <m>X</m> is
+    </p>
+
+    <p>
+      <m>f(x)=p\cdot q^{x-1},\,\, x=1,2,...</m> where <m>q=1-p</m>
+        </p>
+        <p>
+            Then <m>X</m> is said to have a <fillin characters="25"/> distribution.
+        </p>
+    </statement>
+</definition>
+ </page>
+ <page>
+    <exercise workspace="6in">
+        <statement>
+            <p>
+                  Suppose <m>X</m> has a geometric distribution with pmf <m>f(x)=p\cdot q^{x-1}, \, \, x=1,2,... (q=1-p).</m>
+                  Then the mgf of <m>X</m>, <m>\mu</m> and <m>\sigma^{2}</m> are:
+            </p>
+        </statement>
+    </exercise>
+
+    </page>
+   <exercise workspace="3in">
+    <statement>
+        <p>
+            The geometric distribution has some convenient formulas that are worth
+      noting:
+    </p>
+
+    </statement>
+   </exercise>
+
+<exercise>
+    <introduction>
+        <p>
+        Sue keeps practicing basketball but never improves. The probability that
+      Sue makes a basket is always 0.2. Let <m>X</m> be the number of shots it
+      takes until Sue makes a basket.    
+        </p>
+    </introduction>
+    <task workspace="0.5in">
+    <statement>
+        <p>
+            How is <m>X</m> distributed?
+        </p>
+    </statement>
+    </task>
+
+    <task workspace=".5in">
+    <statement>
+        <p>
+           What is the pmf of <m>X</m>?
+        </p>
+    </statement>
+    </task>
+
+     <task workspace=".5in">
+    <statement>
+        <p>
+            How many shots do you expect Sue to take before she makes her first
+            basket?
+        </p>
+    </statement>
+    </task>
+     <task workspace=".5in">
+    <statement>
+        <p>
+            What is the probability that Sue makes her first basket on her 4th
+            shot?
+        </p>
+    </statement>
+    </task>
+
+     <task workspace=".5in">
+    <statement>
+        <p>
+              What is the probability that it takes no more than 8 shots before
+            Sue makes her first basket?
+        </p>
+    </statement>
+    </task>
+
+     <task workspace=".5in">
+    <statement>
+        <p>
+                What is the probability that it takes at least 10 shots before Sue
+            makes her first basket?
+        </p>
+    </statement>
+    </task>
+</exercise>
+   
+   <exercise>
+    <introduction>
+        <p>
+           A random variable <m>X</m> has space <m>\{1,2,3\}</m> and pmf given
+            by <m>f(1)=0.2, f(2) = 0.5, f(3) = 0.3</m>. 
+        </p>
+    </introduction>
+    <task workspace="1in">
+        <statement>
+            <p>
+                What is the moment generating function for <m>X</m>?
+            </p>
+        </statement>
+    </task>
+    <task workspace="4in">
+        <statement>
+            <p>
+                Use the mgf to find the mean and variance of <m>X</m>. 
+            </p>
+        </statement>
+    </task>
+   </exercise>
+     <exercise>
+        <introduction>
+            <p>
+              An electronic math placement tests consists of all multiple choice
+            questions with 4 choices. The assessment continues as long as the
+            person gets the correct answer. That is, it ends when the person
+            gets the first wrong answer. A person is taking the test by randomly
+            guessing answers. Let <m>X</m> be the number of the question the
+            person first gets wrong.   
+            </p>
+        </introduction>
+        <task workspace="1in">
+            <statement>
+                <p>
+                     Find the pmf of <m>X</m>.
+                </p>
+            </statement>
+        </task>
+
+         <task workspace="1in">
+            <statement>
+                <p>
+                     What is the probability that <m>X</m> is 3?
+                </p>
+            </statement>
+        </task>
+
+         <task workspace="1in">
+            <statement>
+                <p>
+                    What is the probability that <m>X</m> is at least 4?
+                </p>
+            </statement>
+        </task>
+
+         <task workspace="1in">
+            <statement>
+                <p>
+                    What is the probability that <m>X</m> is no more than 6? 
+                </p>
+            </statement>
+        </task>
+    
+     </exercise>
+         
+
+</worksheet>
