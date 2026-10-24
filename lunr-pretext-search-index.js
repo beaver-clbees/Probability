@@ -1439,6 +1439,393 @@ var ptx_lunr_docs = [
   "number": "8.18",
   "title": "",
   "body": "  In a carton of eggs, are cracked. eggs are selected at random. Let be the number cracked. For each part, first write the question as or for the correct value of , then solve. Recall that and .     Find the probability that 3 eggs are cracked.      Find the probability that no more than is cracked.      Find the probability that at least one is cracked.    "
+},
+{
+  "id": "expected-value",
+  "level": "1",
+  "url": "expected-value.html",
+  "type": "Worksheet",
+  "number": "9",
+  "title": "Mathematical Expectation (2.2)",
+  "body": " Mathematical Expectation (2.2)   One of the most important concepts in probability theory is the expected value of a random variable. One can think of expected value as follows: If we perform an experiment numerous times, the average result is the expected value (arithmetic mean).    Suppose we flip a fair coin and let if a heads appears and if tails. What does your intuition tell you the expected value of should be if the coin is flipped repeatedly?     Expected Value (B:2.2-1)   If is a discrete random variable, having a probability mass function and space , and is any function on , so that exists, then expected value or mathematical expectation of , denoted is         Often we are just looking at       Find , where is the outcome when we roll a fair die.        We play a game where a fair coin is flipped and if a heads appear we get and if tails appears we pay . Let be the payment made on each game. What is the expected value of .      We play a game where a fair die is rolled. If it comes up you win , if it comes up or you win , otherwise you pay . What is the expected value of the game?    Notes:    The expected value of a random variable is not necessarily a value that the random variable can take on.    Let be the expected payment from a game. The game is called fair if .     Properties of Expected Value (B:2.2-1)   If the mathematical expectation exists, then it satisfies the following properties:      where is a constant    If is a discrete random variable and is a constant, then     If and are constants and and are functions of , then             Proofs :      Let denote a random variable that takes on any of the values with pmf Compute directly and using Theorem 2.2-1.        A game is played where you toss a coin. If it comes up heads you get , if it comes up tails you pay . Let be the payment of the game (amount you win or lose).     What is the space of ?      What is the pmf of ?      What is ?      What does mean? Does the value you found make sense? Why?       Let denote a random variable that takes on any of the values with pmf Compute directly and using Theorem 2.2-1.        Suppose in a stack of lottery tickets, are winners. You reach in and grab two tickets at random. Let be the number of winning tickets. Find the space of , the pmf of and .     What is the space of ?      What is the pmf of ?      What is ?      What does mean? Does the value you found make sense? Why?       For these problems, make a guess for the expected value of the random variable . You do not need to show any work.     A CD has songs. You like of them and don't like of them. Play songs chosen at random and let be the number of songs that you like. Make a guess for .      A store has cartons of eggs. Four of these cartons contain cracked eggs. You grab five cartons of eggs at random without checking. Let be the number of cartons that contain cracked eggs. Make a guess for .         Suppose is a R.V. with a hypergeometric distribution. objects ( alike and alike) and suppose you choose at random. Then we know that so: We will compute .[See slides on Canvas page if you don't to take notes.]    Conclusion:    "
+},
+{
+  "id": "expected-value-2-2",
+  "level": "2",
+  "url": "expected-value.html#expected-value-2-2",
+  "type": "Worksheet Exercise",
+  "number": "9.1",
+  "title": "",
+  "body": "  Suppose we flip a fair coin and let if a heads appears and if tails. What does your intuition tell you the expected value of should be if the coin is flipped repeatedly?   "
+},
+{
+  "id": "def-expected-value",
+  "level": "2",
+  "url": "expected-value.html#def-expected-value",
+  "type": "Definition",
+  "number": "9.1",
+  "title": "Expected Value (B:2.2-1).",
+  "body": " Expected Value (B:2.2-1)   If is a discrete random variable, having a probability mass function and space , and is any function on , so that exists, then expected value or mathematical expectation of , denoted is      "
+},
+{
+  "id": "expected-value-2-4",
+  "level": "2",
+  "url": "expected-value.html#expected-value-2-4",
+  "type": "Worksheet Exercise",
+  "number": "9.2",
+  "title": "",
+  "body": "  Often we are just looking at    "
+},
+{
+  "id": "expected-value-2-5",
+  "level": "2",
+  "url": "expected-value.html#expected-value-2-5",
+  "type": "Worksheet Exercise",
+  "number": "9.3",
+  "title": "",
+  "body": "  Find , where is the outcome when we roll a fair die.   "
+},
+{
+  "id": "expected-value-3-1",
+  "level": "2",
+  "url": "expected-value.html#expected-value-3-1",
+  "type": "Worksheet Exercise",
+  "number": "9.4",
+  "title": "",
+  "body": "  We play a game where a fair coin is flipped and if a heads appear we get and if tails appears we pay . Let be the payment made on each game. What is the expected value of .   "
+},
+{
+  "id": "expected-value-3-2",
+  "level": "2",
+  "url": "expected-value.html#expected-value-3-2",
+  "type": "Worksheet Exercise",
+  "number": "9.5",
+  "title": "",
+  "body": "  We play a game where a fair die is rolled. If it comes up you win , if it comes up or you win , otherwise you pay . What is the expected value of the game?   "
+},
+{
+  "id": "thm-expected-value-properties",
+  "level": "2",
+  "url": "expected-value.html#thm-expected-value-properties",
+  "type": "Theorem",
+  "number": "9.2",
+  "title": "Properties of Expected Value (B:2.2-1).",
+  "body": " Properties of Expected Value (B:2.2-1)   If the mathematical expectation exists, then it satisfies the following properties:      where is a constant    If is a discrete random variable and is a constant, then     If and are constants and and are functions of , then       "
+},
+{
+  "id": "expected-value-4-1",
+  "level": "2",
+  "url": "expected-value.html#expected-value-4-1",
+  "type": "Worksheet Exercise",
+  "number": "9.6",
+  "title": "",
+  "body": "   Proofs :   "
+},
+{
+  "id": "expected-value-4-2",
+  "level": "2",
+  "url": "expected-value.html#expected-value-4-2",
+  "type": "Worksheet Exercise",
+  "number": "9.7",
+  "title": "",
+  "body": "  Let denote a random variable that takes on any of the values with pmf Compute directly and using Theorem 2.2-1.   "
+},
+{
+  "id": "expected-value-5-1",
+  "level": "2",
+  "url": "expected-value.html#expected-value-5-1",
+  "type": "Worksheet Exercise",
+  "number": "9.8",
+  "title": "",
+  "body": "  A game is played where you toss a coin. If it comes up heads you get , if it comes up tails you pay . Let be the payment of the game (amount you win or lose).     What is the space of ?      What is the pmf of ?      What is ?      What does mean? Does the value you found make sense? Why?    "
+},
+{
+  "id": "expected-value-5-2",
+  "level": "2",
+  "url": "expected-value.html#expected-value-5-2",
+  "type": "Worksheet Exercise",
+  "number": "9.9",
+  "title": "",
+  "body": "  Let denote a random variable that takes on any of the values with pmf Compute directly and using Theorem 2.2-1.   "
+},
+{
+  "id": "expected-value-6-1",
+  "level": "2",
+  "url": "expected-value.html#expected-value-6-1",
+  "type": "Worksheet Exercise",
+  "number": "9.10",
+  "title": "",
+  "body": "  Suppose in a stack of lottery tickets, are winners. You reach in and grab two tickets at random. Let be the number of winning tickets. Find the space of , the pmf of and .     What is the space of ?      What is the pmf of ?      What is ?      What does mean? Does the value you found make sense? Why?    "
+},
+{
+  "id": "expected-value-6-2",
+  "level": "2",
+  "url": "expected-value.html#expected-value-6-2",
+  "type": "Worksheet Exercise",
+  "number": "9.11",
+  "title": "",
+  "body": "  For these problems, make a guess for the expected value of the random variable . You do not need to show any work.     A CD has songs. You like of them and don't like of them. Play songs chosen at random and let be the number of songs that you like. Make a guess for .      A store has cartons of eggs. Four of these cartons contain cracked eggs. You grab five cartons of eggs at random without checking. Let be the number of cartons that contain cracked eggs. Make a guess for .    "
+},
+{
+  "id": "expected-value-7-1",
+  "level": "2",
+  "url": "expected-value.html#expected-value-7-1",
+  "type": "Worksheet Exercise",
+  "number": "9.12",
+  "title": "",
+  "body": "  Suppose is a R.V. with a hypergeometric distribution. objects ( alike and alike) and suppose you choose at random. Then we know that so: We will compute .[See slides on Canvas page if you don't to take notes.]   "
+},
+{
+  "id": "special-expected-values",
+  "level": "1",
+  "url": "special-expected-values.html",
+  "type": "Worksheet",
+  "number": "10",
+  "title": "Special Mathematical Expectations (2.3) Part 1",
+  "body": " Special Mathematical Expectations (2.3) Part 1   We'll start by recalling (or learning) some useful formulas.    The sum of the first numbers       One can check (use induction) that       Find the sum: (where ).  Start with a finite sum:        Mean   Let be a discrete random variable with space and with pmf .  The  , denoted , or just if the context is clear, is just the expected value of        Variance   Let be a discrete random variable with space and with pmf .  The of , denoted is the weighted mean of the square of the distance of each point in the space of to the mean:      Standard Deviation   Let be a discrete random variable with space and with pmf . The positive square root of the variance is the standard deviation of and is denoted by .      Note that because of the linear properties of expected value we get:           Let have uniform distribution on the space . Find the mean and variance of .      More generally suppose that has a uniform distribution on the first positive integers. The mean of is:        Recall that has a hypergeometric distribution in the situation where you are selecting objects at random without replacement from a set of objects composed of of one type and of another ( . is the number of objects of type .     We saw in the last section that       It can be shown (see book) that        Suppose you have a stack of lottery tickets of which are winners. You draw at random. Let be the number of winning tickets. Find .      Practice     Suppose is a discrete RV with pmf given by for . Find the mean and the variance of .      Suppose a fair, 12 sided die is rolled. Let be the top face. Find the mean and Variance of .      In a bowl of fun size candy, there are 15 Twix bars and 20 Snickers. I reach in and grab 5 candies at random. Let be the number of Twix. Find the mean and Variance of .     "
+},
+{
+  "id": "special-expected-values-2-2",
+  "level": "2",
+  "url": "special-expected-values.html#special-expected-values-2-2",
+  "type": "Worksheet Exercise",
+  "number": "10.1",
+  "title": "",
+  "body": "  The sum of the first numbers    "
+},
+{
+  "id": "special-expected-values-2-3",
+  "level": "2",
+  "url": "special-expected-values.html#special-expected-values-2-3",
+  "type": "Worksheet Exercise",
+  "number": "10.2",
+  "title": "",
+  "body": "  One can check (use induction) that    "
+},
+{
+  "id": "special-expected-values-2-4",
+  "level": "2",
+  "url": "special-expected-values.html#special-expected-values-2-4",
+  "type": "Worksheet Exercise",
+  "number": "10.3",
+  "title": "",
+  "body": "  Find the sum: (where ).  Start with a finite sum:    "
+},
+{
+  "id": "def-mean",
+  "level": "2",
+  "url": "special-expected-values.html#def-mean",
+  "type": "Definition",
+  "number": "10.1",
+  "title": "Mean.",
+  "body": " Mean   Let be a discrete random variable with space and with pmf .  The  , denoted , or just if the context is clear, is just the expected value of     "
+},
+{
+  "id": "special-expected-values-3-2",
+  "level": "2",
+  "url": "special-expected-values.html#special-expected-values-3-2",
+  "type": "Worksheet Exercise",
+  "number": "10.4",
+  "title": "",
+  "body": "  Variance   Let be a discrete random variable with space and with pmf .  The of , denoted is the weighted mean of the square of the distance of each point in the space of to the mean:    "
+},
+{
+  "id": "def-standard-deviation",
+  "level": "2",
+  "url": "special-expected-values.html#def-standard-deviation",
+  "type": "Definition",
+  "number": "10.3",
+  "title": "Standard Deviation.",
+  "body": " Standard Deviation   Let be a discrete random variable with space and with pmf . The positive square root of the variance is the standard deviation of and is denoted by .   "
+},
+{
+  "id": "special-expected-values-3-4",
+  "level": "2",
+  "url": "special-expected-values.html#special-expected-values-3-4",
+  "type": "Worksheet Exercise",
+  "number": "10.5",
+  "title": "",
+  "body": "  Note that because of the linear properties of expected value we get:      "
+},
+{
+  "id": "special-expected-values-4-1",
+  "level": "2",
+  "url": "special-expected-values.html#special-expected-values-4-1",
+  "type": "Worksheet Exercise",
+  "number": "10.6",
+  "title": "",
+  "body": "  Let have uniform distribution on the space . Find the mean and variance of .   "
+},
+{
+  "id": "special-expected-values-4-2",
+  "level": "2",
+  "url": "special-expected-values.html#special-expected-values-4-2",
+  "type": "Worksheet Exercise",
+  "number": "10.7",
+  "title": "",
+  "body": "  More generally suppose that has a uniform distribution on the first positive integers. The mean of is:   "
+},
+{
+  "id": "special-expected-values-5-1",
+  "level": "2",
+  "url": "special-expected-values.html#special-expected-values-5-1",
+  "type": "Worksheet Exercise",
+  "number": "10.8",
+  "title": "",
+  "body": "  Recall that has a hypergeometric distribution in the situation where you are selecting objects at random without replacement from a set of objects composed of of one type and of another ( . is the number of objects of type .     We saw in the last section that       It can be shown (see book) that     "
+},
+{
+  "id": "special-expected-values-5-2",
+  "level": "2",
+  "url": "special-expected-values.html#special-expected-values-5-2",
+  "type": "Worksheet Exercise",
+  "number": "10.9",
+  "title": "",
+  "body": "  Suppose you have a stack of lottery tickets of which are winners. You draw at random. Let be the number of winning tickets. Find .   "
+},
+{
+  "id": "special-expected-values-6-2",
+  "level": "2",
+  "url": "special-expected-values.html#special-expected-values-6-2",
+  "type": "Worksheet Exercise",
+  "number": "10.10",
+  "title": "",
+  "body": "  Suppose is a discrete RV with pmf given by for . Find the mean and the variance of .   "
+},
+{
+  "id": "special-expected-values-6-3",
+  "level": "2",
+  "url": "special-expected-values.html#special-expected-values-6-3",
+  "type": "Worksheet Exercise",
+  "number": "10.11",
+  "title": "",
+  "body": "  Suppose a fair, 12 sided die is rolled. Let be the top face. Find the mean and Variance of .   "
+},
+{
+  "id": "special-expected-values-6-4",
+  "level": "2",
+  "url": "special-expected-values.html#special-expected-values-6-4",
+  "type": "Worksheet Exercise",
+  "number": "10.12",
+  "title": "",
+  "body": "  In a bowl of fun size candy, there are 15 Twix bars and 20 Snickers. I reach in and grab 5 candies at random. Let be the number of Twix. Find the mean and Variance of .   "
+},
+{
+  "id": "moment-generating-function",
+  "level": "1",
+  "url": "moment-generating-function.html",
+  "type": "Worksheet",
+  "number": "11",
+  "title": "The Moment Generating Function | Special Mathematical Expectations (2.3) Part 2",
+  "body": " The Moment Generating Function | Special Mathematical Expectations (2.3) Part 2    Moment Generating Function (B:2.3-1)   Let be a discrete R.V. with space and pmf . If there exists a positive number such that exists and is finite for (interval around zero), then is called the moment generating function of (mgf) .    Suppose your sample space is . Then Therefore the coefficient of is .     Example 1 : Suppose is a RV with the following moment generating function. Find the pmf.          Example 2 : Suppose is a RV with the following moment generating function. Find the pmf.          Neat little trick with Moment Generating Functions : Using the theory of Laplace Transforms, it is known that if exists for then the derivative of  exists when Let's look at two of these derivatives.                   Summary:         Back to Example 1 where had the mgf below. Let's use the moment generating function to find :           Roll a fair die. Let be the number of trials needed until we see the first six. Let us denote by a success (rolling a ) and be a failure (rolling anything other than a ).  What is the space of ? What is the pmf? What is the mgf?      Suppose the pmf of a random variable is   where   Then is said to have a distribution.        Suppose has a geometric distribution with pmf Then the mgf of , and are:       The geometric distribution has some convenient formulas that are worth noting:      Sue keeps practicing basketball but never improves. The probability that Sue makes a basket is always 0.2. Let be the number of shots it takes until Sue makes a basket.     How is distributed?      What is the pmf of ?      How many shots do you expect Sue to take before she makes her first basket?      What is the probability that Sue makes her first basket on her 4th shot?      What is the probability that it takes no more than 8 shots before Sue makes her first basket?      What is the probability that it takes at least 10 shots before Sue makes her first basket?       A random variable has space and pmf given by .     What is the moment generating function for ?      Use the mgf to find the mean and variance of .       An electronic math placement tests consists of all multiple choice questions with 4 choices. The assessment continues as long as the person gets the correct answer. That is, it ends when the person gets the first wrong answer. A person is taking the test by randomly guessing answers. Let be the number of the question the person first gets wrong.     Find the pmf of .      What is the probability that is 3?      What is the probability that is at least 4?      What is the probability that is no more than 6?     "
+},
+{
+  "id": "def-moment-generating-function",
+  "level": "2",
+  "url": "moment-generating-function.html#def-moment-generating-function",
+  "type": "Definition",
+  "number": "11.1",
+  "title": "Moment Generating Function (B:2.3-1).",
+  "body": " Moment Generating Function (B:2.3-1)   Let be a discrete R.V. with space and pmf . If there exists a positive number such that exists and is finite for (interval around zero), then is called the moment generating function of (mgf) .   "
+},
+{
+  "id": "moment-generating-function-2-3",
+  "level": "2",
+  "url": "moment-generating-function.html#moment-generating-function-2-3",
+  "type": "Worksheet Exercise",
+  "number": "11.1",
+  "title": "",
+  "body": "   Example 1 : Suppose is a RV with the following moment generating function. Find the pmf.    "
+},
+{
+  "id": "moment-generating-function-3-1",
+  "level": "2",
+  "url": "moment-generating-function.html#moment-generating-function-3-1",
+  "type": "Worksheet Exercise",
+  "number": "11.2",
+  "title": "",
+  "body": "   Example 2 : Suppose is a RV with the following moment generating function. Find the pmf.    "
+},
+{
+  "id": "moment-generating-function-4-1",
+  "level": "2",
+  "url": "moment-generating-function.html#moment-generating-function-4-1",
+  "type": "Worksheet Exercise",
+  "number": "11.3",
+  "title": "",
+  "body": "   Neat little trick with Moment Generating Functions : Using the theory of Laplace Transforms, it is known that if exists for then the derivative of  exists when Let's look at two of these derivatives.                   Summary:    "
+},
+{
+  "id": "moment-generating-function-5-1",
+  "level": "2",
+  "url": "moment-generating-function.html#moment-generating-function-5-1",
+  "type": "Worksheet Exercise",
+  "number": "11.4",
+  "title": "",
+  "body": "  Back to Example 1 where had the mgf below. Let's use the moment generating function to find :      "
+},
+{
+  "id": "moment-generating-function-6-1",
+  "level": "2",
+  "url": "moment-generating-function.html#moment-generating-function-6-1",
+  "type": "Worksheet Exercise",
+  "number": "11.5",
+  "title": "",
+  "body": "  Roll a fair die. Let be the number of trials needed until we see the first six. Let us denote by a success (rolling a ) and be a failure (rolling anything other than a ).  What is the space of ? What is the pmf? What is the mgf?   "
+},
+{
+  "id": "def-geometric",
+  "level": "2",
+  "url": "moment-generating-function.html#def-geometric",
+  "type": "Definition",
+  "number": "11.2",
+  "title": "",
+  "body": "  Suppose the pmf of a random variable is   where   Then is said to have a distribution.   "
+},
+{
+  "id": "moment-generating-function-7-1",
+  "level": "2",
+  "url": "moment-generating-function.html#moment-generating-function-7-1",
+  "type": "Worksheet Exercise",
+  "number": "11.6",
+  "title": "",
+  "body": "  Suppose has a geometric distribution with pmf Then the mgf of , and are:   "
+},
+{
+  "id": "moment-generating-function-8",
+  "level": "2",
+  "url": "moment-generating-function.html#moment-generating-function-8",
+  "type": "Worksheet Exercise",
+  "number": "11.7",
+  "title": "",
+  "body": "  The geometric distribution has some convenient formulas that are worth noting:   "
+},
+{
+  "id": "moment-generating-function-9",
+  "level": "2",
+  "url": "moment-generating-function.html#moment-generating-function-9",
+  "type": "Worksheet Exercise",
+  "number": "11.8",
+  "title": "",
+  "body": "  Sue keeps practicing basketball but never improves. The probability that Sue makes a basket is always 0.2. Let be the number of shots it takes until Sue makes a basket.     How is distributed?      What is the pmf of ?      How many shots do you expect Sue to take before she makes her first basket?      What is the probability that Sue makes her first basket on her 4th shot?      What is the probability that it takes no more than 8 shots before Sue makes her first basket?      What is the probability that it takes at least 10 shots before Sue makes her first basket?    "
+},
+{
+  "id": "moment-generating-function-10",
+  "level": "2",
+  "url": "moment-generating-function.html#moment-generating-function-10",
+  "type": "Worksheet Exercise",
+  "number": "11.9",
+  "title": "",
+  "body": "  A random variable has space and pmf given by .     What is the moment generating function for ?      Use the mgf to find the mean and variance of .    "
+},
+{
+  "id": "moment-generating-function-11",
+  "level": "2",
+  "url": "moment-generating-function.html#moment-generating-function-11",
+  "type": "Worksheet Exercise",
+  "number": "11.10",
+  "title": "",
+  "body": "  An electronic math placement tests consists of all multiple choice questions with 4 choices. The assessment continues as long as the person gets the correct answer. That is, it ends when the person gets the first wrong answer. A person is taking the test by randomly guessing answers. Let be the number of the question the person first gets wrong.     Find the pmf of .      What is the probability that is 3?      What is the probability that is at least 4?      What is the probability that is no more than 6?    "
 }
 ]
 
