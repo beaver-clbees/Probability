@@ -1826,6 +1826,159 @@ var ptx_lunr_docs = [
   "number": "11.10",
   "title": "",
   "body": "  An electronic math placement tests consists of all multiple choice questions with 4 choices. The assessment continues as long as the person gets the correct answer. That is, it ends when the person gets the first wrong answer. A person is taking the test by randomly guessing answers. Let be the number of the question the person first gets wrong.     Find the pmf of .      What is the probability that is 3?      What is the probability that is at least 4?      What is the probability that is no more than 6?    "
+},
+{
+  "id": "binomial-distribution",
+  "level": "1",
+  "url": "binomial-distribution.html",
+  "type": "Worksheet",
+  "number": "12",
+  "title": "The Binomial Distribution (2.4)",
+  "body": " The Binomial Distribution (2.4)     Suppose a random experiment is performed where there are only two possible outcomes: success or failure. Let be the discrete R.V. where if the outcome is a success and if failure. Then is called a random variable and the experiment is a experiment.  Denote by the probability of success, then the pmf of is      Find the pmf of each random variable described below.     An urn contains red and white balls. Draw a ball at random, let if red, if white.      The probability my brother answers the phone when I call is . Let if he answers the phone and otherwise.       Suppose is a Bernoulli random variable. Find the mean, variance, and standard deviation of .           Suppose a Bernoulli experiment is repeated times ( trials ) and                         Then, the experiment is called a experiment and has a   distribution, which we denote by .    Roll a die times and let be the number of times I get a . How is distributed? Find .      On a question multiple choice exam, each answer has choices. Suppose each answer is randomly guessed. Let be the number correct. How is distributed? Find the pmf of .        Now in general suppose      What values can it take on?       What is the probability of each Bernoulli trial?      What is the pmf?       Suppose each lottery ticket in OR has a probability of being a winner. I have a stack of lottery tickets. Let be the number of winning tickets. How is distributed? Find the expected number of winners.      Suppose in my stack of lottery tickets, 6 are winners. I draw tickets at random and let be the number of winning tickets. How is distributed? Find the expected number of winners.        Let's use the moment generating function technique to find the mean and variance:      In Summary:  If is , then   Note: We will use and interchangeably.    Jerry sells life insurance over the phone. The probability of any given phone call resulting in a sale is . Suppose Jerry calls people, let be the number of sales (assume independence of the calls).     How is distributed (i.e., write for the correct and )?      How many sales can Jerry expect to make?      For each of the following, first write the answer in terms of (or , etc.). Then find the answer.     What is the probability he makes no more than sale?      At least ?      Exactly ?          The probability that the field goal kicker on a certain football team will make the field goal is . Assume that each attempt is independent. In practice one day the kicker attempts field goals. Let be the number that are successful.     How is distributed?      What is the expected number of field goals?      What is the probability that exactly field goals are made?      What is the probability that more than field goals are made?      What is the probability that he misses more than field goal?         Recall the Cumulative distribution function, cdf of a discrete random variable is      For each of the following, first write the problem as or . Then use you calculator or app to find the answer. Use the format given in class to show work for calculator formulas.     For find .      For find .      For find .      For find .      For find .      For find .         Your favorite cereal (Sugar-O's) is offering one of four prizes in each box of cereal. There is a probability in each box (assume independence) that the prize will be the secret decoder ring. What is the fewest number of boxes of cereal you need to buy so that the probability of getting at least one secret decoder ring is greater than ?      A hospital obtains of its flu vaccine from Company , from Companuy , and from Company . From past experience, it is known that of the vials from are ineffective, from are ineffective, and from are ineffective. The hospital tests five vials from each shipment. If at least one of the five is ineffective, find the conditional probability of that shipment's having come from .     "
+},
+{
+  "id": "binomial-distribution-2-1",
+  "level": "2",
+  "url": "binomial-distribution.html#binomial-distribution-2-1",
+  "type": "Worksheet Exercise",
+  "number": "12.1",
+  "title": "",
+  "body": "  Suppose a random experiment is performed where there are only two possible outcomes: success or failure. Let be the discrete R.V. where if the outcome is a success and if failure. Then is called a random variable and the experiment is a experiment.  Denote by the probability of success, then the pmf of is   "
+},
+{
+  "id": "binomial-distribution-2-2",
+  "level": "2",
+  "url": "binomial-distribution.html#binomial-distribution-2-2",
+  "type": "Worksheet Exercise",
+  "number": "12.2",
+  "title": "",
+  "body": "  Find the pmf of each random variable described below.     An urn contains red and white balls. Draw a ball at random, let if red, if white.      The probability my brother answers the phone when I call is . Let if he answers the phone and otherwise.    "
+},
+{
+  "id": "binomial-distribution-2-3",
+  "level": "2",
+  "url": "binomial-distribution.html#binomial-distribution-2-3",
+  "type": "Worksheet Exercise",
+  "number": "12.3",
+  "title": "",
+  "body": "  Suppose is a Bernoulli random variable. Find the mean, variance, and standard deviation of .   "
+},
+{
+  "id": "binomial-distribution-3-1",
+  "level": "2",
+  "url": "binomial-distribution.html#binomial-distribution-3-1",
+  "type": "Worksheet Exercise",
+  "number": "12.4",
+  "title": "",
+  "body": "     Suppose a Bernoulli experiment is repeated times ( trials ) and                        "
+},
+{
+  "id": "binomial-distribution-3-4",
+  "level": "2",
+  "url": "binomial-distribution.html#binomial-distribution-3-4",
+  "type": "Worksheet Exercise",
+  "number": "12.5",
+  "title": "",
+  "body": "  Roll a die times and let be the number of times I get a . How is distributed? Find .   "
+},
+{
+  "id": "binomial-distribution-3-5",
+  "level": "2",
+  "url": "binomial-distribution.html#binomial-distribution-3-5",
+  "type": "Worksheet Exercise",
+  "number": "12.6",
+  "title": "",
+  "body": "  On a question multiple choice exam, each answer has choices. Suppose each answer is randomly guessed. Let be the number correct. How is distributed? Find the pmf of .   "
+},
+{
+  "id": "binomial-distribution-4-1",
+  "level": "2",
+  "url": "binomial-distribution.html#binomial-distribution-4-1",
+  "type": "Worksheet Exercise",
+  "number": "12.7",
+  "title": "",
+  "body": "  Now in general suppose      What values can it take on?       What is the probability of each Bernoulli trial?      What is the pmf?    "
+},
+{
+  "id": "binomial-distribution-4-2",
+  "level": "2",
+  "url": "binomial-distribution.html#binomial-distribution-4-2",
+  "type": "Worksheet Exercise",
+  "number": "12.8",
+  "title": "",
+  "body": "  Suppose each lottery ticket in OR has a probability of being a winner. I have a stack of lottery tickets. Let be the number of winning tickets. How is distributed? Find the expected number of winners.   "
+},
+{
+  "id": "binomial-distribution-4-3",
+  "level": "2",
+  "url": "binomial-distribution.html#binomial-distribution-4-3",
+  "type": "Worksheet Exercise",
+  "number": "12.9",
+  "title": "",
+  "body": "  Suppose in my stack of lottery tickets, 6 are winners. I draw tickets at random and let be the number of winning tickets. How is distributed? Find the expected number of winners.   "
+},
+{
+  "id": "binomial-distribution-5-1",
+  "level": "2",
+  "url": "binomial-distribution.html#binomial-distribution-5-1",
+  "type": "Worksheet Exercise",
+  "number": "12.10",
+  "title": "",
+  "body": "  Let's use the moment generating function technique to find the mean and variance:   "
+},
+{
+  "id": "binomial-distribution-6-4",
+  "level": "2",
+  "url": "binomial-distribution.html#binomial-distribution-6-4",
+  "type": "Worksheet Exercise",
+  "number": "12.11",
+  "title": "",
+  "body": "  Jerry sells life insurance over the phone. The probability of any given phone call resulting in a sale is . Suppose Jerry calls people, let be the number of sales (assume independence of the calls).     How is distributed (i.e., write for the correct and )?      How many sales can Jerry expect to make?      For each of the following, first write the answer in terms of (or , etc.). Then find the answer.     What is the probability he makes no more than sale?      At least ?      Exactly ?     "
+},
+{
+  "id": "binomial-distribution-7-1",
+  "level": "2",
+  "url": "binomial-distribution.html#binomial-distribution-7-1",
+  "type": "Worksheet Exercise",
+  "number": "12.12",
+  "title": "",
+  "body": "  The probability that the field goal kicker on a certain football team will make the field goal is . Assume that each attempt is independent. In practice one day the kicker attempts field goals. Let be the number that are successful.     How is distributed?      What is the expected number of field goals?      What is the probability that exactly field goals are made?      What is the probability that more than field goals are made?      What is the probability that he misses more than field goal?    "
+},
+{
+  "id": "binomial-distribution-8-1",
+  "level": "2",
+  "url": "binomial-distribution.html#binomial-distribution-8-1",
+  "type": "Worksheet Exercise",
+  "number": "12.13",
+  "title": "",
+  "body": "  Recall the Cumulative distribution function, cdf of a discrete random variable is   "
+},
+{
+  "id": "binomial-distribution-8-2",
+  "level": "2",
+  "url": "binomial-distribution.html#binomial-distribution-8-2",
+  "type": "Worksheet Exercise",
+  "number": "12.14",
+  "title": "",
+  "body": "  For each of the following, first write the problem as or . Then use you calculator or app to find the answer. Use the format given in class to show work for calculator formulas.     For find .      For find .      For find .      For find .      For find .      For find .    "
+},
+{
+  "id": "binomial-distribution-9-1",
+  "level": "2",
+  "url": "binomial-distribution.html#binomial-distribution-9-1",
+  "type": "Worksheet Exercise",
+  "number": "12.15",
+  "title": "",
+  "body": "  Your favorite cereal (Sugar-O's) is offering one of four prizes in each box of cereal. There is a probability in each box (assume independence) that the prize will be the secret decoder ring. What is the fewest number of boxes of cereal you need to buy so that the probability of getting at least one secret decoder ring is greater than ?   "
+},
+{
+  "id": "binomial-distribution-9-2",
+  "level": "2",
+  "url": "binomial-distribution.html#binomial-distribution-9-2",
+  "type": "Worksheet Exercise",
+  "number": "12.16",
+  "title": "",
+  "body": "  A hospital obtains of its flu vaccine from Company , from Companuy , and from Company . From past experience, it is known that of the vials from are ineffective, from are ineffective, and from are ineffective. The hospital tests five vials from each shipment. If at least one of the five is ineffective, find the conditional probability of that shipment's having come from .   "
 }
 ]
 
