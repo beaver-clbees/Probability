@@ -1,0 +1,373 @@
+ <worksheet xml:id="binomial-distribution">
+         <title>The Binomial Distribution (2.4) </title>
+<page>
+<exercise workspace="1in">
+<statement>
+    <p>
+        Suppose a random experiment is performed where there are only two possible
+      outcomes: success or failure. Let <m>X</m> be the discrete R.V. where
+      <m>X=1</m> if the outcome is a success and <m>X=0</m> if failure. Then
+      <m>X</m> is called a <fillin characters="20"/> random variable and the experiment is a <fillin characters="20"/> experiment.
+    </p>
+
+    <p>
+      Denote by <m>p</m> the probability of success, then the pmf of <m>X</m> is
+    </p>
+</statement>
+</exercise>
+<exercise>
+    <introduction>
+        <p>
+            Find the pmf of each random variable <m>X</m> described below.
+        </p>
+    </introduction>
+    <task workspace="0.5in">
+    <statement>
+        <p>
+             An urn contains <m>7</m> red and <m>11</m> white balls. Draw a ball
+            at random, let <m>X=1</m> if red, <m>X=0</m> if white.
+        </p>
+    </statement>
+    </task>
+    <task workspace="0.5in">
+        <statement>
+            <p>
+                The probability my brother answers the phone when I call is
+            <m>0.45</m>. Let <m>X=1</m> if he answers the phone and <m>X=0</m>
+            otherwise.
+            </p>
+        </statement>
+    </task>
+</exercise>
+   
+<exercise workspace="2in">
+<statement>
+    <p>
+      Suppose <m>X</m> is a Bernoulli random variable. Find the mean, variance, and standard deviation of <m>X</m>.
+    </p>
+</statement>
+</exercise>
+</page>
+<page>
+  <exercise>
+    <introduction>
+        <p>
+            <definition xml:id="Binomial-def">
+            <statement>
+                <p>
+                    Suppose a Bernoulli experiment is repeated <m>n</m> times (<q><m>n</m> trials</q>) and
+                </p>
+            </statement>
+            </definition>
+        </p>
+    </introduction>
+    <task workspace=".25in">
+    <statement>
+        <p>
+            
+        </p>
+    </statement>
+    </task>
+     <task workspace=".25in">
+    <statement>
+        <p>
+            
+        </p>
+    </statement>
+    </task>
+     <task workspace=".25in">
+    <statement>
+        <p>
+            
+        </p>
+    </statement>
+    </task>
+  </exercise>
+    
+
+    <p>
+      Then, the experiment is called a <fillin characters="25"/> experiment and <m>X</m> has a
+    </p>
+
+    <p>
+      <fillin characters="25"/> distribution, which we denote by <fillin characters="25"/>.
+    </p>
+    
+    <exercise workspace = "1.5in">
+    <statement>
+        <p>
+             Roll a die <m>10</m> times and let <m>X</m> be the number of times I
+            get a <m>5</m>. How is <m>X</m> distributed? Find <m>P(X=3)</m>.
+        </p>
+    </statement>
+    </exercise>
+    <exercise workspace="1.5in">
+    <statement>
+        <p>
+             On a <m>3</m> question multiple choice exam, each answer has
+            <m>5</m> choices. Suppose each answer is randomly guessed. Let
+            <m>X</m> be the number correct. How is <m>X</m> distributed? Find the pmf of <m>X</m>.
+        </p>
+    </statement>
+    </exercise>
+</page>
+<page>
+    <exercise>
+        <introduction>
+            <p>
+                Now in general suppose  <m>X \sim b(n,p)</m>
+            </p>
+        </introduction>
+        <task workspace = ".25in">
+        <statement>
+            <p>
+                 What values can it take on? <m>X=</m>
+            </p>
+        </statement>
+        </task>
+        <task>
+        <statement>
+            <p>
+                 What is the probability of each Bernoulli trial?
+            </p>
+        </statement>
+        </task>
+        <task workspace = "2in">
+        <statement>
+            <p>
+                What is the pmf?
+            </p>
+        </statement>
+        </task>
+    </exercise> 
+  <exercise workspace = "2in">
+  <statement>
+    <p>
+      Suppose each lottery ticket in OR has a <m>0.1</m> probability of being a
+      winner. I have a stack of <m>3</m> lottery tickets. Let <m>X</m> be the
+      number of winning tickets. How is <m>X</m> distributed? Find the expected number of winners.    
+    </p>
+  </statement>
+    </exercise>
+    
+      <exercise workspace="1in">
+        <statement>
+            <p>
+                Suppose in my stack of <m>20</m> lottery tickets, 6 are winners. I draw
+      <m>5</m> tickets at random and let <m>X</m> be the number of winning
+      tickets. How is <m>X</m> distributed? Find the expected number of winners.  
+            </p>
+        </statement>
+        </exercise>
+</page>
+<page>
+<exercise workspace = "8in">
+<statement>
+    <p>
+      Let's use the moment generating function technique to find the mean and
+      variance:
+    </p>
+</statement>
+</exercise>
+</page>
+<page>
+    <p>
+      In Summary:
+    </p>
+
+    <p>
+      If <m>X</m> is <m>b(n,p)</m>, then
+      <md>
+        E[X] = \mu = np,\,\,\, Var(X) = np(1-p) = npq; \,\,\, \sigma = \sqrt{npq}
+      </md>
+    </p>
+
+    <p>
+      Note: We will use <m>q</m> and <m>1-p</m> interchangeably.
+    </p>
+
+ <exercise>
+  <introduction>
+    <p>
+      Jerry sells life insurance over the phone. The probability of any given
+          phone call resulting in a sale is <m>0.1</m>. Suppose Jerry calls
+          <m>25</m> people, let <m>X</m> be the number of sales (assume independence
+          of the calls).
+    </p>
+  </introduction>
+  <task workspace="1in">
+    <statement>
+      <p>
+        How is <m>X</m> distributed (i.e., write <m>X \sim b(n,p)</m> for
+                the correct <m>n</m> and <m>p</m> )?
+      </p>
+    </statement>
+  </task>
+  <task workspace = "0.75in">
+    <statement>
+      <p>
+         How many sales can Jerry expect to make?
+      </p>
+    </statement>
+  </task>
+  <task>
+  <introduction>
+    <p>
+      For each of the following, first write the answer in terms of
+                <m>P(X\leq k)</m> (or <m>1-P(X \leq k)</m>, etc.). Then find the
+                answer.
+    </p>
+  </introduction>
+  <task workspace = "0.75in">
+  <statement>
+    <p>
+      What is the probability he makes no more than <m>1</m> sale?
+    </p>
+  </statement>
+  </task>
+  <task workspace = "0.75in">
+    <statement>
+      <p>
+        At least <m>1</m>?
+      </p>
+    </statement>
+  </task>
+  <task workspace = "0.75in">
+    <statement>
+      <p>
+        Exactly <m>5</m>?
+      </p>
+    </statement>
+  </task>
+  </task>             
+  </exercise>
+</page>
+<page>
+  <exercise>
+    <introduction>
+      <p>
+        The probability that the field goal kicker on a certain football team will
+          make the field goal is <m>0.80</m>. Assume that each attempt is
+          independent. In practice one day the kicker attempts <m>20</m> field
+          goals. Let <m>X</m> be the number that are successful.
+      </p>
+    </introduction>
+      <task workspace = "0.75in">
+        <statement>
+          <p>
+            How is <m>X</m> distributed?
+          </p>
+          </statement>
+      </task>
+      <task workspace = "0.75in">
+        <statement>
+          <p>
+            What is the expected number of field goals?
+          </p>
+          </statement>
+      </task>
+      <task workspace = "0.75in">
+        <statement>
+          <p>
+            What is the probability that exactly <m>12</m> field goals are made?
+          </p>
+          </statement>
+      </task>
+      <task workspace = "0.75in">
+        <statement>
+          <p>
+            What is the probability that more than <m>19</m> field goals are
+                made?
+          </p>
+          </statement>
+      </task>
+      <task workspace = "0.75in">
+        <statement>
+          <p>
+           What is the probability that he misses more than <m>1</m> field goal?
+          </p>
+          </statement>
+      </task>
+  </exercise>        
+</page>
+<page>
+    <exercise workspace="1in">
+<statement>
+    <p>
+         Recall the <alert>Cumulative distribution function, cdf</alert> of a
+      discrete random variable <m>X</m> is
+    </p>
+</statement>
+</exercise>  
+<exercise>
+    <introduction>
+        <p>
+            For each of the following, first write the problem as <m>f(x), F(x), </m> or <m> 1-F(x)</m>. 
+            Then use you calculator or app to find the answer. 
+            Use the format given in class to show work for calculator formulas.
+        </p>
+    </introduction>
+<task workspace="0.75in">
+<statement>
+    <p>
+       For <m>X\sim b(10,0.45)</m> find <m>P(X \leq 2)</m>.  
+    </p>
+</statement>
+</task>
+<task workspace="0.75in">
+<statement>
+    <p>
+         For <m>X\sim b(15, 0.3)</m> find <m>P(X\lt 10)</m>.
+    </p>
+</statement>
+</task>
+<task workspace="0.75in">
+<statement>
+    <p>
+         For <m>X\sim b(5,0.1)</m> find <m>P(X \geq 2)</m>.
+    </p>
+</statement>
+</task>
+<task workspace="0.75in">
+<statement>
+    <p>
+          For <m>X\sim b(20,0.5)</m> find <m>P(X=15)</m>.
+    </p>
+</statement>
+</task>
+<task workspace="0.75in">
+<statement>
+    <p>
+         For <m>X\sim b(15,0.9)</m> find <m>P(10 \lt X \leq 13)</m>.
+    </p>
+</statement>
+</task>
+<task workspace="0.75in">
+<statement>
+    <p>
+        For <m>X\sim b(15,0.9)</m> find <m>P(10 \leq X \lt 13)</m>.
+    </p>
+</statement>
+</task>
+</exercise>
+</page>
+<page>
+    <exercise workspace = "2in">
+    <statement>
+        <p>
+            Your favorite cereal (Sugar-O's) is offering one of four prizes in each box of cereal. There is a <m>0.25</m> probability in each box (assume independence) that 
+            the prize will be the secret decoder ring. What is the fewest number of boxes of cereal you need to buy so that the probability
+            of getting at least one secret decoder ring is greater than <m>0.5</m>?
+        </p>
+    </statement>
+    </exercise>
+
+    <exercise workspace = "3in">
+    <statement>
+        <p>
+             A hospital obtains <m>40\%</m> of its flu vaccine from Company <m>A</m>, <m>50\%</m> from Companuy <m>B</m>, and <m>10\%</m> from Company <m>C</m>. From past experience, it is known that <m>3\%</m> of the vials from <m>A</m> are ineffective, <m>2\%</m> from <m>B</m> are ineffective, and <m>5\%</m> from <m>C</m> are ineffective. The hospital tests five vials from each shipment. If at least one of the five is ineffective, find the conditional probability of that shipment's having come from <m>C</m>.
+        </p>
+    </statement>
+    </exercise>
+</page>
+</worksheet>
