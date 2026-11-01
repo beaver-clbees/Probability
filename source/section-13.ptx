@@ -1,0 +1,147 @@
+<worksheet xml:id="ws-negative-binomial">
+    <title>The Negative Binomial Distribution (2.5)</title>
+<page>
+    <exercise workspace="3in">
+      <statement>
+        <p>
+           The world series in baseball is a seven game series between an
+            American League (AL) team and a National League team (NL) where the
+            winner is the first team that wins <m>4</m> games. Suppose the
+            probability that the AL team wins any given game is <m>p=0.55</m>.
+            In other words, for the sake of this problem, whether a team wins a
+            game is independent of the wins in the other games. What is the
+            probability that the AL team wins in <m>6</m> games?
+        </p>
+      </statement>
+    </exercise>  
+    <exercise workspace="2in">
+      <statement>
+        <p>
+          Jerry is selling life insurance over the phone. The probability that
+            any given call will result in a sale is <m>0.25</m>. Find the
+            probability that his <m>2^{nd}</m> sale happens on his <m>5^{th}</m> call.
+        </p>
+      </statement>
+    </exercise>
+</page>
+
+<page>
+
+<definition xml:id="negative-binomial">
+  <title>Negative Binomial Distribution</title>
+  <statement>
+    <p>Suppose a sequence of independent Bernoulli trials is repeated
+      (each with probability <m>p</m> of success) and let the random variable
+      <m>X</m> denote the trial on which the <m>r^{th}</m> success occurs. Then we
+      say <m>X</m> has a <em>negative binomial</em> distribution.
+    </p>
+  </statement>
+</definition>
+  
+<exercise>
+  <introduction>
+    <p>
+      Suppose <m>X</m> has a negative binomial distribution. 
+    </p>
+  </introduction>
+  <task workspace="2in">
+    <statement>
+      <p>
+        Find the pmf of <m>X</m>.
+      </p>
+    </statement>
+  </task>
+ <task workspace="1in">
+  <statement>
+    <p>
+      The mean and variance of <m>X</m> are given by:
+    </p>
+  </statement>
+  </task>
+</exercise>
+<exercise>
+  <introduction>
+    <p>
+      A fair six-sided die is rolled repeatedly.
+    </p>
+  </introduction>
+  <task workspace="1in">
+    <statement>
+      <p>
+        What is the probability that the <m>5</m> appears for the
+                  <m>3^{rd}</m> time on the <m>15^{th} </m> roll of the die?
+      </p>
+    </statement>
+  </task>
+  <task workspace="1in">
+    <statement>
+      <p>
+        What is the probability that the first <m>5</m> appears
+                  sometime after the fourth roll?
+      </p>
+    </statement>
+  </task>
+  <task workspace="1in">
+    <statement>
+      <p>
+        How many rolls to you expect before you get the <m>6^{th}</m> five?
+      </p>
+    </statement>
+  </task>
+</exercise>
+</page>
+<page>
+<exercise workspace="6in">
+<statement>
+  <p>
+    A fair six-sided die is rolled until each face is observed at
+                  least once. On average, how many rolls are needed?
+  </p>
+</statement>           
+</exercise>
+</page>
+<page>
+  <exercise workspace="1in">
+    <statement>
+      <p>
+        The probability that any customer at Starbucks orders the new holiday latte is 0.45. What is the probability that the fourth holiday latte is sold to the <m>10^{th}</m> customer? (Assume independence, and that each customer only buys one drink.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise workspace="1in">
+    <statement>
+      <p>
+        The probability that Joe wakes up before his alarm goes off while he is on vacation is <m>0.35</m>. What is the probability that the second time he wakes up before his alarm goes off is the <m>5^{th}</m> day of Joe's vacation?
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <introduction>
+      <p>
+        The probability that a baseball team wins a game is <m>0.6</m> (assume independence). 
+      </p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>
+          What is the probability that the first game they win is the <m>3^{rd}</m> game of the season?
+        </p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>
+          What is the probability that they win their <m>2^{nd}</m> game within their first <m>4</m> games?
+        </p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>
+          Once a team wins <m>15</m> games, they are guaranteed to be in the championship tournament. Once they win their <m>15^{th}</m> game, they are said to <q>make the tournament</q>. What is the expected number of games the team must play before they make the tournament?
+        </p>
+      </statement>
+    </task>
+  </exercise>
+</page>
+</worksheet>

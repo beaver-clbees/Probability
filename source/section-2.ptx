@@ -234,8 +234,8 @@
 </li>
 </ul>
 <sidebyside widths="20% 20% 20%" margins="20%">
-<image>
-<latex-image xml:id="venn1g">
+<image  xml:id="venn1g">
+<latex-image>
     \begin{tikzpicture}
         \draw (-1.5,-2.5) rectangle (2.5,1.5)
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
@@ -244,8 +244,8 @@
 \end{tikzpicture}
 </latex-image>
 </image>
-<image>
-  <latex-image xml:id="venn2g">
+<image  xml:id="venn2g">
+  <latex-image>
 \begin{tikzpicture}
     \draw (-1.5,-2.5) rectangle (2.5,1.5)
     (0,0) circle (1) (-.25,0) node [text=black,above] {$A$}
