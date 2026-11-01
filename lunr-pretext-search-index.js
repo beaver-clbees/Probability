@@ -1979,6 +1979,96 @@ var ptx_lunr_docs = [
   "number": "12.16",
   "title": "",
   "body": "  A hospital obtains of its flu vaccine from Company , from Companuy , and from Company . From past experience, it is known that of the vials from are ineffective, from are ineffective, and from are ineffective. The hospital tests five vials from each shipment. If at least one of the five is ineffective, find the conditional probability of that shipment's having come from .   "
+},
+{
+  "id": "ws-negative-binomial",
+  "level": "1",
+  "url": "ws-negative-binomial.html",
+  "type": "Worksheet",
+  "number": "13",
+  "title": "The Negative Binomial Distribution (2.5)",
+  "body": " The Negative Binomial Distribution (2.5)     The world series in baseball is a seven game series between an American League (AL) team and a National League team (NL) where the winner is the first team that wins games. Suppose the probability that the AL team wins any given game is . In other words, for the sake of this problem, whether a team wins a game is independent of the wins in the other games. What is the probability that the AL team wins in games?      Jerry is selling life insurance over the phone. The probability that any given call will result in a sale is . Find the probability that his sale happens on his call.       Negative Binomial Distribution   Suppose a sequence of independent Bernoulli trials is repeated (each with probability of success) and let the random variable denote the trial on which the success occurs. Then we say has a negative binomial distribution.      Suppose has a negative binomial distribution.     Find the pmf of .      The mean and variance of are given by:       A fair six-sided die is rolled repeatedly.     What is the probability that the appears for the time on the roll of the die?      What is the probability that the first appears sometime after the fourth roll?      How many rolls to you expect before you get the five?         A fair six-sided die is rolled until each face is observed at least once. On average, how many rolls are needed?        The probability that any customer at Starbucks orders the new holiday latte is 0.45. What is the probability that the fourth holiday latte is sold to the customer? (Assume independence, and that each customer only buys one drink.)      The probability that Joe wakes up before his alarm goes off while he is on vacation is . What is the probability that the second time he wakes up before his alarm goes off is the day of Joe's vacation?      The probability that a baseball team wins a game is (assume independence).     What is the probability that the first game they win is the game of the season?      What is the probability that they win their game within their first games?      Once a team wins games, they are guaranteed to be in the championship tournament. Once they win their game, they are said to make the tournament . What is the expected number of games the team must play before they make the tournament?      "
+},
+{
+  "id": "ws-negative-binomial-2-1",
+  "level": "2",
+  "url": "ws-negative-binomial.html#ws-negative-binomial-2-1",
+  "type": "Worksheet Exercise",
+  "number": "13.1",
+  "title": "",
+  "body": "  The world series in baseball is a seven game series between an American League (AL) team and a National League team (NL) where the winner is the first team that wins games. Suppose the probability that the AL team wins any given game is . In other words, for the sake of this problem, whether a team wins a game is independent of the wins in the other games. What is the probability that the AL team wins in games?   "
+},
+{
+  "id": "ws-negative-binomial-2-2",
+  "level": "2",
+  "url": "ws-negative-binomial.html#ws-negative-binomial-2-2",
+  "type": "Worksheet Exercise",
+  "number": "13.2",
+  "title": "",
+  "body": "  Jerry is selling life insurance over the phone. The probability that any given call will result in a sale is . Find the probability that his sale happens on his call.   "
+},
+{
+  "id": "negative-binomial",
+  "level": "2",
+  "url": "ws-negative-binomial.html#negative-binomial",
+  "type": "Definition",
+  "number": "13.1",
+  "title": "Negative Binomial Distribution.",
+  "body": " Negative Binomial Distribution   Suppose a sequence of independent Bernoulli trials is repeated (each with probability of success) and let the random variable denote the trial on which the success occurs. Then we say has a negative binomial distribution.   "
+},
+{
+  "id": "ws-negative-binomial-3-2",
+  "level": "2",
+  "url": "ws-negative-binomial.html#ws-negative-binomial-3-2",
+  "type": "Worksheet Exercise",
+  "number": "13.3",
+  "title": "",
+  "body": "  Suppose has a negative binomial distribution.     Find the pmf of .      The mean and variance of are given by:    "
+},
+{
+  "id": "ws-negative-binomial-3-3",
+  "level": "2",
+  "url": "ws-negative-binomial.html#ws-negative-binomial-3-3",
+  "type": "Worksheet Exercise",
+  "number": "13.4",
+  "title": "",
+  "body": "  A fair six-sided die is rolled repeatedly.     What is the probability that the appears for the time on the roll of the die?      What is the probability that the first appears sometime after the fourth roll?      How many rolls to you expect before you get the five?    "
+},
+{
+  "id": "ws-negative-binomial-4-1",
+  "level": "2",
+  "url": "ws-negative-binomial.html#ws-negative-binomial-4-1",
+  "type": "Worksheet Exercise",
+  "number": "13.5",
+  "title": "",
+  "body": "  A fair six-sided die is rolled until each face is observed at least once. On average, how many rolls are needed?   "
+},
+{
+  "id": "ws-negative-binomial-5-1",
+  "level": "2",
+  "url": "ws-negative-binomial.html#ws-negative-binomial-5-1",
+  "type": "Worksheet Exercise",
+  "number": "13.6",
+  "title": "",
+  "body": "  The probability that any customer at Starbucks orders the new holiday latte is 0.45. What is the probability that the fourth holiday latte is sold to the customer? (Assume independence, and that each customer only buys one drink.)   "
+},
+{
+  "id": "ws-negative-binomial-5-2",
+  "level": "2",
+  "url": "ws-negative-binomial.html#ws-negative-binomial-5-2",
+  "type": "Worksheet Exercise",
+  "number": "13.7",
+  "title": "",
+  "body": "  The probability that Joe wakes up before his alarm goes off while he is on vacation is . What is the probability that the second time he wakes up before his alarm goes off is the day of Joe's vacation?   "
+},
+{
+  "id": "ws-negative-binomial-5-3",
+  "level": "2",
+  "url": "ws-negative-binomial.html#ws-negative-binomial-5-3",
+  "type": "Worksheet Exercise",
+  "number": "13.8",
+  "title": "",
+  "body": "  The probability that a baseball team wins a game is (assume independence).     What is the probability that the first game they win is the game of the season?      What is the probability that they win their game within their first games?      Once a team wins games, they are guaranteed to be in the championship tournament. Once they win their game, they are said to make the tournament . What is the expected number of games the team must play before they make the tournament?    "
 }
 ]
 
