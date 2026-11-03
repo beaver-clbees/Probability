@@ -165,7 +165,7 @@
 <statement>
     <p>
       Let's use the moment generating function technique to find the mean and
-      variance:
+      variance for the Binomial distribution.
     </p>
 </statement>
 </exercise>
@@ -357,7 +357,7 @@
         <p>
             Your favorite cereal (Sugar-O's) is offering one of four prizes in each box of cereal. There is a <m>0.25</m> probability in each box (assume independence) that 
             the prize will be the secret decoder ring. What is the fewest number of boxes of cereal you need to buy so that the probability
-            of getting at least one secret decoder ring is greater than <m>0.5</m>?
+            of getting at least one secret decoder ring is greater than <m>0.95</m>?
         </p>
     </statement>
     </exercise>
@@ -365,7 +365,7 @@
     <exercise workspace = "3in">
     <statement>
         <p>
-             A hospital obtains <m>40\%</m> of its flu vaccine from Company <m>A</m>, <m>50\%</m> from Companuy <m>B</m>, and <m>10\%</m> from Company <m>C</m>. From past experience, it is known that <m>3\%</m> of the vials from <m>A</m> are ineffective, <m>2\%</m> from <m>B</m> are ineffective, and <m>5\%</m> from <m>C</m> are ineffective. The hospital tests five vials from each shipment. If at least one of the five is ineffective, find the conditional probability of that shipment's having come from <m>C</m>.
+             A hospital obtains <m>40\%</m> of its flu vaccine from Company <m>A</m>, <m>50\%</m> from Company <m>B</m>, and <m>10\%</m> from Company <m>C</m>. From past experience, it is known that <m>3\%</m> of the vials from <m>A</m> are ineffective, <m>2\%</m> from <m>B</m> are ineffective, and <m>5\%</m> from <m>C</m> are ineffective. The hospital tests five vials from each shipment. If at least one of the five is ineffective, find the conditional probability of that shipment's having come from <m>C</m>.
         </p>
     </statement>
     </exercise>
