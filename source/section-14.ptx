@@ -1,0 +1,484 @@
+<worksheet xml:id="ws-poisson">
+    <title>The Poisson Distribution (2.6)</title>
+<page>
+<exercise>
+  <introduction>
+    <p>
+      Suppose that on average <m>10</m> people call a particular hotline every
+      half hour. Let <m>X</m> be the number of people who call the hotline in a
+      given hour. Find <m>P(X=25)</m>.
+    </p>  
+        <p>
+      <em>Attempt 1:</em>
+      </p>
+    </introduction>
+  <task workspace="0.25in">
+    <statement>
+  
+      <p>
+        What is a success?
+          </p>
+    </statement>
+  </task>
+  <task workspace="0.25in">
+    <statement>
+      <p>
+        How many successes do we expect in an hour?    
+      </p>
+    </statement>
+  </task>  
+  <task workspace =".25in">
+    <statement>
+      <p>
+         What is a trial?
+      </p>
+    </statement>
+  </task>
+<task workspace =".25in">
+    <statement>
+      <p>
+         How many trials?
+      </p>
+    </statement>
+  </task>
+  <task workspace =".25in">
+    <statement>
+      <p>
+          What is the probability of success for each trial?
+      </p>
+    </statement>
+  </task><task workspace =".25in">
+    <statement>
+      <p>
+         Are the trials independent?
+      </p>
+    </statement>
+  </task><task workspace =".25in">
+    <statement>
+      <p>
+         Distribution and <m>\mu</m>:
+      </p>
+    </statement>
+  </task><task workspace =".25in">
+    <statement>
+      <p>
+         <m>P(X=25)=</m> 
+      </p>
+    </statement>
+  </task>
+  </exercise>
+  <exercise workspace="1in">
+    <statement>
+    <p>
+      What if more than one person calls during a minute - then
+      this isn't binomial. Why not?
+    </p>
+    </statement>
+  </exercise>
+  </page>
+  <page>
+  <exercise>
+    <introduction>
+      <p>
+        <em>Attempt 2:</em> We could attempt to fix this by making our intervals
+      smaller so that the probability that two will call during any interval is
+      less. Suppose we make the intervals for our trial only 30 seconds.
+      </p>
+    </introduction>
+    <task workspace=".25in">
+      <statement>
+        <p>
+          How many trials do we have now?
+        </p>
+      </statement>
+    </task>
+    <task workspace=".25in">
+      <statement>
+        <p>
+          What is the probability of success for each trial?
+        </p>
+      </statement>
+    </task>
+    <task workspace=".25in">
+      <statement>
+        <p>
+          Distribution and <m>\mu</m>:
+        </p>
+      </statement>
+    </task>
+    <task workspace=".25in">
+      <statement>
+        <p>
+          <m>P(X=25)=</m>
+        </p>
+      </statement>
+    </task>
+  </exercise>
+  <exercise workspace=".5in">
+    <statement>
+      <p>
+        Which answer do you think is more accurate? How can we make
+      it even more accurate?
+      </p>
+    </statement>       
+  </exercise>
+  <exercise>
+    <introduction>
+      <p>
+        <em>Attempt 3:</em> Let's try one more... Lets make the intervals for our
+      trial <m>5</m> seconds.
+      </p>
+    </introduction>
+    <task workspace=".25in">
+      <statement>
+        <p>
+          How many trials do we have now?
+        </p>
+      </statement>
+    </task>
+    <task workspace=".25in">
+      <statement>
+        <p>
+          What is the probability of success for each trial?
+        </p>
+      </statement>
+    </task>
+    <task workspace=".25in">
+      <statement>
+        <p>
+          Distribution and <m>\mu</m>:
+        </p>
+      </statement>
+    </task>
+    <task workspace=".25in">
+      <statement>
+        <p>
+          <m>P(X=25)=</m>
+        </p>
+      </statement>
+    </task>
+  </exercise>
+   <exercise>
+    <statement workspace=".5in">
+      <p>
+        Conclusion:
+      </p>
+    </statement>
+    </exercise>
+    </page>
+    <page>
+  <definition xml:id="poisson-process">
+    <title>(2.6-1)</title>
+    <statement>
+      <p>
+         Let the number of occurrences of some
+      event in a given continuous interval be counted. Then we have an <fillin characters="50"/>
+      with parameter <m>\lambda\gt 0</m> if the following conditions are
+      satisfied:
+      <ol>
+        <li>
+          <p>
+            The numbers of occurrences in nonoverlapping subintervals are
+            independent.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The probability of exactly one occurrence in a sufficiently short
+            subinterval of length <m>h</m> is approximately <m>\lambda h</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The probability of two or more occurrences in a sufficiently short
+            subinterval is essentially zero.
+          </p>
+        </li>
+      </ol>
+      </p>
+    </statement>
+   </definition>
+  <exercise>
+    <introduction>
+      <p>
+        Let <m>X</m> denote the number of changes occurring in such an interval of
+      length <m>1</m> unit in an approximate Poisson process.
+      </p>
+    </introduction>
+    <task workspace="0.5in">
+      <statement>
+        <p>
+          A success is:
+        </p>
+      </statement>
+    </task>
+    <task workspace="0.5in">
+      <statement>
+        <p>
+           The expected number of successes in the whole interval is:
+        </p>
+      </statement>
+    </task>
+    <task workspace=".5in">
+      <statement>
+        <p>
+          Choose <m>n</m> so that
+        </p>
+      </statement>
+    </task>
+    <task workspace=".5in">
+      <statement>
+        <p>
+          A trial is:
+        </p>
+      </statement>
+    </task>
+    <task workspace=".5in">
+      <statement>
+        <p>
+          The number of trials is:
+        </p>
+      </statement>
+    </task>
+    <task workspace=".5in">
+      <statement>
+        <p>
+           The probability of success in one trial is:
+        </p>
+      </statement>
+    </task>
+    <task workspace=".5in">
+      <statement>
+        <p>
+           Independent?
+        </p>
+      </statement>
+    </task>
+    <task workspace=".5in">
+      <statement>
+        <p>
+            Approximate distribution:
+        </p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>
+          Then <m>P(X=x)\approx</m>
+        </p>
+      </statement>
+    </task>
+  </exercise>
+  </page>
+  <page>
+  <definition xml:id="poisson">
+    <statement>
+      <p>
+         If <m>X</m> has pmf <fillin characters="25"/> then the RV <m>X</m> is said
+      to
+    </p>
+
+    <p>
+      have a <fillin characters="25"/> distribution.
+    </p>
+      
+    </statement>
+    </definition>
+      
+    <exercise workspace = "1in">
+      <statement>
+        <p>
+          Applying this to our phone call example, then what is
+      <m>\lambda</m>? <m>P(X=25)</m>?
+        </p>
+      </statement>
+    </exercise>
+ 
+
+    <p>
+      In general, Poisson processes applies to events that occur rather
+      uniformly, but rather infrequently per small unit of time or space. Some examples include:
+    </p>
+      <ul>
+        <li>
+          <p>
+            number of accidents during some time period
+          </p>
+        </li>
+
+        <li>
+          <p>
+            number of flaws in an industrial process
+          </p>
+        </li>
+
+        <li>
+          <p>
+            number of claims at an insurance company
+          </p>
+        </li>
+
+        <li>
+          <p>
+            number of fish caught during a fishing trip
+          </p>
+        </li>
+
+        <li>
+          <p>
+            number of calls coming in on a hotline
+          </p>
+        </li>
+
+        <li>
+          <p>
+            number of customers lining up in at checkout
+          </p>
+        </li>
+
+        <li>
+          <p>
+            emissions of radioactive particles over a fixed period of time...
+          </p>
+        </li>
+      </ul>
+   
+<exercise workspace = "4in">
+  <statement>
+    <p>
+       Let's look at the moment generating function...
+    </p>
+     <p>
+      <m>M(t) =</m>
+    </p>
+  </statement>
+</exercise> 
+</page>
+<page>
+    <p>
+      <alert>Summary: How to solve a Poisson Problem</alert>
+    </p>
+      <ol>
+        <li>
+          <p>
+            Identify what a <q>change</q> is for your situation (<q> success</q>, etc.)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Identify the length of your interval of interest (e.g. 4 minutes, 5
+            yards, etc.)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Determine how many <q>change's</q> you expect during your interval.
+            This is given to you in the problem, but you may need to adjust it
+            for your interval length. For example it might tell you how many
+            changes expected per minute, but you are interested in changes over
+            a 5 minute period so you would multiply by 5. This value is
+            <m>\lambda</m>. (Note: <m>\lambda</m> does not have to be a whole
+            number)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Write your problem as <m>P(X=k), P(X \leq k),</m> or
+            <m>1-P(X\leq k)</m> and solve.
+          </p>
+        </li>
+      </ol>
+    
+  <exercise>
+    <introduction>
+      <p>
+        Suppose flaws occur in a piece of sheet metal on average of
+            <m>15</m> per linear yard.
+      </p>
+    </introduction>
+    <task workspace = "1in">
+      <statement>
+        <p>
+          Find the probability that in a given yard, there are <m>20</m>
+                  flaws.
+        </p>
+      </statement>
+    </task>
+    <task workspace ="1in">
+      <statement>
+        <p>
+          What is the probability of at most <m>3</m> flaws in a
+                  <m>0.5</m> linear yard?
+        </p>
+      </statement>
+    </task>
+   </exercise>  
+  <exercise> 
+    <introduction>
+      <p>
+        Suppose that customers line up to buy tickets to a show on average
+            of <m>5</m> every <m>10</m> minutes.
+      </p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>
+          Assuming a Poisson process, what is the probability that there
+                  will be <m>40</m> customers in an hour?
+        </p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>
+          What is the probability of at least <m>20</m> customers in a
+                  half hour?
+        </p>
+      </statement>
+    </task>
+   </exercise>
+</page>
+<page>
+          <p>
+            We started by showing that the binomial distribution was used to
+            derive the Poisson distribution, but it turns out the Poisson can
+            actually be used to approximate the binomial distribution. If
+            <m>X \sim b(n,p)</m> with <m>n</m> <q>large</q> and <m>p</m> <q>small</q>,
+            then the Poisson approximates <m>X</m> using
+            <fillin characters="25"/>.The rule of thumb is to only
+            use this if <m>n\geq 20</m> and <m>p \leq 0.05</m> or
+            <m>n \geq 100</m> and <m>p \leq 0.10</m>.
+          </p>
+
+          <image width="80%" source="PoissonBinomial.PNG"/>
+    <exercise>
+            <introduction>
+              <p>
+                A computer chip manufacturing plant knows that about
+            <m>1.5\%</m> of its chips are defective. (assume independence of
+            defective chips). In a shipment of <m>1,000</m> chips, find the
+            probability that at least 25 will be defective.
+              </p>
+            </introduction>
+         <task workspace="1in">
+          <statement>
+            <p>
+              Using  the binomial distribution:
+            </p>
+          </statement>
+         </task>
+         <task workspace="1in">
+          <statement>
+            <p>
+              Using a Poisson approximation:
+            </p>
+          </statement>
+         </task>
+      </exercise>
+      </page>
+</worksheet>
