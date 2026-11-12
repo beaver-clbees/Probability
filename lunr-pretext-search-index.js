@@ -2069,6 +2069,141 @@ var ptx_lunr_docs = [
   "number": "13.8",
   "title": "",
   "body": "  The probability that a baseball team wins a game is (assume independence).     What is the probability that the first game they win is the game of the season?      What is the probability that they win their game within their first games?      Once a team wins games, they are guaranteed to be in the championship tournament. Once they win their game, they are said to make the tournament . What is the expected number of games the team must play before they make the tournament?    "
+},
+{
+  "id": "ws-poisson",
+  "level": "1",
+  "url": "ws-poisson.html",
+  "type": "Worksheet",
+  "number": "14",
+  "title": "The Poisson Distribution (2.6)",
+  "body": " The Poisson Distribution (2.6)     Suppose that on average people call a particular hotline every half hour. Let be the number of people who call the hotline in a given hour. Find .   Attempt 1:      What is a success?      How many successes do we expect in an hour?      What is a trial?      How many trials?      What is the probability of success for each trial?     Are the trials independent?     Distribution and :             What if more than one person calls during a minute - then this isn't binomial. Why not?         Attempt 2: We could attempt to fix this by making our intervals smaller so that the probability that two will call during any interval is less. Suppose we make the intervals for our trial only 30 seconds.     How many trials do we have now?      What is the probability of success for each trial?      Distribution and :              Which answer do you think is more accurate? How can we make it even more accurate?       Attempt 3: Let's try one more... Lets make the intervals for our trial seconds.     How many trials do we have now?      What is the probability of success for each trial?      Distribution and :              Conclusion:       (2.6-1)   Let the number of occurrences of some event in a given continuous interval be counted. Then we have an with parameter if the following conditions are satisfied:   The numbers of occurrences in nonoverlapping subintervals are independent.    The probability of exactly one occurrence in a sufficiently short subinterval of length is approximately .    The probability of two or more occurrences in a sufficiently short subinterval is essentially zero.         Let denote the number of changes occurring in such an interval of length unit in an approximate Poisson process.     A success is:      The expected number of successes in the whole interval is:      Choose so that      A trial is:      The number of trials is:      The probability of success in one trial is:      Independent?      Approximate distribution:      Then          If has pmf then the RV is said to  have a distribution.      Applying this to our phone call example, then what is ? ?    In general, Poisson processes applies to events that occur rather uniformly, but rather infrequently per small unit of time or space. Some examples include:    number of accidents during some time period    number of flaws in an industrial process    number of claims at an insurance company    number of fish caught during a fishing trip    number of calls coming in on a hotline    number of customers lining up in at checkout    emissions of radioactive particles over a fixed period of time...      Let's look at the moment generating function...          Summary: How to solve a Poisson Problem     Identify what a change is for your situation ( success , etc.)    Identify the length of your interval of interest (e.g. 4 minutes, 5 yards, etc.)    Determine how many change's you expect during your interval. This is given to you in the problem, but you may need to adjust it for your interval length. For example it might tell you how many changes expected per minute, but you are interested in changes over a 5 minute period so you would multiply by 5. This value is . (Note: does not have to be a whole number)    Write your problem as or and solve.      Suppose flaws occur in a piece of sheet metal on average of per linear yard.     Find the probability that in a given yard, there are flaws.      What is the probability of at most flaws in a linear yard?       Suppose that customers line up to buy tickets to a show on average of every minutes.     Assuming a Poisson process, what is the probability that there will be customers in an hour?      What is the probability of at least customers in a half hour?       We started by showing that the binomial distribution was used to derive the Poisson distribution, but it turns out the Poisson can actually be used to approximate the binomial distribution. If with  large and  small , then the Poisson approximates using .The rule of thumb is to only use this if and or and .     A computer chip manufacturing plant knows that about of its chips are defective. (assume independence of defective chips). In a shipment of chips, find the probability that at least 25 will be defective.     Using the binomial distribution:      Using a Poisson approximation:      "
+},
+{
+  "id": "ws-poisson-2-1",
+  "level": "2",
+  "url": "ws-poisson.html#ws-poisson-2-1",
+  "type": "Worksheet Exercise",
+  "number": "14.1",
+  "title": "",
+  "body": "  Suppose that on average people call a particular hotline every half hour. Let be the number of people who call the hotline in a given hour. Find .   Attempt 1:      What is a success?      How many successes do we expect in an hour?      What is a trial?      How many trials?      What is the probability of success for each trial?     Are the trials independent?     Distribution and :          "
+},
+{
+  "id": "ws-poisson-2-2",
+  "level": "2",
+  "url": "ws-poisson.html#ws-poisson-2-2",
+  "type": "Worksheet Exercise",
+  "number": "14.2",
+  "title": "",
+  "body": "  What if more than one person calls during a minute - then this isn't binomial. Why not?   "
+},
+{
+  "id": "ws-poisson-3-1",
+  "level": "2",
+  "url": "ws-poisson.html#ws-poisson-3-1",
+  "type": "Worksheet Exercise",
+  "number": "14.3",
+  "title": "",
+  "body": "   Attempt 2: We could attempt to fix this by making our intervals smaller so that the probability that two will call during any interval is less. Suppose we make the intervals for our trial only 30 seconds.     How many trials do we have now?      What is the probability of success for each trial?      Distribution and :           "
+},
+{
+  "id": "ws-poisson-3-2",
+  "level": "2",
+  "url": "ws-poisson.html#ws-poisson-3-2",
+  "type": "Worksheet Exercise",
+  "number": "14.4",
+  "title": "",
+  "body": "  Which answer do you think is more accurate? How can we make it even more accurate?   "
+},
+{
+  "id": "ws-poisson-3-3",
+  "level": "2",
+  "url": "ws-poisson.html#ws-poisson-3-3",
+  "type": "Worksheet Exercise",
+  "number": "14.5",
+  "title": "",
+  "body": "   Attempt 3: Let's try one more... Lets make the intervals for our trial seconds.     How many trials do we have now?      What is the probability of success for each trial?      Distribution and :           "
+},
+{
+  "id": "ws-poisson-3-4",
+  "level": "2",
+  "url": "ws-poisson.html#ws-poisson-3-4",
+  "type": "Worksheet Exercise",
+  "number": "14.6",
+  "title": "",
+  "body": "  Conclusion:   "
+},
+{
+  "id": "poisson-process",
+  "level": "2",
+  "url": "ws-poisson.html#poisson-process",
+  "type": "Definition",
+  "number": "14.1",
+  "title": "(2.6-1).",
+  "body": " (2.6-1)   Let the number of occurrences of some event in a given continuous interval be counted. Then we have an with parameter if the following conditions are satisfied:   The numbers of occurrences in nonoverlapping subintervals are independent.    The probability of exactly one occurrence in a sufficiently short subinterval of length is approximately .    The probability of two or more occurrences in a sufficiently short subinterval is essentially zero.      "
+},
+{
+  "id": "ws-poisson-4-2",
+  "level": "2",
+  "url": "ws-poisson.html#ws-poisson-4-2",
+  "type": "Worksheet Exercise",
+  "number": "14.7",
+  "title": "",
+  "body": "  Let denote the number of changes occurring in such an interval of length unit in an approximate Poisson process.     A success is:      The expected number of successes in the whole interval is:      Choose so that      A trial is:      The number of trials is:      The probability of success in one trial is:      Independent?      Approximate distribution:      Then     "
+},
+{
+  "id": "poisson",
+  "level": "2",
+  "url": "ws-poisson.html#poisson",
+  "type": "Definition",
+  "number": "14.2",
+  "title": "",
+  "body": "  If has pmf then the RV is said to  have a distribution.   "
+},
+{
+  "id": "ws-poisson-5-2",
+  "level": "2",
+  "url": "ws-poisson.html#ws-poisson-5-2",
+  "type": "Worksheet Exercise",
+  "number": "14.8",
+  "title": "",
+  "body": "  Applying this to our phone call example, then what is ? ?   "
+},
+{
+  "id": "ws-poisson-5-5",
+  "level": "2",
+  "url": "ws-poisson.html#ws-poisson-5-5",
+  "type": "Worksheet Exercise",
+  "number": "14.9",
+  "title": "",
+  "body": "  Let's look at the moment generating function...      "
+},
+{
+  "id": "ws-poisson-6-3",
+  "level": "2",
+  "url": "ws-poisson.html#ws-poisson-6-3",
+  "type": "Worksheet Exercise",
+  "number": "14.10",
+  "title": "",
+  "body": "  Suppose flaws occur in a piece of sheet metal on average of per linear yard.     Find the probability that in a given yard, there are flaws.      What is the probability of at most flaws in a linear yard?    "
+},
+{
+  "id": "ws-poisson-6-4",
+  "level": "2",
+  "url": "ws-poisson.html#ws-poisson-6-4",
+  "type": "Worksheet Exercise",
+  "number": "14.11",
+  "title": "",
+  "body": "  Suppose that customers line up to buy tickets to a show on average of every minutes.     Assuming a Poisson process, what is the probability that there will be customers in an hour?      What is the probability of at least customers in a half hour?    "
+},
+{
+  "id": "ws-poisson-7-3",
+  "level": "2",
+  "url": "ws-poisson.html#ws-poisson-7-3",
+  "type": "Worksheet Exercise",
+  "number": "14.12",
+  "title": "",
+  "body": "  A computer chip manufacturing plant knows that about of its chips are defective. (assume independence of defective chips). In a shipment of chips, find the probability that at least 25 will be defective.     Using the binomial distribution:      Using a Poisson approximation:    "
 }
 ]
 
