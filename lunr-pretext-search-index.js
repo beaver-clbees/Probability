@@ -2204,6 +2204,141 @@ var ptx_lunr_docs = [
   "number": "14.12",
   "title": "",
   "body": "  A computer chip manufacturing plant knows that about of its chips are defective. (assume independence of defective chips). In a shipment of chips, find the probability that at least 25 will be defective.     Using the binomial distribution:      Using a Poisson approximation:    "
+},
+{
+  "id": "ws-continuous-rv",
+  "level": "1",
+  "url": "ws-continuous-rv.html",
+  "type": "Worksheet",
+  "number": "15",
+  "title": "Random Variables of the Continuous Type (3.1)",
+  "body": " Random Variables of the Continuous Type (3.1)   Recall that a discrete random variable has a uniform distribution on if every outcome in the space was equally likely. In that case the pmf was     Suppose a random variable is the outcome when a point is selected at random from the interval , where . If then if we tried to assign a probability as a fraction where the denominator was the number of possible outcomes in the interval then we'd get that for all . So we instead lets look at the cdf (cumulative distribution function) . If the outcome is random, then what should be?        Note that if we let         then we can write        We call the   In the previous situation, we say has a distribution and write:       Let . Find .     Probability Density Function (pdf)   More generally, if the outcomes of an experiment come from an interval or union of intervals, , instead of a discrete set, then the corresponding random variable is said to be of the continuous type . We define a probability density function (pdf) for a R.V. of the continuous to be one such that               If is an event, then          For continuous distributions we define the cumulative distribution function (cdf) as :       NOTES:      is an event - for continuous data events are intervals or unions of intervals     is NOT the probability that occurs (and in particular can be greater than for any given ).    We define for so that the makes sense.    By the fundamental theorem of calculus we get that .         Let be a continuous R.V. with p.d.f.      Check that the properties 1 and 2 of a pdf are satisfied.      Find       Find       Find          The expected value, variance, and standard deviation are defined similarly for continuous random variables as they were for discrete:  Let a continuous random variable:      The Moment Generating Function: provided the integral exists for some (interval around 0). As with the discrete case we have the following relationships:            Let be a continuous R.V. with pdf Find .        Let be a continuous R.V. with pdf Find and .        Let be a continuous RV on with pdf . Check that .        Let be a continuous uniform R.V. on . Find and .        Let be a continuous RV with pdf given by .     What value must be to make this a valid pdf?      Find       Find       Find .         Let .     What is the pdf of ?      Find and (you may use the formulas for the uniform distribution).      What is the cdf of ?      Use the cdf to find .         Let be a continuous RV with pdf .     What value of makes this a valid pdf?      Find .       Let be a continuous RV with pdf . Find .     "
+},
+{
+  "id": "ws-continuous-rv-2-2",
+  "level": "2",
+  "url": "ws-continuous-rv.html#ws-continuous-rv-2-2",
+  "type": "Worksheet Exercise",
+  "number": "15.1",
+  "title": "",
+  "body": "  Suppose a random variable is the outcome when a point is selected at random from the interval , where . If then if we tried to assign a probability as a fraction where the denominator was the number of possible outcomes in the interval then we'd get that for all . So we instead lets look at the cdf (cumulative distribution function) . If the outcome is random, then what should be?        Note that if we let         then we can write       "
+},
+{
+  "id": "ws-continuous-rv-3-1",
+  "level": "2",
+  "url": "ws-continuous-rv.html#ws-continuous-rv-3-1",
+  "type": "Worksheet Exercise",
+  "number": "15.2",
+  "title": "",
+  "body": "  Let . Find .   "
+},
+{
+  "id": "def-pdf",
+  "level": "2",
+  "url": "ws-continuous-rv.html#def-pdf",
+  "type": "Definition",
+  "number": "15.1",
+  "title": "Probability Density Function (pdf).",
+  "body": " Probability Density Function (pdf)   More generally, if the outcomes of an experiment come from an interval or union of intervals, , instead of a discrete set, then the corresponding random variable is said to be of the continuous type . We define a probability density function (pdf) for a R.V. of the continuous to be one such that               If is an event, then       "
+},
+{
+  "id": "ws-continuous-rv-3-3",
+  "level": "2",
+  "url": "ws-continuous-rv.html#ws-continuous-rv-3-3",
+  "type": "Worksheet Exercise",
+  "number": "15.3",
+  "title": "",
+  "body": "  For continuous distributions we define the cumulative distribution function (cdf) as :      "
+},
+{
+  "id": "ws-continuous-rv-4-1",
+  "level": "2",
+  "url": "ws-continuous-rv.html#ws-continuous-rv-4-1",
+  "type": "Worksheet Exercise",
+  "number": "15.4",
+  "title": "",
+  "body": "  Let be a continuous R.V. with p.d.f.      Check that the properties 1 and 2 of a pdf are satisfied.      Find       Find       Find     "
+},
+{
+  "id": "def-expected-values-continuous",
+  "level": "2",
+  "url": "ws-continuous-rv.html#def-expected-values-continuous",
+  "type": "Definition",
+  "number": "15.2",
+  "title": "",
+  "body": "  The expected value, variance, and standard deviation are defined similarly for continuous random variables as they were for discrete:  Let a continuous random variable:      The Moment Generating Function: provided the integral exists for some (interval around 0). As with the discrete case we have the following relationships:         "
+},
+{
+  "id": "ws-continuous-rv-5-2",
+  "level": "2",
+  "url": "ws-continuous-rv.html#ws-continuous-rv-5-2",
+  "type": "Worksheet Exercise",
+  "number": "15.5",
+  "title": "",
+  "body": "  Let be a continuous R.V. with pdf Find .   "
+},
+{
+  "id": "ws-continuous-rv-6-1",
+  "level": "2",
+  "url": "ws-continuous-rv.html#ws-continuous-rv-6-1",
+  "type": "Worksheet Exercise",
+  "number": "15.6",
+  "title": "",
+  "body": "  Let be a continuous R.V. with pdf Find and .   "
+},
+{
+  "id": "ws-continuous-rv-7-1",
+  "level": "2",
+  "url": "ws-continuous-rv.html#ws-continuous-rv-7-1",
+  "type": "Worksheet Exercise",
+  "number": "15.7",
+  "title": "",
+  "body": "  Let be a continuous RV on with pdf . Check that .   "
+},
+{
+  "id": "ws-continuous-rv-8-1",
+  "level": "2",
+  "url": "ws-continuous-rv.html#ws-continuous-rv-8-1",
+  "type": "Worksheet Exercise",
+  "number": "15.8",
+  "title": "",
+  "body": "  Let be a continuous uniform R.V. on . Find and .   "
+},
+{
+  "id": "ws-continuous-rv-9-1",
+  "level": "2",
+  "url": "ws-continuous-rv.html#ws-continuous-rv-9-1",
+  "type": "Worksheet Exercise",
+  "number": "15.9",
+  "title": "",
+  "body": "  Let be a continuous RV with pdf given by .     What value must be to make this a valid pdf?      Find       Find       Find .    "
+},
+{
+  "id": "ws-continuous-rv-10-1",
+  "level": "2",
+  "url": "ws-continuous-rv.html#ws-continuous-rv-10-1",
+  "type": "Worksheet Exercise",
+  "number": "15.10",
+  "title": "",
+  "body": "  Let .     What is the pdf of ?      Find and (you may use the formulas for the uniform distribution).      What is the cdf of ?      Use the cdf to find .    "
+},
+{
+  "id": "ws-continuous-rv-11-1",
+  "level": "2",
+  "url": "ws-continuous-rv.html#ws-continuous-rv-11-1",
+  "type": "Worksheet Exercise",
+  "number": "15.11",
+  "title": "",
+  "body": "  Let be a continuous RV with pdf .     What value of makes this a valid pdf?      Find .    "
+},
+{
+  "id": "ws-continuous-rv-11-2",
+  "level": "2",
+  "url": "ws-continuous-rv.html#ws-continuous-rv-11-2",
+  "type": "Worksheet Exercise",
+  "number": "15.12",
+  "title": "",
+  "body": "  Let be a continuous RV with pdf . Find .   "
 }
 ]
 
