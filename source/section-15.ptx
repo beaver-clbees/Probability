@@ -1,0 +1,415 @@
+<worksheet xml:id="ws-continuous-rv">
+      <title>Random Variables of the Continuous Type (3.1)</title>
+  <page>
+    <p>
+      Recall that a discrete random variable has a uniform distribution on
+      <m>\{1,2,3,...,m\}</m> if every outcome in the space was equally likely.
+      In that case the pmf was
+      <md>
+        f(x)=\frac{1}{m}.
+      </md>
+    </p>
+<exercise>
+  <introduction>
+     <p>
+      Suppose a random variable <m>X</m> is the outcome when a point is selected
+      at random from the interval <m>[a,b]</m>, where 
+      <m>-\infty \leq a \leq b \lt \infty</m>. If <m>x \in [a,b]</m> then if we
+      tried to assign a probability <m>P(X=x)</m> as a fraction where the
+      denominator was the number of possible outcomes in the interval
+      <m>[a,b]</m> then we'd get that
+      <m>f(x)=lim_{m\rightarrow \infty}\frac{1}{m}=0</m> for all <m>x</m>. So we
+      instead lets look at the cdf (cumulative distribution function)
+      <m>F(x)</m>. If the outcome is random, then what should <m>P(X\leq x)</m>
+      be?
+    </p>
+     <p>
+      <md>
+        F(x)=\left\{ \begin{array}{ll}0, &amp; x \lt a,\\ \frac{x-a}{b-a}, &amp; a \leq x \lt b, \\ 1, &amp; b\leq x.\end{array} \right.
+      </md>
+    </p>
+  </introduction>
+  <task workspace = "0.5in">
+    <statement>
+        <p>
+      Note that if we let  
+      </p>
+      <p>
+      <m>
+        f(x)=
+      </m>
+     </p>
+    </statement>
+  </task>
+  <task workspace = "0.5in">
+    <statement>
+      <p>
+        then we can write
+      </p>
+      <p>
+      <m>
+        F(x)=
+      </m>
+      </p>
+    </statement>
+  </task>
+</exercise>
+   
+    <p>
+      We call <m>f(x)</m> the
+      <fillin characters = "75"/><!--{\bf probability density function pdf} of $X$.-->
+    </p>
+
+    <p>
+      In the previous situation, we say <m>X</m> has a <fillin characters = "15"/> distribution and
+      write: <fillin characters = "15"/><!--$X \sim U(a,b)$.\\-->
+    </p>
+</page>
+<page>
+<exercise workspace = "2in">
+  <statement>
+     <p>
+      Let <m>X\sim U(0,4)</m>. Find <m>F(1)</m>.
+    </p>
+  </statement>
+</exercise>
+   
+<definition xml:id="def-pdf">
+  <title>Probability Density Function (pdf)</title>
+  
+  
+  <statement>
+    <p>
+      More generally, if the outcomes of an experiment come from an interval or
+      union of intervals, <m>S</m>, instead of a discrete set, then the
+      corresponding random variable is said to be of the
+      <alert>continuous type</alert>. We define a probability density function
+      (pdf) for a R.V. <m>X</m> of the continuous to be one such that
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            <m>f(x)\geq 0\,\,\,\ \forall x \in S</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>{\int_S f(x)\,dx=1}</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If <m>(a,b)\subseteq S</m> is an event, then
+            <m>P(a \leq x \leq b)={\int_a^b f(x)\,dx}</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</definition>
+    
+<exercise workspace = ".5in">
+  <statement>
+    <p>
+      For continuous distributions we define the <alert>cumulative distribution
+      function (cdf)</alert> as <m>P(X \leq x)</m>:
+    </p>
+      <p>
+      <m>
+        F(x) =
+      </m>
+    </p>
+  </statement>
+</exercise>
+
+
+    <p>
+      NOTES:
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            <m>\{a \leq x \leq b \}</m> is an event - for continuous data events
+            are intervals or unions of intervals
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f(x)</m> is NOT the probability that <m>x</m> occurs (and in
+            particular can be greater than <m>1</m> for any given <m>x</m>).
+          </p>
+        </li>
+
+        <li>
+          <p>
+            We define <m>f(x)=0</m> for <m>x \not\in S</m> so that the
+            <m>{\int_{-\infty}^{\infty}f(x)\,dx}</m> makes sense.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            By the fundamental theorem of calculus we get that
+            <m>F'(x)=f(x)</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+</page>
+<page>
+  
+<exercise>
+  <introduction>
+     <p>
+      Let <m>X</m> be a continuous R.V. with p.d.f.
+      <md>
+        f(x)=3x^{2} \,\,\, 0 \leq x \leq 1
+      </md>
+      
+    </p>
+  </introduction>
+  <task workspace="2in">
+    <statement>
+      <p>
+        Check that the properties 1 and 2 of a pdf are satisfied.
+      </p>
+    </statement>
+  </task>
+  <task workspace="1in">
+    <statement>
+       <p>
+      Find <m>P(.5 \leq x \leq 1)=</m>
+    </p>
+    </statement>
+  </task>
+  <task workspace="1in">
+    <statement>
+      <p>
+        Find <m>F(x)=</m> 
+      </p>
+    </statement>
+  </task>
+  <task workspace="1in">
+    <statement>
+      <p>
+         Find <m>F(.5)=</m>
+      </p>
+    </statement>
+  </task>
+</exercise>
+ </page>
+ <page>
+
+
+<definition xml:id="def-expected-values-continuous">
+  <statement>
+    <p>
+      The expected value, variance, and standard deviation are defined similarly for continuous random variables as
+      they were for discrete:
+    </p>
+
+    <p>
+      Let <m>X</m> a continuous random variable:
+      <md>
+        E[u(X)] = \int_{-\infty}^{\infty}u(x) \cdot f(x) \, dx
+      </md>
+      <md>
+        \mu = E[X] = \int_{-\infty}^{\infty}x \cdot f(x) \, dx
+      </md>
+      <md>
+        Var(X) = \sigma^{2} = E[(X-\mu)^{2}] = \int_{-\infty}^{\infty}(x-\mu)^{2} \cdot f(x) \, dx
+      </md>
+      <md>
+        \sigma = \sqrt{Var(X)}
+      </md>
+    </p>
+
+    <p>
+      The Moment Generating Function:
+      <md>
+        M(t) = E[e^{tX}] = \int_{-\infty}^{\infty}e^{tx}\cdot f(x) \, dx\,\,\, -h \leq t \leq h
+      </md>
+      provided the integral exists for some <m>h</m> (interval around 0). As with the discrete case we have the following relationships:
+    </p>
+
+    <p>
+   
+      <md>
+        \sigma^{2} = E[X^{2}]-\mu^{2}
+      </md>
+      <md>
+        M^{(n)}(0) = E[X^{n}]
+      </md>
+      <md>
+        M'(0) = \mu
+      </md>
+      <md>
+        \sigma^{2} = M''(0) - [M'(0)]^{2}
+      </md>
+    </p>
+  </statement>
+</definition>
+
+<exercise workspace="2in">
+  <statement>
+    <p>
+      Let <m>X</m> be a continuous R.V. with pdf
+      <m>
+        f(x)=3x^{2}, \,\, 0 \leq x \leq 1
+      </m>
+      Find <m>E[2x-1]</m>.
+    </p>
+  </statement>
+  </exercise>
+    </page>
+    <page>
+
+  
+<exercise workspace="3in">
+  <statement>
+     <p>
+      Let <m>X</m> be a continuous R.V. with pdf
+      <m>f(x) = {\frac{1}{2\sqrt{x}}}, \,\, 0 \lt x \leq 1</m> Find
+      <m>\mu</m> and <m>\sigma^2</m>.
+    </p>
+  </statement>
+</exercise>
+</page>
+<page>
+<exercise workspace="6in">
+  <statement>
+     <p>
+      Let <m>X</m> be a continuous RV on <m>0 \leq x \leq \infty</m> with pdf
+      <m>f(x)=xe^{-x}</m>. Check that <m>\int_{0}^{\infty}f(x)\, dx = 1</m>.
+      
+    </p>
+  </statement>
+</exercise>
+</page>
+<page>
+<exercise workspace = "6in">
+  <statement>
+    <p>
+      Let <m>X \sim U(a,b)</m> be a continuous uniform R.V. on <m>[a,b]</m>.
+      Find <m>\mu, \sigma^{2},</m> and <m>M(t)</m>.
+    </p>
+  </statement>
+</exercise>
+</page>
+<page>
+
+  <exercise>
+    <introduction>
+      <p>
+         Let <m>X</m> be a continuous RV with pdf given by
+            <m>f(x)=cx^{2}, \,\, -1\lt x\lt 1</m>.
+      </p>
+    </introduction>
+    <task workspace = "2in">
+      <statement>
+        <p>
+          What value must <m>c</m> be to make this a valid pdf?
+        </p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>
+          Find <m>P(X \leq 0)</m>
+        </p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>
+           Find <m>\mu</m>
+        </p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>
+          Find <m>\sigma^{2}</m>.
+        </p>
+      </statement>
+    </task>
+  </exercise>
+ </page>
+ <page>
+<exercise>
+  <introduction>
+    <p>
+       Let <m>X\sim U(1,6)</m>.
+    </p>
+  </introduction>
+  <task workspace = "0.5in">
+    <statement>
+      <p>
+         What is the pdf of <m>X, f(x)</m>?
+      </p>
+    </statement>
+  </task>
+  <task workspace = "1.5in">
+    <statement>
+      <p>
+      Find <m>\mu</m> and <m>\sigma^2</m> (you may use the formulas for the uniform distribution).
+      </p>
+    </statement>
+  </task>
+  <task workspace = ".75in">
+    <statement>
+      <p>
+         What is the cdf of <m>X, F(x)</m>?
+      </p>
+    </statement>
+  </task>
+  <task workspace=".75in">
+    <statement>
+      <p>
+        Use the cdf to find <m>P(2.5 \leq X \leq 4)</m>.
+      </p>
+    </statement>
+  </task>
+</exercise>    
+</page>
+<page>
+<exercise>
+  <introduction>
+    <p>
+      Let <m>X</m> be a continuous RV with pdf
+            <m>f(x)=4x, \,\, 0 \lt x\lt c</m>.
+    </p>
+  </introduction>
+  <task workspace="1in">
+    <statement>
+      <p>
+        What value of <m>c</m> makes this a valid pdf?
+      </p>
+    </statement>
+  </task>
+  <task workspace = "1in">
+    <statement>
+      <p>
+        Find <m>P(X \geq 0.1)</m>.
+      </p>
+    </statement>
+  </task>
+</exercise>
+<exercise workspace = "2in">
+  <statement>
+    <p>
+      Let <m>X</m> be a continuous RV with pdf
+            <m>f(x)=xe^{-x^2/2}, \,\, 0\lt x\lt \infty</m>. Find <m>P(X>2)</m>. 
+    </p>
+  </statement>
+</exercise>
+    </page>
+
+</worksheet>
