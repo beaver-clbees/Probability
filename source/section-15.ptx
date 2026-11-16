@@ -384,7 +384,7 @@
   <introduction>
     <p>
       Let <m>X</m> be a continuous RV with pdf
-            <m>f(x)=4x, \,\, 0 \lt x\lt c</m>.
+            <m>f(x)=8x, \,\, 0 \lt x\lt c</m>.
     </p>
   </introduction>
   <task workspace="1in">
