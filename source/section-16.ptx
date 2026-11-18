@@ -1,0 +1,627 @@
+<worksheet xml:id="ws-gamma">
+    <title>The Exponential, Gamma, and Chi-Square Distributions (3.2)</title>
+    <page>
+<exercise workspace=".75in">
+  <statement>
+     <p>
+      Suppose that on average 6 people come to the DMV per hour according to a
+      Poisson process. Find the probability that we wait more than 10 minutes
+      for the first person to arrive.
+    </p>
+  </statement>
+</exercise>
+   
+
+    <p>
+      If we ask the question <q>What is the waiting time until the first change
+      in a Poisson process</q>? that is inherently a question answered by a
+      <em>continuous</em> random variable <m>W</m> since the wait time can take
+      on any value in the interval <m>(0,\infty).</m>
+    </p>
+
+    <p>
+      We will develop the pdf for such a <m>W</m> by first finding the
+      cumulative distribution function <m>F(w)</m> and then using the
+      relationship that <m>F'(w)=f(w).</m>
+    </p>
+<exercise>
+  <introduction>
+    <p>
+      Suppose we have a Poisson process with parameter <m>\lambda</m> giving the
+      expected number of changes in a unit interval. Let <m>W</m> be the
+      continuous random variable that gives the waiting time until the first
+      change in this Poisson process.
+    </p>
+  </introduction>
+  <task>
+    <statement>
+      <p>
+          <m>F(w)</m> is the probability that the waiting time until the first
+            change is less than or equal to <m>w</m>.
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>F(w) = P(W \leq w) =</m><fillin characters="20"/>
+      </p>
+    </statement>
+  </task>
+  <task workspace=".75in">
+    <statement>
+      <p>
+        Let <m>X</m> be the Poisson random variable on the interval
+            <m>[0,w]</m>. Then the corresponding
+          </p>
+
+          <p>
+            parameter is <fillin/>
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>P(W\gt w) = P(X=0) =</m><fillin characters="20"/>
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+         Hence, for our continuous RV W, for <m>0 \leq w \lt \infty</m>
+          </p>
+
+          <p>
+            <m>F(w) =</m> 
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+         So the pdf is the derivative:
+          </p>
+
+          <p>
+            <m>f(w) = F'(w) =</m> 
+      </p>
+    </statement>
+  </task>
+</exercise>
+ </page>
+<page>
+  <exercise>
+    <introduction>
+      <p>
+        Let <m>\lambda</m> be the expected number of changes in a unit interval. Let <m>X</m> be the waiting time until the first change. 
+      </p>
+    </introduction>
+    <task workspace=".5in">
+      <statement>
+        <p>
+          Let <m>\theta</m> be the expected wait until the first change. What is <m>\theta</m> in terms of <m>\lambda</m>?
+        </p>
+      </statement>
+    </task>
+    <task workspace=".5in">
+      <statement>
+        <p>
+          Then our pdf and cdf for <m>X</m> in terms of <m>\theta</m> are
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          An <m>X</m> with such a distribution is said to have an <fillin characters="25"/> distribution
+    </p>
+
+    <p>
+      with <fillin characters="25"/>.
+        </p>
+      </statement>
+    </task>
+    <task workspace=".5in">
+      <statement>
+        <p>
+          What do you expect the mean to be?
+        </p>
+      </statement>
+    </task>
+    <task workspace="4in">
+      <statement>
+        <p>
+          Let's check using the moment generating function:
+    </p>
+
+    <p>
+      <m>M(t) =</m>
+        </p>
+      </statement>
+    </task>
+  </exercise>
+</page>
+ <page>
+<exercise>
+  <introduction>
+     <p>
+      Back to our example. Suppose on average <m>6</m> people come to the DMV
+      per hour according to a Poisson process. Find the probability that we wait
+      more than 10 minutes for the first person to arrive.
+    </p>
+
+    <p>
+      Let <m>X</m> be the wait time until the first person arrives. We expect on
+      average 6 people per hour so we'd expect the first to arrive after 10 minutes.</p>
+      <p>
+      Thus <m>X</m> is an exponential random variable with parameter
+      <m>\theta=</m><fillin characters="20"/>.
+    </p>
+  </introduction>
+  <task workspace=".75in">
+    <statement>
+      <p>
+            What is the pdf of <m>X</m>?
+        
+      </p>
+    </statement>
+  </task>
+  <task workspace="1in">
+    <statement>
+      <p>
+         Find <m>P(X\gt 10)</m>
+      </p>
+    </statement>
+  </task>
+</exercise>
+
+
+<p>
+     <em>Summary for Exponential</em>
+    </p>
+
+    <p>
+      In an (approximate) Poisson process with mean <m>\lambda</m>, let <m>X</m>
+      be the continuous R.V. that measures the waiting time until the first
+      occurrence. 
+    </p>
+    <p>Then <m>X</m> has an <alert>exponential distribution</alert>
+      with parameter <m>\theta = \frac{1}{\lambda}</m>. Further,
+      <md>
+        f(x) = \frac{1}{\theta}e^{-x/\theta}, \,\,\, 0\leq x \lt \infty
+      </md>
+    </p>
+
+    <p>
+      <m>\mu=</m><fillin characters="20"/>,<m>\,\,\, \sigma^{2}=</m><fillin characters="20"/>
+      
+    </p>
+
+    <p>
+      <m>
+        F(x)=P(X\leq x)=</m><fillin characters="20"/>
+      
+    </p>
+
+    <p>
+      <m>
+        P(X \gt x) = </m><fillin characters="20"/>
+     
+    </p>
+
+    <p>
+      Note for a continuous random variable, <m>P(X=x)=0</m> so
+      <m>P(X\leq x)=P(X \lt x)</m> and <m>P(X \geq x)=P(X\gt x).</m>
+    </p>
+</page>
+<page>
+
+    <p>
+      The exponential distribution (waiting time until first occurrence) might
+      remind you in some ways of the geometric distribution where we were
+      interested in the number of trials until our first success. Note the
+      geometric distribution is a special case of the negative binomial
+      distribution where we asked the number of trials until the <m>rth</m>
+      success. The analog here would be to ask the waiting time until the
+      <m>\alpha^{th}</m> occurrence. Again we will proceed by considering the
+      cdf.
+    </p>
+<exercise>
+  <introduction>
+    <p>
+      Suppose we have an (approximate) Poisson process with mean <m>\lambda</m>.
+      Let <m>W</m> be the waiting time until the <m>\alpha</m>th occurrence, where <m>\alpha</m> is a positive integer. 
+    </p>
+  </introduction>
+  <task workspace=".5in">
+    <statement>
+      <p>
+         The
+      cdf of <m>W</m> is given by
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+      Another way to think about <m>P(W\gt w)</m> is to ask the probability that
+      <em>fewer</em> than <m>\alpha</m>
+    </p>
+
+    <p>
+      occurrences happen before time <m>w</m> or <m>P(X \lt \alpha)</m> for
+      <m>X</m> a Poison random variable on the interval <m>[0,w]</m> with parameter
+      <fillin characters="25"/>.
+    </p>
+    </statement>
+  </task>
+  <task workspace=".25">
+    <statement>
+      <p>
+         We know from the last chapter that
+    </p>
+
+    <p>
+      <m>P(X \lt \alpha)=</m>
+      </p>
+    </statement>
+  </task>
+  <task workspace=".25">
+    <statement>
+      <p>
+        Hence the value we are looking for is
+    </p>
+
+    <p>
+      <m>F(w)=</m>
+      </p>
+    </statement>
+  </task>
+</exercise>
+
+    <p>
+      Still assuming <m>w\gt 0</m> we can find the pdf by looking at the
+      derivative (using the chain rule and the product rule we get):
+      <md>
+        F'(w)= \lambda e^{-\lambda w}-e^{-\lambda w}\sum_{k=1}^{\alpha -1}\left[\frac{k(\lambda w)^{k-1}\lambda}{k!}-\frac{(\lambda w)^{k} \lambda}{k!}\right]
+      </md>
+      <md>
+        =\lambda e^{-\lambda w}-e^{-\lambda w}\left[ \frac{1\cdot (\lambda w)^{0} \lambda}{1!}-\frac{(\lambda w)^{1} \lambda}{1!}+\frac{2(\lambda w)^{1} \lambda}{2!}-\frac{(\lambda w)^{2} \lambda}{2!}+\cdots -\frac{(\lambda w)^{\alpha -1}\lambda}{(\alpha-1)!}\right]
+      </md>
+    </p>
+</page>
+<page> 
+    <p>
+      <md>
+        =\lambda e^{-\lambda w}-e^{-\lambda w}\left[ \lambda-\frac{(\lambda w)^{1} \lambda}{1!}+\frac{(\lambda w)^{1} \lambda}{1!}-\frac{(\lambda w)^{2} \lambda}{2!}+\frac{(\lambda w)^{2} \lambda}{2!}-+\cdots -\frac{(\lambda w)^{\alpha -1}\lambda}{(\alpha-1)!}\right]
+      </md>
+    </p>
+
+    <p>
+      <md>
+        =\lambda e^{-\lambda w}-e^{-\lambda w}\left[ \lambda -\frac{(\lambda w)^{\alpha -1}\lambda}{(\alpha-1)!}\right]
+      </md>
+      <md>
+        =\frac{\lambda(\lambda w)^{\alpha -1}}{(\alpha-1)!}e^{-\lambda w}.
+      </md>
+    </p>
+
+    <p>
+      <m>W</m> is said to have a <fillin characters="25"/> distribution.
+    </p>
+<exercise>
+  <introduction>
+    <p>
+      [Aside: Where did the name gamma distribution come from?]
+    </p>
+  </introduction>
+  <task workspace=".5in">
+    <statement>
+      <p>
+         The gamma function is defined by
+    </p>
+
+    <p>
+      <m>\Gamma(t)=</m>
+      </p>
+    </statement>
+  </task>
+  <task workspace="1.75in">
+    <statement>
+      <p>
+        Integration by parts gives
+    </p>
+
+    <p>
+      <m>\Gamma(t)=</m>
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+         Further, <m>\Gamma(1)=</m><fillin/> and so if <m>n</m> is a positive
+      integer we have <m>\Gamma(n)=</m><fillin characters="15"/>.
+      </p>
+      <p>
+      The gamma function is (for obvious reasons) called the
+    </p>
+
+    <p>
+      <fillin characters="75"/>.
+    </p>
+    </statement>
+  </task>
+</exercise>
+    
+    <p>
+      The random variable <m>X</m> is said to have a <fillin characters="25"/> distribution if its pdf is
+      defined by
+    </p>
+</page>
+<page>
+  <exercise>
+    <introduction>
+      <p>
+        In summary, suppose we have a Poisson process with mean <m>\lambda</m>. If
+      we let <m>X</m> be the continuous R.V. that measures the waiting time
+      until the <m>\alpha</m>th occurrence then <m>X</m> has a
+      <alert>gamma distribution</alert> with parameter
+      <m>\theta = \frac{1}{\lambda}</m>. Note that since <m>\lambda</m>
+      represents the average number of occurrence per unit of time, then
+      <m>\theta</m> represents the expected wait time until the first
+      occurrence. The pdf of <m>X</m> is
+      
+      <md>
+        f(x)=\frac{1}{\Gamma(\alpha)\theta^{\alpha}}x^{\alpha -1}e^{-x/\theta}, \,\, 0 \leq x \lt \infty
+      </md>
+      </p>
+    </introduction>
+    <task workspace=".5in">
+      <statement>
+        <p>
+          <em>if <m>\alpha</m> is a positive integer</em> then
+      <md>
+        (cdf) F(x)=P(X\leq x)=1-\sum_{k=0}^{\alpha -1}\frac{(\lambda x)^{k} e^{-kx}}{k!}=1-\sum_{k=0}^{\alpha -1}\frac{(x/\theta)^{k} e^{-x/\theta}}{k!}
+      </md>
+      <m>=</m>
+    </p>
+      </statement>
+    </task>
+    <task workspace=".25in">
+      <statement>
+        <p>
+          Further,  <m>\displaystyle{P(X\gt x)=\sum_{k=0}^{\alpha -1}\frac{(x/\theta)^{k} e^{-x/\theta}}{k!}}=</m>
+        </p>
+      </statement>
+    </task>
+  </exercise>
+
+
+
+    <p>
+      It can be shown that the moment generating function, mean, and variance
+      are as follows:
+      <md>
+        M(t)=\frac{1}{(1-\theta t)^{\alpha}}, \,\, t\lt \frac{1}{\theta}
+      </md>
+      <md>
+        \mu = \alpha \theta, \,\, \sigma^{2}=\alpha \theta^{2}
+      </md>
+ 
+    </p>
+<exercise>
+  <introduction>
+<p>
+      Telephone calls enter a switchboard according to a Poisson process on
+      average <m>2</m> every <m>3</m> minutes. Let <m>X</m> be the waiting time
+      until you receive <m>3</m> calls.
+    </p>
+  </introduction>  
+  <task workspace=".5in">
+    <statement>
+      <p>
+          How is <m>X</m> distributed?
+      </p>
+    </statement>
+  </task>
+  <task workspace=".75in">
+    <statement>
+      <p>
+        Find the probability that you have to wait no more than <m>10</m>
+            minutes for the first <m>3</m> calls.
+      </p>
+    </statement>
+  </task>
+</exercise>
+  
+</page>
+<page>
+<exercise>
+  <introduction>
+    <p>
+       As in the last problem, suppose telephone calls enter a switchboard
+            according to a Poisson process on average <m>2</m> every <m>3</m>
+            minutes. Let <m>X</m> be the waiting time until the FIRST call
+            arrives.
+    </p>
+  </introduction>
+<task workspace=".75in">
+  <statement>
+    <p>
+      How is <m>X</m> distributed?
+    </p>
+  </statement>
+</task>
+<task workspace="1in">
+  <statement>
+    <p>
+       What is the probability that the first call comes within the
+                  first minute?
+    </p>
+  </statement>
+</task>
+<task workspace="1in">
+  <statement>
+    <p>
+      What is the probability that the first call doesn't come until
+                  after 5 minutes?
+    </p>
+  </statement>
+</task>
+</exercise>
+<exercise>
+  <introduction>
+    <p>
+      Let <m>X</m> denote the number of particles emitted by a radioactive
+            substance and recorded by a Geiger counter as clicks. Assume <m>X</m> follows
+            a Poisson process with <m>\lambda=2</m> clicks per second. Let
+            <m>W</m> be the waiting time to observe <m>4</m> clicks.
+    </p>
+  </introduction>
+  <task workspace=".75in">
+    <statement>
+      <p>
+         What is the expected wait time (<m>\mu</m>)?
+      </p>
+    </statement>
+  </task>
+  <task workspace=".75in">
+    <statement>
+      <p>
+         Find the probability that you have to wait more than 5 seconds
+                  to observe 4 clicks.
+      </p>
+    </statement>
+  </task>
+  <task workspace=".75in">
+    <statement>
+      <p>
+        Find the probability that the first 4 clicks happen in the
+                  first 2 seconds.
+      </p>
+    </statement>
+  </task>
+</exercise>
+ </page>
+ <page>
+
+    <p>
+      <em>A special case of the gamma distribution</em>
+    </p>
+
+    <p>
+      Suppose <m>X</m> has a gamma distribution with <m>\theta=2</m> and
+      <m>\alpha=r/2</m> where <m>r</m> is a positive integer. The pdf of
+      <m>X</m> is then
+      <md>
+        f(x)=\frac{1}{\Gamma(r/2)2^{r/2}}x^{r/2-1}e^{-x/2}, \,\, 0\lt x\lt \infty
+      </md>
+    </p>
+
+    <p>
+      We say <m>X</m> has a <fillin characters="25"/> distribution with <fillin characters="40" />
+    </p>
+
+    <p>
+      In this case we write
+    </p>
+    <p>
+      <m>X \sim</m>
+    </p>
+    <p>
+      We can't always use the sum formula for the cdf since <m>r/2</m> is not an
+      integer (if <m>r</m> is odd) so the cdf for <m>X</m> is
+      <md>
+        F(x) = \int_{0}^{x}\frac{1}{\Gamma(r/2)2^{r/2}}w^{r/2-1}dw
+      </md>
+      and your calculator or table <m>IV</m> in your book can be used to find
+      some values of <m>F(x)</m>.
+    </p>
+
+    <p>
+      <image width="80%" source="chisquare.png"/>
+    </p>
+</page>
+<page>
+  <exercise>
+    <introduction>
+      <p>
+         Suppose <m>X \sim \chi^{2}(10)</m>. Use the tables to find the following,
+      then use your calculator to verify. Note the lower bound if not given, is 0.
+      </p>
+    </introduction>
+    <task workspace=".25in">
+      <statement>
+        <p>
+          <m>P(X \leq 20.48)=</m>
+        </p>
+      </statement>
+    </task>
+    <task workspace=".5in">
+      <statement>
+        <p>
+            <m>P(3.247 \leq X \leq 15.99)=</m>
+        </p>
+      </statement>
+    </task>
+  </exercise>
+    
+    <p>
+      We will use this distribution more next term in statistics but
+      for now we will just make a few more definitions and restrict our use to
+      learning the notation and tables.
+    </p>
+<p> The <m>100p^{th}%</m> percentile (for <m>0\leq p \leq 1</m>) is a number <m>\pi_p</m> such that the area under the curve of <m>f(x)</m> to the left of <m>\pi_p</m> is equal to <m>p</m>. That is
+<md>p=\int_{-\infty}^{\pi_p} f(x)\, dx = F(\pi_p)</md>
+</p> 
+    <p>
+      Suppose <m>X</m> has a chi-square distribution with <m>r</m> degrees of
+      freedom. Define <m>\chi^{2}_{\alpha}(r)</m> so that
+    </p>
+
+    <p>
+      <md>
+        P[X\geq \chi^{2}_{\alpha}(r)]=\alpha.
+      </md>
+    </p>
+
+    <p>
+      In other words, the area under the curve of <m>f(x)</m> to the right of <m>\chi^{2}_{\alpha}(r)</m> is <m>\alpha</m>. It follows that <m>\chi^{2}_{\alpha}(r)</m> is the <m>100(1-\alpha)</m>th
+      percentile.
+    </p>
+
+    
+      
+<exercise>
+  <introduction>
+    <p>
+      Let <m>X \sim \chi^{2}(5)</m>. Use the table to find the following.
+    </p>
+  </introduction>
+  <task workspace=".25in">
+    <statement>
+      <p>
+         <m>\chi^{2}_{0.10}(5)=</m>
+      </p>
+    </statement>
+  </task>
+  <task workspace=".25in">
+    <statement>
+      <p>
+         <m>\chi^{2}_{0.90}(5)=</m>
+      </p>
+    </statement>
+  </task>
+  <task workspace=".25in">
+    <statement>
+      <p>
+         The 95th percentile.
+      </p>
+    </statement>
+  </task>
+</exercise>
+  </page>
+</worksheet>
