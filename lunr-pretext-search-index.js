@@ -2339,6 +2339,123 @@ var ptx_lunr_docs = [
   "number": "15.12",
   "title": "",
   "body": "  Let be a continuous RV with pdf . Find .   "
+},
+{
+  "id": "ws-gamma",
+  "level": "1",
+  "url": "ws-gamma.html",
+  "type": "Worksheet",
+  "number": "16",
+  "title": "The Exponential, Gamma, and Chi-Square Distributions (3.2)",
+  "body": " The Exponential, Gamma, and Chi-Square Distributions (3.2)     Suppose that on average 6 people come to the DMV per hour according to a Poisson process. Find the probability that we wait more than 10 minutes for the first person to arrive.    If we ask the question What is the waiting time until the first change in a Poisson process ? that is inherently a question answered by a continuous random variable since the wait time can take on any value in the interval   We will develop the pdf for such a by first finding the cumulative distribution function and then using the relationship that     Suppose we have a Poisson process with parameter giving the expected number of changes in a unit interval. Let be the continuous random variable that gives the waiting time until the first change in this Poisson process.      is the probability that the waiting time until the first change is less than or equal to .             Let be the Poisson random variable on the interval . Then the corresponding  parameter is              Hence, for our continuous RV W, for          So the pdf is the derivative:            Let be the expected number of changes in a unit interval. Let be the waiting time until the first change.     Let be the expected wait until the first change. What is in terms of ?      Then our pdf and cdf for in terms of are      An with such a distribution is said to have an distribution  with .      What do you expect the mean to be?      Let's check using the moment generating function:            Back to our example. Suppose on average people come to the DMV per hour according to a Poisson process. Find the probability that we wait more than 10 minutes for the first person to arrive.  Let be the wait time until the first person arrives. We expect on average 6 people per hour so we'd expect the first to arrive after 10 minutes.  Thus is an exponential random variable with parameter .     What is the pdf of ?      Find       Summary for Exponential   In an (approximate) Poisson process with mean , let be the continuous R.V. that measures the waiting time until the first occurrence.  Then has an exponential distribution with parameter . Further,    ,         Note for a continuous random variable, so and     The exponential distribution (waiting time until first occurrence) might remind you in some ways of the geometric distribution where we were interested in the number of trials until our first success. Note the geometric distribution is a special case of the negative binomial distribution where we asked the number of trials until the success. The analog here would be to ask the waiting time until the occurrence. Again we will proceed by considering the cdf.    Suppose we have an (approximate) Poisson process with mean . Let be the waiting time until the th occurrence, where is a positive integer.     The cdf of is given by      Another way to think about is to ask the probability that fewer than   occurrences happen before time or for a Poison random variable on the interval with parameter .      We know from the last chapter that         Hence the value we are looking for is        Still assuming we can find the pdf by looking at the derivative (using the chain rule and the product rule we get):              is said to have a distribution.    [Aside: Where did the name gamma distribution come from?]     The gamma function is defined by         Integration by parts gives         Further, and so if is a positive integer we have .  The gamma function is (for obvious reasons) called the   .     The random variable is said to have a distribution if its pdf is defined by      In summary, suppose we have a Poisson process with mean . If we let be the continuous R.V. that measures the waiting time until the th occurrence then has a gamma distribution with parameter . Note that since represents the average number of occurrence per unit of time, then represents the expected wait time until the first occurrence. The pdf of is       if is a positive integer then        Further,      It can be shown that the moment generating function, mean, and variance are as follows:      Telephone calls enter a switchboard according to a Poisson process on average every minutes. Let be the waiting time until you receive calls.     How is distributed?      Find the probability that you have to wait no more than minutes for the first calls.         As in the last problem, suppose telephone calls enter a switchboard according to a Poisson process on average every minutes. Let be the waiting time until the FIRST call arrives.     How is distributed?      What is the probability that the first call comes within the first minute?      What is the probability that the first call doesn't come until after 5 minutes?       Let denote the number of particles emitted by a radioactive substance and recorded by a Geiger counter as clicks. Assume follows a Poisson process with clicks per second. Let be the waiting time to observe clicks.     What is the expected wait time ( )?      Find the probability that you have to wait more than 5 seconds to observe 4 clicks.      Find the probability that the first 4 clicks happen in the first 2 seconds.        A special case of the gamma distribution   Suppose has a gamma distribution with and where is a positive integer. The pdf of is then   We say has a distribution with   In this case we write     We can't always use the sum formula for the cdf since is not an integer (if is odd) so the cdf for is and your calculator or table in your book can be used to find some values of .         Suppose . Use the tables to find the following, then use your calculator to verify. Note the lower bound if not given, is 0.                  We will use this distribution more next term in statistics but for now we will just make a few more definitions and restrict our use to learning the notation and tables.  The percentile (for ) is a number such that the area under the curve of to the left of is equal to . That is   Suppose has a chi-square distribution with degrees of freedom. Define so that     In other words, the area under the curve of to the right of is . It follows that is the th percentile.    Let . Use the table to find the following.                   The 95th percentile.      "
+},
+{
+  "id": "ws-gamma-2-1",
+  "level": "2",
+  "url": "ws-gamma.html#ws-gamma-2-1",
+  "type": "Worksheet Exercise",
+  "number": "16.1",
+  "title": "",
+  "body": "  Suppose that on average 6 people come to the DMV per hour according to a Poisson process. Find the probability that we wait more than 10 minutes for the first person to arrive.   "
+},
+{
+  "id": "ws-gamma-2-4",
+  "level": "2",
+  "url": "ws-gamma.html#ws-gamma-2-4",
+  "type": "Worksheet Exercise",
+  "number": "16.2",
+  "title": "",
+  "body": "  Suppose we have a Poisson process with parameter giving the expected number of changes in a unit interval. Let be the continuous random variable that gives the waiting time until the first change in this Poisson process.      is the probability that the waiting time until the first change is less than or equal to .             Let be the Poisson random variable on the interval . Then the corresponding  parameter is              Hence, for our continuous RV W, for          So the pdf is the derivative:       "
+},
+{
+  "id": "ws-gamma-3-1",
+  "level": "2",
+  "url": "ws-gamma.html#ws-gamma-3-1",
+  "type": "Worksheet Exercise",
+  "number": "16.3",
+  "title": "",
+  "body": "  Let be the expected number of changes in a unit interval. Let be the waiting time until the first change.     Let be the expected wait until the first change. What is in terms of ?      Then our pdf and cdf for in terms of are      An with such a distribution is said to have an distribution  with .      What do you expect the mean to be?      Let's check using the moment generating function:       "
+},
+{
+  "id": "ws-gamma-4-1",
+  "level": "2",
+  "url": "ws-gamma.html#ws-gamma-4-1",
+  "type": "Worksheet Exercise",
+  "number": "16.4",
+  "title": "",
+  "body": "  Back to our example. Suppose on average people come to the DMV per hour according to a Poisson process. Find the probability that we wait more than 10 minutes for the first person to arrive.  Let be the wait time until the first person arrives. We expect on average 6 people per hour so we'd expect the first to arrive after 10 minutes.  Thus is an exponential random variable with parameter .     What is the pdf of ?      Find     "
+},
+{
+  "id": "ws-gamma-5-2",
+  "level": "2",
+  "url": "ws-gamma.html#ws-gamma-5-2",
+  "type": "Worksheet Exercise",
+  "number": "16.5",
+  "title": "",
+  "body": "  Suppose we have an (approximate) Poisson process with mean . Let be the waiting time until the th occurrence, where is a positive integer.     The cdf of is given by      Another way to think about is to ask the probability that fewer than   occurrences happen before time or for a Poison random variable on the interval with parameter .      We know from the last chapter that         Hence the value we are looking for is       "
+},
+{
+  "id": "ws-gamma-6-4",
+  "level": "2",
+  "url": "ws-gamma.html#ws-gamma-6-4",
+  "type": "Worksheet Exercise",
+  "number": "16.6",
+  "title": "",
+  "body": "  [Aside: Where did the name gamma distribution come from?]     The gamma function is defined by         Integration by parts gives         Further, and so if is a positive integer we have .  The gamma function is (for obvious reasons) called the   .    "
+},
+{
+  "id": "ws-gamma-7-1",
+  "level": "2",
+  "url": "ws-gamma.html#ws-gamma-7-1",
+  "type": "Worksheet Exercise",
+  "number": "16.7",
+  "title": "",
+  "body": "  In summary, suppose we have a Poisson process with mean . If we let be the continuous R.V. that measures the waiting time until the th occurrence then has a gamma distribution with parameter . Note that since represents the average number of occurrence per unit of time, then represents the expected wait time until the first occurrence. The pdf of is       if is a positive integer then        Further,     "
+},
+{
+  "id": "ws-gamma-7-3",
+  "level": "2",
+  "url": "ws-gamma.html#ws-gamma-7-3",
+  "type": "Worksheet Exercise",
+  "number": "16.8",
+  "title": "",
+  "body": "  Telephone calls enter a switchboard according to a Poisson process on average every minutes. Let be the waiting time until you receive calls.     How is distributed?      Find the probability that you have to wait no more than minutes for the first calls.    "
+},
+{
+  "id": "ws-gamma-8-1",
+  "level": "2",
+  "url": "ws-gamma.html#ws-gamma-8-1",
+  "type": "Worksheet Exercise",
+  "number": "16.9",
+  "title": "",
+  "body": "  As in the last problem, suppose telephone calls enter a switchboard according to a Poisson process on average every minutes. Let be the waiting time until the FIRST call arrives.     How is distributed?      What is the probability that the first call comes within the first minute?      What is the probability that the first call doesn't come until after 5 minutes?    "
+},
+{
+  "id": "ws-gamma-8-2",
+  "level": "2",
+  "url": "ws-gamma.html#ws-gamma-8-2",
+  "type": "Worksheet Exercise",
+  "number": "16.10",
+  "title": "",
+  "body": "  Let denote the number of particles emitted by a radioactive substance and recorded by a Geiger counter as clicks. Assume follows a Poisson process with clicks per second. Let be the waiting time to observe clicks.     What is the expected wait time ( )?      Find the probability that you have to wait more than 5 seconds to observe 4 clicks.      Find the probability that the first 4 clicks happen in the first 2 seconds.    "
+},
+{
+  "id": "ws-gamma-10-1",
+  "level": "2",
+  "url": "ws-gamma.html#ws-gamma-10-1",
+  "type": "Worksheet Exercise",
+  "number": "16.11",
+  "title": "",
+  "body": "  Suppose . Use the tables to find the following, then use your calculator to verify. Note the lower bound if not given, is 0.                 "
+},
+{
+  "id": "ws-gamma-10-7",
+  "level": "2",
+  "url": "ws-gamma.html#ws-gamma-10-7",
+  "type": "Worksheet Exercise",
+  "number": "16.12",
+  "title": "",
+  "body": "  Let . Use the table to find the following.                   The 95th percentile.    "
 }
 ]
 
